@@ -1,0 +1,47 @@
+.accordion-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  padding: 1rem;
+  align-items: center;
+}
+
+.accordion-title {
+  width: 50%;
+  height: 3rem;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+.accordion-title:hover,
+.active {
+  background-color: #ccc;
+}
+
+.accordion-icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  align-self: center;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.accordion-text {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}

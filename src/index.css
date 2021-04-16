@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+:root {
+  /* for now these are the variables for just the banner*/
+  --banner-color: orange;
+  --banner-color-accent: navy;
+  /* decorative text color*/
+  --deco-text-color: white;
+}

@@ -1,0 +1,16 @@
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  background-color: rgba(223, 223, 223, 0.625);
+  width: max-content;
+  padding: 1%;
+}
+
+.carousel-item > img { 
+  object-fit: cover;
+  height: 50vh;
+}
