@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './navbar.css';
 import {
   Nav,
   NavItem,
@@ -29,34 +30,25 @@ const Navbar = (props) => {
             Regions
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem>
-              <NavLink href="#">Find Your Region</NavLink>
+            <DropdownItem href="#">Find Your Region
               {/* href points to interative map */}
             </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-              {/* repeat for as many regions. Aesthetically might be messy */}
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
-            </DropdownItem>
-            <DropdownItem>
-              <NavLink href="#">Region</NavLink>
+            <DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
+            </DropdownItem><DropdownItem href="#">
+              Region
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
