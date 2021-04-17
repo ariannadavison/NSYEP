@@ -1,4 +1,8 @@
 import React from 'react';
+import LogoHero from './components/LogoHero/LogoHero';
+import MottoBanner from './components/MottoBanner/MottoBanner';
+import PageDivider from './components/PageDivider/PageDivider';
+import Footer from './components/footer/Footer';
 import './App.css';
 
 //*Structure for Region Page:
@@ -31,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <LogoHero />
-      {/* NavBar */}
+      {/* <Navbar /> */}
       <MottoBanner />
       {/* COPY */}
       <PageDivider />
