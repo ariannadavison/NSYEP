@@ -2,7 +2,7 @@ import React from 'react';
 import LogoHero from './components/LogoHero/LogoHero';
 import MottoBanner from './components/MottoBanner/MottoBanner';
 import PageDivider from './components/PageDivider/PageDivider';
-import Footer from './components/footer/Footer';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/NavBar/Navbar';
 import './App.css';
 
