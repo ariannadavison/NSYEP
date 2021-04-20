@@ -20,5 +20,6 @@
   text-align: center;
   font-size: clamp(1rem, -0.875rem + 8.333vw, 4.5rem);
   font-weight: bold;
+  font-family: Merriweather, Times, 'Times New Roman', serif;
   color: var(--text-color-deco);
 }
