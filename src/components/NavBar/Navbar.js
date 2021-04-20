@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './navbar.css';
+import { Link } from 'react-router-dom';
 import {
   Nav,
   NavItem,
@@ -10,6 +11,7 @@ import {
   NavLink,
   NavbarBrand
 } from "reactstrap";
+import { regions } from '../../data/Regions';
 
 const Navbar = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = (props) => {
           <NavbarBrand href="/">BRAND</NavbarBrand>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Home</NavLink>
+          <NavLink href="/">Home</NavLink>
         </NavItem>
         <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle nav caret>
@@ -31,30 +33,15 @@ const Navbar = (props) => {
           </DropdownToggle>
           <DropdownMenu>
             <DropdownItem href="#">Find Your Region
-              {/* href points to interative map */}
+            {/* href points to interactive map */}
             </DropdownItem>
-            <DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem><DropdownItem href="#">
-              Region
-            </DropdownItem>
+
+            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
+
           </DropdownMenu>
         </Dropdown>
         <NavItem>
-          <NavLink href="#">Get in Touch with NSYEP Sites</NavLink>
-          {/* Links to <Contact /> */}
+          <NavLink href="/contact">Get in Touch with NSYEP Sites</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#">Link</NavLink>
