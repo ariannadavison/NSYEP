@@ -19,7 +19,7 @@ const Navbar = (props) => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div>
+    <div className="navbar">
       <Nav tabs>
         <NavItem>
           <NavbarBrand href="/">BRAND</NavbarBrand>
