@@ -2,10 +2,4 @@ body {
   margin: 0;
 }
 
-:root {
-  /* for now these are the variables for just the banner*/
-  --banner-color: orange;
-  --banner-color-accent: navy;
-  /* decorative text color*/
-  --deco-text-color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');

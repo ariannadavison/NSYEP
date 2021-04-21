@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import YearlyBanner from './YearlyBanner';
-import Year2020Stats from './Year2020Stats';
-import Year2019Stats from './Year2019Stats';
-import Year2018Stats from './Year2018Stats';
+import YearStats from './YearStats';
 
 function YearlyInfo() {
   const [bannerView, setBannerView] = useState('year-2020');
@@ -15,13 +13,13 @@ function YearlyInfo() {
   function getYearlyView() {
     switch(bannerView) {
       case 'year-2020':
-        return <Year2020Stats />
+        return <YearStats year="2020" />
       case 'year-2019':
-        return <Year2019Stats />
+        return <YearStats year="2019" />
       case 'year-2018':
-        return <Year2018Stats />
+        return <YearStats year="2018" />
       default:
-        return <Year2020Stats />
+        return <YearStats year="2020" />
     }
   }
 
