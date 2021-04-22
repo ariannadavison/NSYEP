@@ -11,15 +11,16 @@
 
 .banner__decorativeLine {
   margin-top: 1rem;
-  height: 0.25rem;
+  height: 0.15rem;
   width: 40%;
   background-color: var(--banner-color-accent);
+  
 }
 
 .banner__motto {
   text-align: center;
   font-size: clamp(1rem, -0.875rem + 8.333vw, 4.5rem);
   font-weight: bold;
-  font-family: Merriweather, Times, 'Times New Roman', serif;
-  color: var(--text-color-deco);
+  text-transform: uppercase;
+  color: var(--deco-text-color);
 }
