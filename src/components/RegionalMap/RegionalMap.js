@@ -1,4 +1,3 @@
-import { cleanup } from "@testing-library/react";
 import React, { useEffect } from "react";
 
 const RegionalMap = () => {
