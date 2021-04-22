@@ -21,4 +21,3 @@ function YearlyBanner({ changeBannerView }) {
 }
 
 export default YearlyBanner;
-
