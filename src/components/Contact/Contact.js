@@ -1,5 +1,5 @@
 import React from "react";
-import { contactInfo } from "../../data/AllContacts.js";
+import { contactInfo } from "./AllContacts.js";
 import Accordion from "./Accordion/Accordion.js";
 import "./contact.css";
 import Form from "./Form/Form.js";
