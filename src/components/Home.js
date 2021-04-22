@@ -1,5 +1,6 @@
 import MottoBanner from './MottoBanner/MottoBanner';
 import PageDivider from './PageDivider/PageDivider';
+import RegionalMap from './RegionalMap2/RegionalMap';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
     <MottoBanner />
     {/* COPY */}
     <PageDivider />
-    {/* MAP */}
+    <RegionalMap />
   </div>
   )
 }
