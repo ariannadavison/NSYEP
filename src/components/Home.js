@@ -8,7 +8,6 @@ export default function Home() {
     <MottoBanner />
     {/* COPY */}
     <PageDivider />
-    {/* MAP */}
     <RegionalMap />
   </div>
   )
