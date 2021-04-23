@@ -1,28 +1,35 @@
 import React from "react";
 import "./individualStories.css";
+import meportrait from '../Images/portraitgirl.jpg';
 
 const IndividualStories = () => {
   return (
     <div className="individualStories__container">
       <div className="individualStories__navbar">
-        <a class="active" href="#home">
+        <a class="navlist active" href="#home">
           Home
         </a>
-        <a href="#counties">Counties</a>
-        <a href="#link">link</a>
-        <a href="#link">link</a>
+        <a className="individualStories__navlist" href="#counties">
+          Counties
+        </a>
+        <a className="individualStories__navlist" href="#link">
+          link
+        </a>
+        <a className="individualStories__navlist" href="#link">
+          link
+        </a>
       </div>
       <div className="individualStories__innerContent">
-        <img className="individualStories__personPicture"></img>
+      <img className="individualStories_studentPicture" src={meportrait} alt="student" />
         <div className="individualStories__nameDetailsBox">
           <div className="individualStories__nameAgeCountry">
-            <h2 className="individualStories__details">Name</h2>
-            <h2 className="individualStories__details"> Age </h2>
-            <h2 className="individualStories__details"> County </h2>
+            <h2 className="individualStories__details">Name:</h2>
+            <h2 className="individualStories__details"> Age: </h2>
+            <h2 className="individualStories__details"> County: </h2>
           </div>
           <div className="individualStories__jobPlacement">
-            <h2 className="individualStories__details"> SYEP Job Placement </h2>
-            <h2 className="individualStories__details">Job title</h2>
+            <h2 className="individualStories__details"> SYEP Job Placement: </h2>
+            <h2 className="individualStories__details">Job title:</h2>
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -48,20 +55,7 @@ const IndividualStories = () => {
             erat ut turpis viverra dignissim. Suspendisse sodales blandit justo
             sed pharetra. Nullam ante mi, rutrum quis pharetra quis, consequat
             eu sem. Phasellus nisi massa, faucibus sed volutpat et, rhoncus sit
-            amet arcu. Fusce vehicula, eros at semper luctus, libero arcu
-            posuere leo, at pretium tellus lorem a metus. Aenean pellentesque
-            lacus a erat finibus, sed tempor purus pretium. Quisque ac risus
-            commodo neque elementum dapibus. Maecenas nulla dolor, facilisis ac
-            sapien at, eleifend bibendum leo. Mauris vel leo nulla. Mauris
-            congue, dui a facilisis interdum, eros massa vehicula nisi, pharetra
-            blandit velit arcu sit amet arcu. Vivamus consectetur sem eget
-            posuere fringilla. Donec ullamcorper faucibus lacinia. Aenean
-            sollicitudin risus ex, ac consequat sem posuere sit amet.
-            Pellentesque vitae semper metus. Praesent dapibus felis at bibendum
-            scelerisque. Morbi facilisis ac dui nec venenatis. Vivamus id justo
-            sed sapien ornare sagittis. Etiam vel mauris non tellus vulputate
-            lobortis. Aenean eu nisi ac turpis pretium dapibus. Nam ut enim
-            eros.
+            amet arcu. 
           </p>
         </div>
       </div>
