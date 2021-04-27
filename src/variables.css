@@ -1,7 +1,10 @@
 :root {
   /* for now these are the variables for just the banner*/
-  --banner-color: orange;
-  --banner-color-accent: navy;
+  --banner-color: #1FBCF2;
+  --banner-color-accent: #39383A;
   /* decorative text color*/
   --text-color-deco: white;
+
+  --navy: #203A83;
+  --green: #7BBF50;
 }
