@@ -14,7 +14,7 @@ export default function Region (props) {
       <RegionBanner region={name}/>
       i am a region.<br />
       specifically, the region known as {name}.
-      <YearlyInfo />
+      <YearlyInfo regionName={name} />
     </div>
   )
 }

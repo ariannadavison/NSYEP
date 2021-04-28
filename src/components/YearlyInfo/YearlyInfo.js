@@ -3,13 +3,13 @@ import PhotoBubbles from '../PhotoBubbles/PhotoBubbles';
 import YearlyBanner from './YearlyBanner';
 import YearStats from './YearStats';
 
-function YearlyInfo() {
+function YearlyInfo({regionName}) {
   const [bannerView, setBannerView] = useState('year-2020');
 
   function changeBannerView(e) {
     const name = e.target.getAttribute("name");
     setBannerView(name);
-    return <PhotoBubbles year={name}/>
+    return <PhotoBubbles year={name} regionName={regionName}/>
   }
 
   function getYearlyView() {
