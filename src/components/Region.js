@@ -1,6 +1,7 @@
 import PhotoBubbles from "./PhotoBubbles/PhotoBubbles";
 import RegionBanner from "./RegionBanners/RegionBanner";
-// import YearlyBanner from "./RegionBanners/RegionBanner";
+import YearlyBanner from "./YearlyInfo/YearlyBanner";
+import YearlyInfo from "./YearlyInfo/YearlyInfo";
 export default function Region (props) {
   console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
@@ -13,8 +14,7 @@ export default function Region (props) {
       <RegionBanner region={name}/>
       i am a region.<br />
       specifically, the region known as {name}.
-      {/* <YearlyBanner /> */}
-      <PhotoBubbles />
+      <YearlyInfo />
     </div>
   )
 }

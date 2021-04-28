@@ -1,7 +1,7 @@
 import React from "react";
 import "./photoBubbles.css";
 
-const PhotoBubbles = ({ images }) => {
+const PhotoBubbles = ({ images, year }) => {
   //! images is being fed an object of keys with the image src ie images['doggy.png']
 
   //how would I make this so that the images are dynamic not hard coded.
@@ -18,6 +18,7 @@ const PhotoBubbles = ({ images }) => {
   return (
     <div>
       something should be here
+      {year}
       {/* {Object.keys(images)
         .slice(0, 10)
         .map((keyName, i) => {

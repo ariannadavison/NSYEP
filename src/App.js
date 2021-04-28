@@ -53,11 +53,10 @@ function App() {
           {/* fun react-router knowledge fact: this long path has to go first because its path is more precise */}
           <Route path="/:regionName/:storyName" component={Story} />
           <Route path="/:regionName" component={Region} />
-
+          
           {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
         </Switch>
-        <IndividualStories />
         {/* <Footer /> */}
       </div>
     </Router>
