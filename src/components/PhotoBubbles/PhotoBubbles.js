@@ -18,7 +18,7 @@ const PhotoBubbles = ({ images }) => {
   return (
     <div>
       something should be here
-      {Object.keys(images)
+      {/* {Object.keys(images)
         .slice(0, 10)
         .map((keyName, i) => {
           return (<div
@@ -31,7 +31,8 @@ const PhotoBubbles = ({ images }) => {
             }}
             className="photoBubbles"
           ></div>);
-        })}
+        })} */}
+        {/* <img src="" /> */}
     </div>
   );
 };
