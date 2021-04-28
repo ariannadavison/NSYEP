@@ -1,18 +1,14 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-import LogoHero from './components/LogoHero/LogoHero';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home';
-import Region from './components/Region';
-import Contact from './components/Contact/Contact';
-import Story from './components/Story';
-// import Footer from './components/Footer/Footer';
-import IndividualStories from './components/IndividualStories/IndividualStories'
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LogoHero from "./components/LogoHero/LogoHero";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home";
+import Region from "./components/Region";
+import Contact from "./components/Contact/Contact";
+import Story from "./components/Story";
+import Footer from "./components/Footer/Footer";
+
+import "./App.css";
 
 //*Structure for Region Page:
 // <logoHero />
@@ -38,8 +34,6 @@ import './App.css';
 // <Form /> beyond mvp
 // <Footer />
 
-
-
 function App() {
   return (
     <Router>
@@ -57,8 +51,7 @@ function App() {
           {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
         </Switch>
-        <IndividualStories />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

@@ -1,6 +1,12 @@
 .photoBubbles {
   border: blue solid;
   border-radius: 50%;
-  padding: 5rem;
-  /* height: 1rem; */
+  /* padding: 5rem; */
+}
+
+.photoBubbles__bubbleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  border: red solid;
+  justify-content: space-evenly;
 }
