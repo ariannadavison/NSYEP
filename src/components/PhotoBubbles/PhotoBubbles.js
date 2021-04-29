@@ -17,8 +17,10 @@ const PhotoBubbles = ({ year, regionName }) => {
   let dir;
 
   switch(regionName) {
-    case 'Capital' : dir = regionName
-    case 'Western' : dir = regionName
+    case 'Capital' : dir = regionName;
+    break;
+    case 'Western' : dir = regionName;
+    break;
     default: dir = 'Capital'
   }
 
@@ -42,10 +44,11 @@ const PhotoBubbles = ({ year, regionName }) => {
           .slice(0, 10)
           .map((keyName, i) => {
             dynamicWidth()
+            console.log(images[keyName].default)
             return (<div
               key={i}
               style={{
-                backgroundImage: `url(${images[keyName]})`,
+                backgroundImage: `url(${images[keyName].default})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
