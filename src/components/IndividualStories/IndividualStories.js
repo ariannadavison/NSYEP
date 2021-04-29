@@ -5,20 +5,6 @@ import meportrait from '../Images/portraitgirl.jpg';
 const IndividualStories = () => {
   return (
     <div className="individualStories__container">
-      <div className="individualStories__navbar">
-        <a class="navlist active" href="#home">
-          Home
-        </a>
-        <a className="individualStories__navlist" href="#counties">
-          Counties
-        </a>
-        <a className="individualStories__navlist" href="#link">
-          link
-        </a>
-        <a className="individualStories__navlist" href="#link">
-          link
-        </a>
-      </div>
       <div className="individualStories__innerContent">
       <img className="individualStories_studentPicture" src={meportrait} alt="student" />
         <div className="individualStories__nameDetailsBox">

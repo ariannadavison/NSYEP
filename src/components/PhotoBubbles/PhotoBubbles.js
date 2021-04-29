@@ -1,6 +1,6 @@
 import React from "react";
 import "./photoBubbles.css";
-
+// import IndividualStories from "../IndividualStories/IndividualStories";
 const PhotoBubbles = ({ year, regionName }) => {
   //how would I make this so that the images are dynamic not hard coded.
   //- option 1: props >> image will be required in the app.js
@@ -35,6 +35,13 @@ const PhotoBubbles = ({ year, regionName }) => {
     measurement = `${length}rem`;
     console.log(length);
   }
+
+  //making a function to redirect to the correct individual page
+  // const toStory = () => {
+  //   console.log("to story")
+  //   return <IndividualStories />
+  // }
+
   return (
     <div>
       something should be here
@@ -56,6 +63,7 @@ const PhotoBubbles = ({ year, regionName }) => {
                 height: measurement ? measurement: 0
               }}
               className="photoBubbles"
+              // onClick={toStory}
             ></div>);
           })}
       </div>

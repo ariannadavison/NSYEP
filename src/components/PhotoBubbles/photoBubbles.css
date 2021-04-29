@@ -8,5 +8,5 @@
   display: flex;
   flex-flow: row wrap;
   border: red solid;
-  justify-content: space-evenly;
+  justify-content:center;
 }

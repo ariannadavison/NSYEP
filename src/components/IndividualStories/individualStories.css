@@ -4,19 +4,6 @@
   box-sizing: inherit;
 }
 
-.individualStories__navbar {
-  text-align: center;
-  font-size: 35px;
-  text-transform: uppercase;
-  background-color: blue;
-}
-
-.individualStories__navlist {
-  padding-left: 200px;
-  text-decoration: none;
-  color: white;
-}
-
 .individualStories__innerContent {
   display: flex;
   flex-direction: row;
