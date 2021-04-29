@@ -1,9 +1,7 @@
 import React from "react";
 import "./photoBubbles.css";
-
+// import IndividualStories from "../IndividualStories/IndividualStories";
 const PhotoBubbles = ({ year, regionName }) => {
-  //! images is being fed an object of keys with the image src ie images['doggy.png']
-
   //how would I make this so that the images are dynamic not hard coded.
   //- option 1: props >> image will be required in the app.js
   //- option 2: putting them in as a recursive file finding thing for each folder of region?
@@ -19,8 +17,10 @@ const PhotoBubbles = ({ year, regionName }) => {
   let dir;
 
   switch(regionName) {
-    case 'Capital' : dir = regionName
-    case 'Western' : dir = regionName
+    case 'Capital' : dir = regionName;
+    break;
+    case 'Western' : dir = regionName;
+    break;
     default: dir = 'Capital'
   }
 
@@ -31,10 +31,17 @@ const PhotoBubbles = ({ year, regionName }) => {
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (20-10) + 10 );
+    let length = Math.floor(Math.random() * (30-1) + 10 );
     measurement = `${length}rem`;
     console.log(length);
   }
+
+  //making a function to redirect to the correct individual page
+  // const toStory = () => {
+  //   console.log("to story")
+  //   return <IndividualStories />
+  // }
+
   return (
     <div>
       something should be here
@@ -44,10 +51,11 @@ const PhotoBubbles = ({ year, regionName }) => {
           .slice(0, 10)
           .map((keyName, i) => {
             dynamicWidth()
+            console.log(images[keyName].default)
             return (<div
               key={i}
               style={{
-                backgroundImage: `url(${images[keyName]})`,
+                backgroundImage: `url(${images[keyName].default})`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -55,6 +63,7 @@ const PhotoBubbles = ({ year, regionName }) => {
                 height: measurement ? measurement: 0
               }}
               className="photoBubbles"
+              // onClick={toStory}
             ></div>);
           })}
       </div>

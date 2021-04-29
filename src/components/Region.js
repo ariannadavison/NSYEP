@@ -1,6 +1,4 @@
-import PhotoBubbles from "./PhotoBubbles/PhotoBubbles";
 import RegionBanner from "./RegionBanners/RegionBanner";
-import YearlyBanner from "./YearlyInfo/YearlyBanner";
 import YearlyInfo from "./YearlyInfo/YearlyInfo";
 export default function Region (props) {
   console.log(props.match.params.regionName);

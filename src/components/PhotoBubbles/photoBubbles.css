@@ -1,6 +1,7 @@
 .photoBubbles {
   border: blue solid;
   border-radius: 50%;
+  cursor: pointer;
   /* padding: 5rem; */
 }
 
@@ -8,5 +9,9 @@
   display: flex;
   flex-flow: row wrap;
   border: red solid;
-  justify-content: space-evenly;
+  justify-content:center;
+}
+
+.photoBubbles:hover {
+  filter:grayscale(100%)
 }
