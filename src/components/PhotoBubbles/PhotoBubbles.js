@@ -2,8 +2,6 @@ import React from "react";
 import "./photoBubbles.css";
 
 const PhotoBubbles = ({ year, regionName }) => {
-  //! images is being fed an object of keys with the image src ie images['doggy.png']
-
   //how would I make this so that the images are dynamic not hard coded.
   //- option 1: props >> image will be required in the app.js
   //- option 2: putting them in as a recursive file finding thing for each folder of region?
@@ -31,7 +29,7 @@ const PhotoBubbles = ({ year, regionName }) => {
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (20-10) + 10 );
+    let length = Math.floor(Math.random() * (30-1) + 10 );
     measurement = `${length}rem`;
     console.log(length);
   }
