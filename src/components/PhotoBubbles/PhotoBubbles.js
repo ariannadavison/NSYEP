@@ -14,27 +14,34 @@ const PhotoBubbles = ({ year, regionName }) => {
   /* For now make the bubbles to fit statically >> probably flex so that each sized content can push the others around making it look more dynamic than it is */
 
   //here i will make a switch statement of which region to use
-  let dir;
-
-  switch(regionName) {
-    case 'Capital' : dir = regionName;
-    break;
-    case 'Western' : dir = regionName;
-    break;
-    default: dir = 'Capital'
-  }
-
+  let images;
   const importImages = (r) => r.keys().map(r);
 
-  const images = importImages(require.context(`../Images/Capital`, false,  /\.(png|jpe?g|svg)$/))
+  switch (regionName) {
+    case "Capital":
+      images = importImages(
+        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Western":
+      images = importImages(
+        require.context(`../Images/Western`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    default:
+      images = importImages(
+        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+      );
+  }
+
 
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (30-1) + 10 );
+    let length = Math.floor(Math.random() * (30 - 1) + 10);
     measurement = `${length}rem`;
     console.log(length);
-  }
+  };
 
   //making a function to redirect to the correct individual page
   // const toStory = () => {
@@ -50,24 +57,26 @@ const PhotoBubbles = ({ year, regionName }) => {
         {Object.keys(images)
           .slice(0, 10)
           .map((keyName, i) => {
-            dynamicWidth()
-            console.log(images[keyName].default)
-            return (<div
-              key={i}
-              style={{
-                backgroundImage: `url(${images[keyName].default})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: measurement ? measurement: 0,
-                height: measurement ? measurement: 0
-              }}
-              className="photoBubbles"
-              // onClick={toStory}
-            ></div>);
+            dynamicWidth();
+            console.log(images[keyName].default);
+            return (
+              <div
+                key={i}
+                style={{
+                  backgroundImage: `url(${images[keyName].default})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  width: measurement ? measurement : 0,
+                  height: measurement ? measurement : 0,
+                }}
+                className="photoBubbles"
+                // onClick={toStory}
+              ></div>
+            );
           })}
       </div>
-        {/* <img src="" /> */}
+      {/* <img src="" /> */}
     </div>
   );
 };
