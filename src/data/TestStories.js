@@ -5,9 +5,10 @@ export const storyBank = {
     media: {
       name: "Sandra Bullock",
       age: "40",
-      
-      interview: "",
-
+      county:"A place",
+      job: "an undercover cop",
+      jobTitle: "wow",
+      interview: "STUFF",
     }
   },
 };
