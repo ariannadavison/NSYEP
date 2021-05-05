@@ -42,7 +42,6 @@ const PhotoBubbles = ({ year, regionName }) => {
   //   return <IndividualStories />
   // }
 
-
   // JSON import
   // we want a name, and a photo, and possibly a URL. and we want access to the region, given the currently-established URL structure. (/region/name)
   // is it possible to have, then, each thing structured as
@@ -102,10 +101,10 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   */
 
-
   return (
     <div>
-      something should be here 
+      something should be here
+
       {year}
       <div className="photoBubbles__bubbleContainer">
         {Object.keys(images)
@@ -113,7 +112,10 @@ const PhotoBubbles = ({ year, regionName }) => {
           .map((keyName, i) => {
             dynamicWidth()
             console.log(images[keyName].default)
-            return (<a href={`/region/test`}><div
+
+            //return (<a href={`/region/test`}><div
+
+            return (<div
               key={i}
               style={{
                 backgroundImage: `url(${images[keyName].default})`,
@@ -125,10 +127,11 @@ const PhotoBubbles = ({ year, regionName }) => {
               }}
               className="photoBubbles"
               // onClick={toStory}
-            ></div></a>);
+
+            //></div></a>);
+            ></div>);
           })}
       </div>
-        {/* <img src="" /> */}
     </div>
   );
 };

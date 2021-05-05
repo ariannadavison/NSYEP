@@ -1,0 +1,20 @@
+.individualStories__container {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.individualStories__innerContent {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.individualStories_studentPicture {
+    display: block;
+    margin: 20px;
+  }
+  
+.individualStories__nameDetailsBox{
+    margin: 20px;
+}
