@@ -5,8 +5,6 @@
   justify-content: flex-end;
 }
 
-
-
 .yearly-banner-component li {
   padding: 1rem;
   cursor: pointer;
@@ -14,7 +12,7 @@
 }
 
 .yearly-banner-component {
-  background: rgb(146, 146, 172);
+  background: var(--year-nav-pointed-arrow);
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -24,21 +22,30 @@
 
 .yearly-banner-component::before {
   border-bottom: 30px solid transparent;
-  border-right: 30px solid rgb(165, 165, 184);
+  border-right: 30px solid var(--year-nav-pointed-arrow);
   border-top: 25px solid transparent;
   content: "";
   height: 0;
   left: -100px;
-  /* position: absolute; */
   top: 0;
   width: 0;
 }
 
-.yearlyBanner-years li:hover{
-  color: pink;
+.yearly-banner-component li:hover{
+  color: var(--link-hover);
 }
 
-.yearlyBanner-years li:active{
-  color: purple;
+.yearly-banner-component li:active{
+  color: var(--link-active);
+}
+
+.yearlyBanner__dropShadow {
+  width: 0;
+  height: 0;
+  border-top: 40px solid var(--year-nav-drop-shadow);
+  border-left: 40px solid transparent;
+  position: absolute;
+  margin-top: 53px;
+  z-index: -1;
 }
 

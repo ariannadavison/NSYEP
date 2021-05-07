@@ -43,6 +43,7 @@ function YearlyBanner({ changeBannerView }) {
           </li>
         </ToggleButton>
       </ToggleButtonGroup>
+      <span className="yearlyBanner__dropShadow"/>
     </div>
   );
 }
