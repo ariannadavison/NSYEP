@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import IndividualStories from "../IndividualStories/IndividualStories";
 import "./photoBubbles.css";
 // import IndividualStories from "../IndividualStories/IndividualStories";
 const PhotoBubbles = ({ year, regionName }) => {
@@ -16,25 +18,30 @@ const PhotoBubbles = ({ year, regionName }) => {
   //here i will make a switch statement of which region to use
   let dir;
 
-  switch(regionName) {
-    case 'Capital' : dir = regionName;
-    break;
-    case 'Western' : dir = regionName;
-    break;
-    default: dir = 'Capital'
+  switch (regionName) {
+    case "Capital":
+      dir = regionName;
+      break;
+    case "Western":
+      dir = regionName;
+      break;
+    default:
+      dir = "Capital";
   }
 
   const importImages = (r) => r.keys().map(r);
 
-  const images = importImages(require.context(`../Images/Capital`, false,  /\.(png|jpe?g|svg)$/))
+  const images = importImages(
+    require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+  );
 
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (30-1) + 10 );
+    let length = Math.floor(Math.random() * (30 - 1) + 10);
     measurement = `${length}rem`;
     console.log(length);
-  }
+  };
 
   //making a function to redirect to the correct individual page
   // const toStory = () => {
@@ -52,9 +59,9 @@ const PhotoBubbles = ({ year, regionName }) => {
     region: 'central',
   }, etc.
   */
- // you have an array of those objects, or something like that, right? then you map through that and that's how the bubbles get formed?
+  // you have an array of those objects, or something like that, right? then you map through that and that's how the bubbles get formed?
 
- // that still leaves us with the point of actually fetching that person's information. that can get passed along here, or otherwise gotten from each individual story page. passing it along here has the merit of only being one map. rather than having to search for a match at every story, but has the downside of being a lot of information traveling at once.
+  // that still leaves us with the point of actually fetching that person's information. that can get passed along here, or otherwise gotten from each individual story page. passing it along here has the merit of only being one map. rather than having to search for a match at every story, but has the downside of being a lot of information traveling at once.
 
   /*
   OPTION ONE:
@@ -101,35 +108,44 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   */
 
+  const storyConstructor = (data) => {
+    data.map()
+  }
+
   return (
     <div>
       something should be here
-
       {year}
       <div className="photoBubbles__bubbleContainer">
         {Object.keys(images)
           .slice(0, 10)
           .map((keyName, i) => {
-            dynamicWidth()
-            console.log(images[keyName].default)
+            dynamicWidth();
+            console.log(images[keyName].default);
 
             //return (<a href={`/region/test`}><div
 
-            return (<div
-              key={i}
-              style={{
-                backgroundImage: `url(${images[keyName].default})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: measurement ? measurement: 0,
-                height: measurement ? measurement: 0
-              }}
-              className="photoBubbles"
-              // onClick={toStory}
+            return (
+              <Link to= {
+                pathname: `/${}`
+              }>
+                <div
+                  key={i}
+                  style={{
+                    backgroundImage: `url(${images[keyName].default})`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    width: measurement ? measurement : 0,
+                    height: measurement ? measurement : 0,
+                  }}
+                  className="photoBubbles"
+                  // onClick={toStory}
 
-            //></div></a>);
-            ></div>);
+                  //></div></a>);
+                ></div>
+              </Link>
+            );
           })}
       </div>
     </div>
