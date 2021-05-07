@@ -6,12 +6,11 @@ import Form from "./Form/Form.js";
 
 const Contact = () => {
   return (
-    <div className="contactNform__container">
+    <div className="contactNform__container margins">
       <div className="contact__regionAccordions">
         {contactInfo.map((item, key) => {
           return (
             <Accordion
-              key={key}
               title={item.Region}
               text={
                 <div className="contact__container">
@@ -30,9 +29,11 @@ const Contact = () => {
                   })}
                 </div>
               }
+              unique={key}
             />
           );
         })}
+        <div className="placeholder"/>
       </div>
       <div className="contact_formContainer">
         <Form />

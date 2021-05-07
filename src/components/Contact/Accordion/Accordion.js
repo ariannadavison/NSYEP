@@ -1,38 +1,44 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import "./Accordion.css";
 
-const Accordion = ({text, title}) => {
-  const [active, setActive] = useState(false);
-  const contentRef = useRef(null);
+const ExpandIcon = <FontAwesomeIcon icon={faChevronRight} />;
 
-  const ExpandIcon = <FontAwesomeIcon icon={faChevronRight} />;
+const useStyles = makeStyles((theme) => ({
+  root: {
+    // width: "100%",
+    flexBasis: "400px",
+    flexGrow: "1",
+    margin: "1rem"
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular,
+  },
+}));
 
-  useEffect(() => {
-    contentRef.current.style.maxHeight = active
-      ? `${contentRef.current.scrollHeight}px`
-      : "0px";
-  }, [contentRef, active]);
-
-  const toggleActive = () => {
-    setActive(!active);
-  };
+export default function SimpleAccordion({ title, text, unique }) {
+  const classes = useStyles();
 
   return (
-    <div className="accordion-section">
-      <button className="accordion-title" onClick={toggleActive}>
-        {title}
-        <span className={active ? "accordion-icon rotate" : "accordion-icon"}>
-          {ExpandIcon}
-        </span>
-      </button>
-
-      <div ref={contentRef} className="accordion-content">
-        {text}
-      </div>
+    <div className={classes.root}>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={ExpandIcon}
+          aria-controls={`panel${unique}-content`}
+          id={`panel${unique}-header`}
+        >
+          <Typography className={classes.heading}>{title}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{text}</Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
-};
-
-export default Accordion;
+}
