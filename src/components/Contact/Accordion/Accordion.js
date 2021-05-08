@@ -14,11 +14,21 @@ const useStyles = makeStyles((theme) => ({
     // width: "100%",
     flexBasis: "400px",
     flexGrow: "1",
-    margin: "1rem"
+    margin: "1rem",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
     fontWeight: theme.typography.fontWeightRegular,
+  },
+  body: {
+    width: "100%",
+  },
+  noPadding: {
+    padding: "0",
+    // marginBottom: "0.5rem",
+  },
+  title: {
+    boxShadow: "0 1px 3px rgba(0,0,0,0.002), 0 1px 2px rgba(0,0,0,0.20)",
   },
 }));
 
@@ -27,16 +37,17 @@ export default function SimpleAccordion({ title, text, unique }) {
 
   return (
     <div className={classes.root}>
-      <Accordion>
+      <Accordion >
         <AccordionSummary
           expandIcon={ExpandIcon}
           aria-controls={`panel${unique}-content`}
           id={`panel${unique}-header`}
+          className={classes.title}
         >
           <Typography className={classes.heading}>{title}</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography>{text}</Typography>
+        <AccordionDetails className={classes.noPadding}>
+          <Typography className={classes.body}>{text}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
