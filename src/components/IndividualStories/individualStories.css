@@ -1,7 +1,6 @@
 .individualStories__container {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .individualStories__innerContent {
@@ -13,8 +12,15 @@
 .individualStories_studentPicture {
     display: block;
     margin: 20px;
+    border-radius: 10px;
   }
   
 .individualStories__nameDetailsBox{
     margin: 20px;
+    padding: 5rem;
+}
+
+.individualStories__textContain {
+  display: flex;
+  flex-flow: row wrap;
 }
