@@ -16,24 +16,25 @@ const PhotoBubbles = ({ year, regionName }) => {
   /* For now make the bubbles to fit statically >> probably flex so that each sized content can push the others around making it look more dynamic than it is */
 
   //here i will make a switch statement of which region to use
-  let dir;
+  let images;
+  const importImages = (r) => r.keys().map(r);
 
   switch (regionName) {
     case "Capital":
-      dir = regionName;
+      images = importImages(
+        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+      );
       break;
     case "Western":
-      dir = regionName;
+      images = importImages(
+        require.context(`../Images/Western`, false, /\.(png|jpe?g|svg)$/)
+      );
       break;
     default:
-      dir = "Capital";
+      images = importImages(
+        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+      );
   }
-
-  const importImages = (r) => r.keys().map(r);
-
-  const images = importImages(
-    require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
-  );
 
   let measurement;
 
@@ -146,6 +147,7 @@ const PhotoBubbles = ({ year, regionName }) => {
             );
           })}
       </div>
+
     </div>
   );
 };
