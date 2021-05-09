@@ -8,6 +8,7 @@ function YearlyInfo({ regionName }) {
 
   function changeBannerView(e) {
     const name = e.target.getAttribute("name");
+    const year = e.target.getAttribute("value");
     setBannerView(name);
     return <PhotoBubbles year={name} regionName={regionName} />;
   }

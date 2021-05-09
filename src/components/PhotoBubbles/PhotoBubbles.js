@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import IndividualStories from "../IndividualStories/IndividualStories";
 import "./photoBubbles.css";
 // import IndividualStories from "../IndividualStories/IndividualStories";
 const PhotoBubbles = ({ year, regionName }) => {
@@ -34,11 +36,10 @@ const PhotoBubbles = ({ year, regionName }) => {
       );
   }
 
-
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (30 - 1) + 10);
+    let length = Math.floor(Math.random() * (20 - 1) + 10);
     measurement = `${length}rem`;
     console.log(length);
   };
@@ -49,34 +50,104 @@ const PhotoBubbles = ({ year, regionName }) => {
   //   return <IndividualStories />
   // }
 
+  // JSON import
+  // we want a name, and a photo, and possibly a URL. and we want access to the region, given the currently-established URL structure. (/region/name)
+  // is it possible to have, then, each thing structured as
+  /*
+  {
+    name: 'jane',
+    img: 'url goes here.jpg',
+    region: 'central',
+  }, etc.
+  */
+  // you have an array of those objects, or something like that, right? then you map through that and that's how the bubbles get formed?
+
+  // that still leaves us with the point of actually fetching that person's information. that can get passed along here, or otherwise gotten from each individual story page. passing it along here has the merit of only being one map. rather than having to search for a match at every story, but has the downside of being a lot of information traveling at once.
+
+  /*
+  OPTION ONE:
+  map once. have each media-person-object-thing go along as props when the bubble is made.
+  OPTION TWO:
+  search. search happens upon click and is matched to media-person-object-thing, passed as props to story
+  OPTION RELATED TO TWO:
+  search happens *after* click on the individual story page.
+
+
+  bubble.json be name, img, possibly url, region?
+  >separate json for an array of individual people
+
+  everything.json is an array of people per region per year, with their whole info included, likely as a sub-object.
+
+ */
+
+  /*
+  region: central,
+  info: {
+    name:
+    img:
+    age:
+    county:
+  }
+ */
+
+  /*
+  import { AShitTonofInfo as stories } from 'toomuch.json';
+
+  generateBubble() {
+    stories.map(person => {
+      return (
+        <Link to={
+          pathname: {`/${person.region}/${person.name}`},
+          person: {person}
+        }>
+          <Bubble?> or <div className="bubble">
+        </Link>
+      )
+    })
+  }
+  routed component (found at the corresponding path) should then have access to it as props.location.person.
+
+  */
+
+  const storyConstructor = (data) => {
+    data.map()
+  }
+
   return (
     <div>
-      something should be here
-      {year}
       <div className="photoBubbles__bubbleContainer">
         {Object.keys(images)
           .slice(0, 10)
           .map((keyName, i) => {
             dynamicWidth();
             console.log(images[keyName].default);
+
+            //return (<a href={`/region/test`}><div
+
             return (
-              <div
-                key={i}
-                style={{
-                  backgroundImage: `url(${images[keyName].default})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  width: measurement ? measurement : 0,
-                  height: measurement ? measurement : 0,
-                }}
-                className="photoBubbles"
-                // onClick={toStory}
-              ></div>
+              // <Link to= {
+              //   pathname: `/${}`
+              // }>
+                <div
+                  key={i}
+                  style={{
+                    backgroundImage: `url(${images[keyName].default})`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    width: measurement ? measurement : 0,
+                    height: measurement ? measurement : 0,
+                  }}
+                  className="photoBubbles"
+                  // onClick={toStory}
+
+                  //></div></a>);
+                ></div>
+              // </Link>
             );
           })}
       </div>
-      {/* <img src="" /> */}
+
     </div>
   );
 };

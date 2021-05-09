@@ -1,3 +1,4 @@
+import { Card, Typography } from "@material-ui/core";
 import React from "react";
 import { contactInfo } from "../../data/AllContacts.js";
 import Accordion from "./Accordion/Accordion.js";
@@ -6,33 +7,32 @@ import Form from "./Form/Form.js";
 
 const Contact = () => {
   return (
-    <div className="contactNform__container">
+    <div className="contactNform__container margins">
       <div className="contact__regionAccordions">
         {contactInfo.map((item, key) => {
           return (
             <Accordion
-              key={key}
               title={item.Region}
-              text={
-                <div className="contact__container">
-                  {item.contacts.map((item, key) => {
-                    return (
-                      <div key={key} className="contact__contactInfo">
-                        <span className="contact__worksite">{item.site}</span>
-                        <span className="contact__nameAndEmail">
-                          {item.personToContact} {<br />} {item.email}
-                        </span>
-                        <span className="contact__phoneNumber">
-                          {item.phone}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              }
+              text={item.contacts.map((item, key) => {
+                return (
+                  <Card key={key} id="contact__contactInfo">
+                    <Typography className="contact__worksite">
+                      {item.site}
+                    </Typography>
+                    <Typography className="contact__nameAndEmail">
+                      {item.personToContact} {item.email ? `- ${item.email}` : ""}
+                    </Typography>
+                    <Typography className="contact__phoneNumber">
+                      {item.phone}
+                    </Typography>
+                  </Card>
+                );
+              })}
+              unique={key}
             />
           );
         })}
+        <div className="placeholder" />
       </div>
       <div className="contact_formContainer">
         <Form />
