@@ -1,5 +1,6 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import YearlyInfo from "./YearlyInfo/YearlyInfo";
+
 export default function Region (props) {
   console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
@@ -10,9 +11,11 @@ export default function Region (props) {
   return (
     <div>
       <RegionBanner region={name}/>
-      i am a region.<br />
-      specifically, the region known as {name}.
-      <YearlyInfo regionName={name} />
+      <div className="margins">
+        i am a region.<br />
+        specifically, the region known as {name}.
+      </div>
+        <YearlyInfo regionName={name} />
     </div>
   )
 }

@@ -41,7 +41,6 @@ function App() {
       <div className="App">
         <LogoHero />
         <Navbar />
-
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />

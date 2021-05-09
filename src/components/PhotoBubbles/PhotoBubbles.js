@@ -38,7 +38,7 @@ const PhotoBubbles = ({ year, regionName }) => {
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (30 - 1) + 10);
+    let length = Math.floor(Math.random() * (20 - 1) + 10);
     measurement = `${length}rem`;
     console.log(length);
   };
@@ -114,8 +114,6 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   return (
     <div>
-      something should be here
-      {year}
       <div className="photoBubbles__bubbleContainer">
         {Object.keys(images)
           .slice(0, 10)
@@ -126,9 +124,9 @@ const PhotoBubbles = ({ year, regionName }) => {
             //return (<a href={`/region/test`}><div
 
             return (
-              <Link to= {
-                pathname: `/${}`
-              }>
+              // <Link to= {
+              //   pathname: `/${}`
+              // }>
                 <div
                   key={i}
                   style={{
@@ -144,7 +142,7 @@ const PhotoBubbles = ({ year, regionName }) => {
 
                   //></div></a>);
                 ></div>
-              </Link>
+              // </Link>
             );
           })}
       </div>
