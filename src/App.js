@@ -6,9 +6,8 @@ import Home from "./components/Home";
 import Region from "./components/Region";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-
-import "./App.css";
 import IndividualStories from "./components/IndividualStories/IndividualStories";
+import "./App.css";
 
 //*Structure for Region Page:
 // <logoHero />
