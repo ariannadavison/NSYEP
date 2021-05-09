@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IndividualStories from "../IndividualStories/IndividualStories";
 import { storyBank } from "../../data/TestStories.js";
 import "./photoBubbles.css";
+
 const PhotoBubbles = ({ year, regionName }) => {
   console.log("photo bubbles region Name", regionName);
 
@@ -102,6 +102,15 @@ const PhotoBubbles = ({ year, regionName }) => {
           <Link
             to={{
               pathname: `/${regionName}/${filteredStory.name}`,
+              state : {
+                image: image,
+                name: filteredStory.name,
+                age: filteredStory.age,
+                county: filteredStory.county,
+                job: filteredStory.job,
+                jobTitle: filteredStory.jobTitle,
+                interview: filteredStory.interview
+              }
             }}
           >
             <div

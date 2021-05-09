@@ -33,6 +33,8 @@ const Contact = () => {
           );
         })}
         <div className="placeholder" />
+        <div className="placeholder" />
+        <div className="placeholder" />
       </div>
       <div className="contact_formContainer">
         <Form />
