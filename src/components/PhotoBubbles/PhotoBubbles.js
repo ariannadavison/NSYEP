@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import IndividualStories from "../IndividualStories/IndividualStories";
+// import { Link } from "react-router-dom";
+// import IndividualStories from "../IndividualStories/IndividualStories";
 import "./photoBubbles.css";
 // import IndividualStories from "../IndividualStories/IndividualStories";
 const PhotoBubbles = ({ year, regionName }) => {
+  console.log("photo bubbles region Name", regionName);
   //how would I make this so that the images are dynamic not hard coded.
   //- option 1: props >> image will be required in the app.js
   //- option 2: putting them in as a recursive file finding thing for each folder of region?
@@ -17,6 +18,7 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   //here i will make a switch statement of which region to use
   let images;
+  let name = regionName;
   const importImages = (r) => r.keys().map(r);
 
   switch (regionName) {
@@ -25,15 +27,53 @@ const PhotoBubbles = ({ year, regionName }) => {
         require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
       );
       break;
+    case "Finger Lakes":
+      images = importImages(
+        require.context(`../Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Central":
+      images = importImages(
+        require.context(`../Images/Central`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Southern":
+      images = importImages(
+        require.context(`../Images/Southern`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "North":
+      images = importImages(
+        require.context(`../Images/North`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Mohawk Valley":
+      images = importImages(
+        require.context(`../Images/MohawkValley`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Hudson Valley":
+      images = importImages(
+        require.context(`../Images/HudsonValley`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "New York City":
+      images = importImages(
+        require.context(`../Images/NewYorkCity`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Long Island":
+      images = importImages(
+        require.context(`../Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
     case "Western":
       images = importImages(
         require.context(`../Images/Western`, false, /\.(png|jpe?g|svg)$/)
       );
       break;
     default:
-      images = importImages(
-        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
-      );
+      console.log("it's not doing what you think it's doing");
   }
 
   let measurement;
@@ -44,6 +84,9 @@ const PhotoBubbles = ({ year, regionName }) => {
     console.log(length);
   };
 
+  // useEffect(() => {
+  //   getAllImages();
+  // }, [])
   //making a function to redirect to the correct individual page
   // const toStory = () => {
   //   console.log("to story")
@@ -109,9 +152,9 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   */
 
-  const storyConstructor = (data) => {
-    data.map()
-  }
+  // const storyConstructor = (data) => {
+  //   data.map();
+  // };
 
   return (
     <div>
@@ -122,32 +165,29 @@ const PhotoBubbles = ({ year, regionName }) => {
             dynamicWidth();
             console.log(images[keyName].default);
 
-            //return (<a href={`/region/test`}><div
-
             return (
               // <Link to= {
               //   pathname: `/${}`
               // }>
-                <div
-                  key={i}
-                  style={{
-                    backgroundImage: `url(${images[keyName].default})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    width: measurement ? measurement : 0,
-                    height: measurement ? measurement : 0,
-                  }}
-                  className="photoBubbles"
-                  // onClick={toStory}
+              <div
+                key={i}
+                style={{
+                  backgroundImage: `url(${images[keyName].default})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  width: measurement ? measurement : 0,
+                  height: measurement ? measurement : 0,
+                }}
+                className="photoBubbles"
+                // onClick={toStory}
 
-                  //></div></a>);
-                ></div>
+                //></div></a>);
+              ></div>
               // </Link>
             );
           })}
       </div>
-
     </div>
   );
 };
