@@ -80,6 +80,8 @@ const PhotoBubbles = ({ year, regionName }) => {
   const getStory = (region, img) => {
     //@region STRING
     //@img STRING
+    img = img.split("/").pop().replace(/\.[^/.]+$/,"").replace(/\.[^/.]+$/,"");
+    console.log("new image variable", img)
     const findStory = (i) => i.img === img;
     //filter to find the right region then the right img:
     //this is an array of all available stories from filtered region
