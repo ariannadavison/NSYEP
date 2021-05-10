@@ -1,6 +1,17 @@
 .photoBubbles {
   border: blue solid;
   border-radius: 50%;
-  padding: 5rem;
-  /* height: 1rem; */
+  cursor: pointer;
+  /* padding: 5rem; */
+}
+
+.photoBubbles__bubbleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  border: red solid;
+  justify-content:center;
+}
+
+.photoBubbles:hover {
+  filter:grayscale(100%)
 }

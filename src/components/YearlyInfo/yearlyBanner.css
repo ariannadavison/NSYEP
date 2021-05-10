@@ -1,0 +1,27 @@
+.yearly-banner-component {
+  border: solid;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: aliceblue;
+}
+
+.yearlyBanner-years {
+  display: flex;
+  list-style: none;
+}
+
+.yearlyBanner-years li {
+  padding: 1rem;
+  cursor: pointer
+}
+
+.yearlyBanner-years li:hover{
+  color: pink;
+}
+
+.yearlyBanner-years li:active{
+  color: purple;
+}
+
