@@ -2,22 +2,23 @@ import React from "react";
 import "./individualStories.css";
 import meportrait from '../Images/portraitgirl.jpg';
 
-const IndividualStories = () => {
+const IndividualStories = ({name, age, county, job, jobtitle, interview}) => {
   return (
     <div className="individualStories__container">
       <div className="individualStories__innerContent">
       <img className="individualStories_studentPicture" src={meportrait} alt="student" />
         <div className="individualStories__nameDetailsBox">
           <div className="individualStories__nameAgeCountry">
-            <h2 className="individualStories__details">Name:</h2>
-            <h2 className="individualStories__details"> Age: </h2>
-            <h2 className="individualStories__details"> County: </h2>
+            <h2 className="individualStories__details">Name: {name}</h2>
+            <h2 className="individualStories__details"> Age: {age}</h2>
+            <h2 className="individualStories__details"> County: {county}</h2>
           </div>
           <div className="individualStories__jobPlacement">
-            <h2 className="individualStories__details"> SYEP Job Placement: </h2>
-            <h2 className="individualStories__details">Job title:</h2>
+            <h2 className="individualStories__details"> SYEP Job Placement: {job}</h2>
+            <h2 className="individualStories__details">Job title: {jobtitle}</h2>
           </div>
           <p>
+            {interview}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             erat nisl, congue in fringilla eu, suscipit eget neque. Proin
             placerat pellentesque nibh sed facilisis. Nam nec diam urna.
