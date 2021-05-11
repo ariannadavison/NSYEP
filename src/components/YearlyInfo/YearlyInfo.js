@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PhotoBubbles from "../PhotoBubbles/PhotoBubbles";
 import YearlyBanner from "./YearlyBanner";
 import YearStats from "./YearStats";
 
