@@ -1,0 +1,41 @@
+.paragraph__ribbon {
+  background-color: var(--tan);
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.paragraph__ribbon::after {
+  content: " ";
+  position: relative;
+  border-top: 0.5rem solid transparent;
+  border-left: 2rem solid blue;
+  border-bottom: 0.5rem solid transparent;
+}
+
+.paragraph__ribbon span {
+  padding: 1rem;
+}
+
+.paragraph__text {
+  display: flex;
+}
+
+.paragraph__column-one, .paragraph__column-two {
+  margin: 2rem;
+}
+
+.paragraph__column-one {
+  flex: 1.5;
+}
+
+.paragraph__column-two {
+  flex: 1;
+}
+
+.paragraph__img-placeholder {
+  margin: 0 auto;
+  height: 400px;
+  width: 550px;
+  background-color: aliceblue;
+  border: 2px solid lightpink;
+}
