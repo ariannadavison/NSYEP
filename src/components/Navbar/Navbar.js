@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './navbar.css';
 import { Link } from 'react-router-dom';
 import {
   Nav,
@@ -12,6 +11,7 @@ import {
   NavbarBrand
 } from "reactstrap";
 import { regions } from '../../data/Regions';
+import './navbar.css';
 
 const Navbar = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,15 +20,15 @@ const Navbar = (props) => {
 
   return (
     <div className="navbar">
-      <Nav tabs>
+      <Nav className="navbar__items" tabs>
+        {/* <NavItem>
+          <NavbarBrand href="/" className="navbar__link">BRAND</NavbarBrand>
+        </NavItem> */}
         <NavItem>
-          <NavbarBrand href="/">BRAND</NavbarBrand>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/">Home</NavLink>
+          <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
         <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle nav caret>
+          <DropdownToggle className="navbar__link" nav caret>
             Regions
           </DropdownToggle>
           <DropdownMenu>
@@ -36,15 +36,15 @@ const Navbar = (props) => {
             {/* href points to interactive map */}
             </DropdownItem>
 
-            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
+            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem className="navbar__link">{r.region}</DropdownItem></Link>)}
 
           </DropdownMenu>
         </Dropdown>
         <NavItem>
-          <NavLink href="/contact">Get in Touch with NSYEP Sites</NavLink>
+          <NavLink href="/contact" className="navbar__link">Get in Touch with NSYEP Sites</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Link</NavLink>
+          <NavLink href="#" className="navbar__link">Link</NavLink>
         </NavItem>
       </Nav>
     </div>
