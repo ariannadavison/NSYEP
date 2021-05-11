@@ -1,0 +1,9 @@
+:root {
+  /* yearly banner variables */
+  --year-nav-pointed-arrow: var(--banner-color);
+  --year-nav-drop-shadow: rgb(38, 122, 174);
+
+  /* link interaction colors */
+  --link-hover: rgb(127, 127, 206);
+  --link-active: rgb(35, 159, 74);
+}
