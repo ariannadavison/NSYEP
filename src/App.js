@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import IndividualStories from "./components/IndividualStories/IndividualStories";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 //*Structure for Region Page:
 // <logoHero />
@@ -38,7 +39,7 @@ function App() {
     <Router>
       <div className="App">
         <LogoHero />
-        <Navbar />
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
