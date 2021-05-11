@@ -4,44 +4,246 @@ import { storyBank } from "../../data/TestStories.js";
 import "./photoBubbles.css";
 
 const PhotoBubbles = ({ year, regionName }) => {
-  console.log("photo bubbles region Name", regionName);
-
   let images;
 
   const importImages = (r) => r.keys().map(r);
 
-  //!I'll have to rework this when the different years come into play
-
   switch (regionName) {
     case "Capital":
-      images = importImages(
-        require.context(`../Images/Capital`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/Capital/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/Capital/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/Capital/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/Capital/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Finger Lakes":
-      images = importImages(
-        require.context(`../Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/FingerLakes/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/FingerLakes/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/FingerLakes/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/FingerLakes/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Central":
-      images = importImages(
-        require.context(`../Images/Central`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/Central/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/Central/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/Central/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/Central/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Southern":
-      images = importImages(
-        require.context(`../Images/Southern`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/Southern/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/Southern/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/Southern/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/Southern/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "North":
-      images = importImages(
-        require.context(`../Images/North`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(`../Images/North/2020`, false, /\.(png|jpe?g|svg)$/)
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(`../Images/North/2019`, false, /\.(png|jpe?g|svg)$/)
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(`../Images/North/2018`, false, /\.(png|jpe?g|svg)$/)
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(`../Images/North/2017`, false, /\.(png|jpe?g|svg)$/)
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Mohawk Valley":
-      images = importImages(
-        require.context(`../Images/MohawkValley`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/MohawkValley/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/MohawkValley/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/MohawkValley/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/MohawkValley/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Hudson Valley":
       images = importImages(
@@ -49,19 +251,130 @@ const PhotoBubbles = ({ year, regionName }) => {
       );
       break;
     case "New York City":
-      images = importImages(
-        require.context(`../Images/NewYorkCity`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/NewYorkCity/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/NewYorkCity/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/NewYorkCity/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/NewYorkCity/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Long Island":
-      images = importImages(
-        require.context(`../Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/LongIsland/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/LongIsland/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/LongIsland/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/LongIsland/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "Western":
-      images = importImages(
-        require.context(`../Images/Western`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/Western/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/Western/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/Western/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2017":
+          images = importImages(
+            require.context(
+              `../Images/Western/2017`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     default:
       console.log("it's not doing what you think it's doing");
@@ -77,56 +390,68 @@ const PhotoBubbles = ({ year, regionName }) => {
 
   let filteredStory;
 
-  const getStory = (region, img) => {
+  const getStory = (region, img, year) => {
     //@region STRING
     //@img STRING
-    img = img.split("/").pop().replace(/\.[^/.]+$/,"").replace(/\.[^/.]+$/,"");
-    console.log("new image variable", img)
-    const findStory = (i) => i.img === img;
-    //filter to find the right region then the right img:
+
+    //filter to find the right region then the right year, then finally by img:
     //this is an array of all available stories from filtered region
+    img = img
+      .split("/")
+      .pop()
+      .replace(/\.[^/.]+$/, "")
+      .replace(/\.[^/.]+$/, "");
+    console.log("photobubbles year", year, " new img variable", img);
+    const findStory = (i) => i.img === img;
     let filteredRegion = storyBank.filter((item) => item.region === region);
-    filteredRegion.map(
-      (item) => (filteredStory = (item.stories.find(findStory)).media)
+    console.log(filteredRegion, "this be filtered region");
+    let filteredYear = filteredRegion.map((item) =>
+      item.years.find((yr) => yr.year === year)
     );
-    console.log("running story", filteredStory.name)
+    console.log(filteredYear[0], "filtered eyar")
+    filteredStory = (filteredYear[0].stories.find(findStory).media);
   };
 
   const constuctBubbles = () => {
-    console.log("running bubbles")
+    console.log("running bubbles");
     return Object.keys(images)
       .slice(0, 10)
       .map((keyName, i) => {
         dynamicWidth();
         let image = images[keyName].default;
-        getStory(regionName, image);
+        getStory(regionName, image, year);
+        let newRegion = regionName.replace(/\s+/g,'-').toLowerCase();
+        let newName = filteredStory.name.replace(/\s+/g,'-').toLowerCase();
         return (
           <Link
+            key={i}
             to={{
-              pathname: `/${regionName}/${filteredStory.name}`,
-              state : {
+              pathname: `/${newRegion}/${newName}`,
+              state: {
                 image: image,
                 name: filteredStory.name,
                 age: filteredStory.age,
                 county: filteredStory.county,
                 job: filteredStory.job,
                 jobTitle: filteredStory.jobTitle,
-                interview: filteredStory.interview
-              }
+                interview: filteredStory.interview,
+              },
             }}
           >
-            <div
-              key={i}
+            <img
+              src={image}
               style={{
-                backgroundImage: `url(${image})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: measurement ? measurement : 0,
-                height: measurement ? measurement : 0,
+                // backgroundImage: `url(${image})`,
+                // backgroundPosition: "center",
+                // backgroundSize: "cover",
+                // backgroundRepeat: "no-repeat",
+                width: measurement ? measurement : 10,
+                height: measurement ? measurement : 10,
+                border: "solid",
+                objectFit: "cover",
               }}
               className="photoBubbles"
-            ></div>
+            />
           </Link>
         );
       });
