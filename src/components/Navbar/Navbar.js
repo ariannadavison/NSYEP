@@ -21,9 +21,9 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       <Nav className="navbar__items" tabs>
-        <NavItem>
+        {/* <NavItem>
           <NavbarBrand href="/" className="navbar__link">BRAND</NavbarBrand>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
