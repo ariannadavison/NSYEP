@@ -33,7 +33,12 @@ const Header = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      console.log("this is the inner width,", window.innerWidth, "also this is what mobileView is set to", mobileView)
+      console.log(
+        "this is the inner width,",
+        window.innerWidth,
+        "also this is what mobileView is set to",
+        mobileView
+      );
       return window.innerWidth < 900
         ? setMobileView(true)
         : setMobileView(false);
@@ -50,13 +55,14 @@ const Header = () => {
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
-      drawerContainer: {
-        padding: "1rem",
-      },
-      toolbar: {
-        display: "flex",
-        justifyContent: "spave-between",
-      },
+      boxShadow: "none",
+    },
+    drawerContainer: {
+      padding: "1rem",
+    },
+    toolbar: {
+      display: "flex",
+      justifyContent: "space-between",
     },
   }));
 
@@ -79,13 +85,12 @@ const Header = () => {
     });
   };
 
-
   const displayMobile = () => {
     const handleMenuOpen = () => {
       setMenuOpen(!menuOpen);
     };
     return (
-      <Toolbar >
+      <Toolbar>
         <IconButton
           {...{
             edge: "start",
@@ -95,7 +100,7 @@ const Header = () => {
             onClick: handleMenuOpen,
           }}
         >
-           Menu Icon
+          Menu Icon
         </IconButton>
         <Drawer
           {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen }}
@@ -112,8 +117,8 @@ const Header = () => {
       <Toolbar className={classes.toolbar}>
         <Navbar />
       </Toolbar>
-    )
-  }
+    );
+  };
 
   return (
     <div>

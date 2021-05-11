@@ -8,7 +8,7 @@ const Paragraph = () => {
         <span>tempor id eu nisl nunc</span>
       </div>
 
-      <div className="paragraph__text">
+      <div className="paragraph__text margins">
         <div className="paragraph__column-one">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Mattis enim ut tellus elementum sagittis vitae et leo. Volutpat commodo sed egestas egestas fringilla phasellus. Lacus suspendisse faucibus interdum posuere lorem ipsum. Quis eleifend quam adipiscing vitae proin sagittis. Quam elementum pulvinar etiam non. Odio euismod lacinia at quis risus sed. Mauris cursus mattis molestie a iaculis. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Aenean pharetra magna ac placerat. Eu facilisis sed odio morbi quis commodo. Facilisis volutpat est velit egestas dui id ornare. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Risus in hendrerit gravida rutrum quisque non tellus orci. Eget dolor morbi non arcu risus quis. Pellentesque nec nam aliquam sem et. Vel pretium lectus quam id leo.</p>
 
