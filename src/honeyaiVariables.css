@@ -6,4 +6,10 @@
   /* link interaction colors */
   --link-hover: rgb(127, 127, 206);
   --link-active: rgb(35, 159, 74);
+
+  /* footer social link variables */
+  --facebook: rgb(59, 89, 152);
+  --twitter: rgb(29, 161, 242);
+  --google: rgb(15, 157, 88);
+  --youtube: rgb(255, 0, 0);
 }
