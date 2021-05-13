@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact';
 import Story from './components/Story';
 // import Footer from './components/Footer/Footer';
 import IndividualStories from './components/IndividualStories/IndividualStories'
+import Circle from './components/PhotoBubbles/Circle/circle';
 import './App.css';
 
 //*Structure for Region Page:
@@ -58,6 +59,7 @@ function App() {
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
         </Switch>
         <IndividualStories />
+        <Circle/>
         {/* <Footer /> */}
       </div>
     </Router>

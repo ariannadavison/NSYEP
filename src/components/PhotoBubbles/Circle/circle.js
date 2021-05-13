@@ -1,11 +1,14 @@
-import Picture from "src/components/Images/port_of_albany_5.jpg";
+import React, {Component} from 'react';
+import Picture from '../../Images/port_of_albany_1.jpg';
+
 
 class Circle extends Component {
-  state = {};
+  state = {
+  };
   render() {
-    render(
+    return(
       <div>
-        <img src={Picture}> </img>
+        <img src={Picture} alt="boat" /> 
       </div>
     );
   }
