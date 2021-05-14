@@ -408,8 +408,9 @@ const PhotoBubbles = ({ year, regionName }) => {
     let filteredYear = filteredRegion.map((item) =>
       item.years.find((yr) => yr.year === year)
     );
-    console.log(filteredYear[0], "filtered eyar")
+    console.log(filteredYear[0], "filtered year", filteredYear[0].stories[1].img)
     filteredStory = (filteredYear[0].stories.find(findStory).media);
+    console.log("it stopped at the first img passed");
   };
 
   const constuctBubbles = () => {
@@ -419,6 +420,7 @@ const PhotoBubbles = ({ year, regionName }) => {
       .map((keyName, i) => {
         dynamicWidth();
         let image = images[keyName].default;
+        console.log(image,"old image name being passed")
         getStory(regionName, image, year);
         let newRegion = regionName.replace(/\s+/g,'-').toLowerCase();
         let newName = filteredStory.name.replace(/\s+/g,'-').toLowerCase();
