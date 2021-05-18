@@ -4,7 +4,8 @@
 }
 
 .paragraph__ribbon {
-  background: var(--tan);
+  background: var(--logo-orange);
+  border-top-left-radius: 2px;
   height: 40px;
   width: 225px;
   display: flex;
@@ -20,7 +21,8 @@
   height: 0;
   width: 0;
   border-bottom: 30px solid transparent;
-  border-right: 55px solid var(--coral);
+  border-bottom-right-radius: 2px;
+  border-right: 55px solid #d48920;
 }
 
 .paragraph__ribbon::after {
@@ -31,7 +33,7 @@
   height: 0;
   width: 0;
   border-bottom: 20px solid transparent;
-  border-left: 50px solid var(--tan);
+  border-left: 50px solid var(--logo-orange);
   border-top: 20px solid transparent;
 }
 
@@ -42,7 +44,7 @@
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.03rem;
-  color: var(--dark-gray);
+  color: white;
 }
 
 .paragraph__text {
