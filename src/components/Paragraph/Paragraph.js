@@ -1,9 +1,10 @@
 import React from "react";
 import "./paragraph.css";
+import placeholder from './placeholder-photo.png';
 
 const Paragraph = () => {
   return (
-    <div>
+    <div className="paragraph margins">
       <div className="paragraph__ribbon">
         <span>tempor id eu nisl nunc</span>
       </div>
@@ -14,12 +15,12 @@ const Paragraph = () => {
 
           <p>Sed velit dignissim sodales ut eu sem. Posuere morbi leo urna molestie at elementum eu facilisis sed. Eu nisl nunc mi ipsum faucibus vitae aliquet. Volutpat est velit egestas dui id ornare. Amet dictum sit amet justo. Augue lacus viverra vitae congue eu consequat ac felis donec. Vitae proin sagittis nisl rhoncus mattis. Elementum eu facilisis sed odio. Tortor at auctor urna nunc id. Tristique nulla aliquet enim tortor. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Malesuada nunc vel risus commodo. A cras semper auctor neque vitae tempus quam pellentesque nec.</p>
 
-          <div className="paragraph__img-placeholder"></div>
+          <p>Pellentesque pulvinar pellentesque habitant morbi. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Tempus iaculis urna id volutpat lacus laoreet. Consequat interdum varius sit amet mattis vulputate enim nulla. Aliquam faucibus purus in massa tempor nec feugiat nisl. Et tortor at risus viverra adipiscing. Nisi quis eleifend quam adipiscing vitae proin. Odio aenean sed adipiscing diam donec.</p>
+
+          <img src={placeholder} alt="group of 9 people smiling" className="paragraph__img" />
         </div>
 
         <div className="paragraph__column-two">
-          <p>Pellentesque pulvinar pellentesque habitant morbi. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Tempus iaculis urna id volutpat lacus laoreet. Consequat interdum varius sit amet mattis vulputate enim nulla. Aliquam faucibus purus in massa tempor nec feugiat nisl. Et tortor at risus viverra adipiscing. Nisi quis eleifend quam adipiscing vitae proin. Odio aenean sed adipiscing diam donec.</p>
-
           <p>Quam viverra orci sagittis eu volutpat odio facilisis. Mi proin sed libero enim sed faucibus. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. Non tellus orci ac auctor augue mauris augue neque gravida. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Sit amet consectetur adipiscing elit. Dui faucibus in ornare quam. Condimentum lacinia quis vel eros donec ac odio. Semper quis lectus nulla at. Massa sapien faucibus et molestie. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Proin fermentum leo vel orci porta non. Venenatis tellus in metus vulputate eu.</p>
 
           <p>Nibh nisl condimentum id venenatis a condimentum vitae. Vel eros donec ac odio tempor orci. Consectetur lorem donec massa sapien faucibus et. Lacinia quis vel eros donec. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. A arcu cursus vitae congue mauris rhoncus aenean vel. Adipiscing bibendum est ultricies integer quis auctor. Pulvinar etiam non quam lacus. Quisque egestas diam in arcu cursus euismod. Est sit amet facilisis magna etiam tempor.</p>
