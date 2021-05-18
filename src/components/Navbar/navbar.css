@@ -3,6 +3,10 @@
   text-transform: uppercase;
 }
 
+.navbar a:hover, .navbar a:focus {
+  text-decoration: none;
+}
+
 .navbar__items {
   color: white;
 }

@@ -36,7 +36,7 @@ const Navbar = (props) => {
             {/* href points to interactive map */}
             </DropdownItem>
 
-            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem className="navbar__link">{r.region}</DropdownItem></Link>)}
+            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
 
           </DropdownMenu>
         </Dropdown>
