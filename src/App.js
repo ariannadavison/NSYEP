@@ -1,13 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LogoHero from "./components/LogoHero/LogoHero";
-import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
 import Region from "./components/Region";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import IndividualStories from "./components/IndividualStories/IndividualStories";
-import "./App.css";
 import Header from "./components/Header/Header";
 
 //*Structure for Region Page:
