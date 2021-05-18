@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import './regionalMap.css';
 
 const RegionalMap = () => {
 
@@ -20,12 +21,14 @@ const RegionalMap = () => {
   });
 
   return (
-    <iframe
-      src="https://createaclickablemap.com/map.php?id=101499&maplocation=ny&online=true"
-      width="900"
-      height="525"
-      style={{ border: "none" }}
-    />
+    <div className="map">
+      <div className="map__wrapper">
+        <iframe
+          src="https://createaclickablemap.com/map.php?id=101499&maplocation=ny&online=true"
+          style={{ border: "none" }}
+        />
+      </div>
+    </div>
   );
 };
 
