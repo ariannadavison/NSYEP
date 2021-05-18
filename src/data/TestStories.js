@@ -6,7 +6,7 @@ export const storyBank = [
         year: "2020",
         stories: [
           {
-            img: "port of albany 1",
+            img: "Port of albany 1",
             media: {
               name: "Sandra Bullock",
               age: "40",
@@ -108,6 +108,8 @@ export const storyBank = [
               jobTitle: "wow",
               interview: "STUFF",
             },
+          },
+          {
             img: "My-Aysa Mayotte_Capital",
             media: {
               name: "Sandra Bullock",
@@ -117,6 +119,8 @@ export const storyBank = [
               jobTitle: "wow",
               interview: "STUFF",
             },
+          },
+          {
             img: "Romare Derritt_Capital Region",
             media: {
               name: "Sandra Bullock",
@@ -142,6 +146,8 @@ export const storyBank = [
               jobTitle: "wow",
               interview: "STUFF",
             },
+          },
+          {
             img: "Robert_Walsh_Capital Region",
             media: {
               name: "Sandra Bullock",
@@ -151,6 +157,8 @@ export const storyBank = [
               jobTitle: "wow",
               interview: "STUFF",
             },
+          },
+          {
             img: "Robinson, Ayanna_Capital Region",
             media: {
               name: "Sandra Bullock",
@@ -160,6 +168,8 @@ export const storyBank = [
               jobTitle: "wow",
               interview: "STUFF",
             },
+          },
+          {
             img: "Schenectady John_Capital Region",
             media: {
               name: "Sandra Bullock",
