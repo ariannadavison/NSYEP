@@ -7,28 +7,29 @@
 }
 
 .pageDivider__left, .pageDivider__right {
-  /* background-color: blue; */
   height: 2rem;
-  border-top: 1rem solid var(--navy);
-  border-bottom: 1rem solid var(--navy);
+  border-top: 1rem solid var(--logo-green);
+  border-bottom: 1rem solid var(--logo-green);
 }
 
 .pageDivider__left {
   flex: 2;
   border-right: 1rem solid transparent;
-  border-left: 2rem solid var(--navy);
+  border-left: 2rem solid var(--logo-green);
 }
 
 .pageDivider__right {
   flex: 1;
-  border-right: 2rem solid var(--navy);
+  border-right: 2rem solid var(--logo-green);
   border-left: 1rem solid transparent;
 }
 
 .pageDivider__text {
   height: 2rem;
-  background-color: white;
-  font-size: 1rem;
+  background-color: transparent;
+  color: var(--logo-navy);
+  font-weight: bold;
+  font-size: 1.25rem;
   text-transform: uppercase;
   line-height: 2rem;
   vertical-align: middle;
