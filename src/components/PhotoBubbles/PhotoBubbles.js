@@ -449,7 +449,7 @@ const PhotoBubbles = ({ year, regionName }) => {
                 // backgroundRepeat: "no-repeat",
                 width: measurement ? measurement : 10,
                 height: measurement ? measurement : 10,
-                border: "solid",
+                // border: "solid",
                 objectFit: "cover",
               }}
               className="photoBubbles"
