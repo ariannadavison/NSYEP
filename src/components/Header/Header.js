@@ -6,6 +6,8 @@ import {
   MenuItem,
   Toolbar,
 } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
@@ -100,7 +102,7 @@ const Header = () => {
             onClick: handleMenuOpen,
           }}
         >
-          Menu Icon
+          <FontAwesomeIcon icon={faBars} />
         </IconButton>
         <Drawer
           {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen }}
