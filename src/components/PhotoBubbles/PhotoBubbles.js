@@ -408,7 +408,6 @@ const PhotoBubbles = ({ year, regionName }) => {
     let filteredYear = filteredRegion.map((item) =>
       item.years.find((yr) => yr.year === year)
     );
-    console.log(filteredYear[0], "filtered year", filteredYear[0].stories[1].img)
     filteredStory = (filteredYear[0].stories.find(findStory).media);
     console.log("it stopped at the first img passed");
   };
