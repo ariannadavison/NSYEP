@@ -17,39 +17,6 @@ export const storyBank = [
             },
           },
           {
-            img: "port of albany 2",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-          {
-            img: "port of albany 3",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-          {
-            img: "port of albany 4",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-          {
             img: "Julia_Bacon_SYEP_2020 - Katherine Raymond",
             media: {
               name: "Sandra Bullock",
