@@ -38,15 +38,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Capital/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -75,15 +66,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/FingerLakes/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/FingerLakes/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -122,15 +104,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Central/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -164,15 +137,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Southern/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -192,11 +156,6 @@ const PhotoBubbles = ({ year, regionName }) => {
         case "2018":
           images = importImages(
             require.context(`../Images/North/2018`, false, /\.(png|jpe?g|svg)$/)
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(`../Images/North/2017`, false, /\.(png|jpe?g|svg)$/)
           );
           break;
         default:
@@ -227,15 +186,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/MohawkValley/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/MohawkValley/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -279,15 +229,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/NewYorkCity/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -321,15 +262,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/LongIsland/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -358,15 +290,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/Western/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Western/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )

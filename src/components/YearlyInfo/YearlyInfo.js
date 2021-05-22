@@ -20,8 +20,6 @@ function YearlyInfo({ regionName }) {
         return <YearStats year="2019" regionName={regionName}/>;
       case "year-2018":
         return <YearStats year="2018" regionName={regionName}/>;
-      case "year-2017":
-        return <YearStats year="2017" regionName={regionName}/>;
       default:
         return <YearStats year="2020" regionName={regionName}/>;
     }

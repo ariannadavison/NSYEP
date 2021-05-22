@@ -182,22 +182,6 @@ export const storyBank = [
           },
         ],
       },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
     ],
   },
   {
@@ -295,22 +279,6 @@ export const storyBank = [
           },
           {
             img: "Savannah_Central New York",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
             media: {
               name: "Sandra Bullock",
               age: "40",
@@ -485,22 +453,6 @@ export const storyBank = [
           },
         ],
       },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
     ],
   },
   {
@@ -598,22 +550,6 @@ export const storyBank = [
           },
         ],
       },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
     ],
   },
   {
@@ -656,22 +592,6 @@ export const storyBank = [
         stories: [
           {
             img: "portraitgirl", //imgs: Chris Blanschan Jr, Kyrell Brown @ YMCA Farm Project (34), Lewis Mori and Alex Morales @ Myer
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "portraitgirl",
             media: {
               name: "Sandra Bullock",
               age: "40",
@@ -780,22 +700,6 @@ export const storyBank = [
           },
         ],
       },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
     ],
   },
   {
@@ -835,22 +739,6 @@ export const storyBank = [
       },
       {
         year: "2018",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
-      {
-        year: "2017",
         stories: [
           {
             img: "",
@@ -962,22 +850,6 @@ export const storyBank = [
           },
           {
             img: "MichaelI Jeff Lewis",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
             media: {
               name: "Sandra Bullock",
               age: "40",
@@ -1108,22 +980,6 @@ export const storyBank = [
           },
         ],
       },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
     ],
   },
   {
@@ -1232,22 +1088,6 @@ export const storyBank = [
           },
           {
             img: "Rosalie Santiago",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
-        ],
-      },
-      {
-        year: "2017",
-        stories: [
-          {
-            img: "",
             media: {
               name: "Sandra Bullock",
               age: "40",
