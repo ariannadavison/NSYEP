@@ -10,6 +10,7 @@
   flex-flow: row wrap;
   /* border: red solid; */
   justify-content:center;
+  background-color: var(--banner-color);
 }
 
 .photoBubbles:hover {

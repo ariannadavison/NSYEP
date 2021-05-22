@@ -383,7 +383,7 @@ const PhotoBubbles = ({ year, regionName }) => {
   let measurement;
 
   const dynamicWidth = () => {
-    let length = Math.floor(Math.random() * (20 - 1) + 10);
+    let length = Math.floor(Math.random() * (13 - 1) + 10);
     measurement = `${length}rem`;
     console.log(length);
   };
