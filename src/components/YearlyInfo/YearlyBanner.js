@@ -37,11 +37,6 @@ function YearlyBanner({ changeBannerView }) {
             2018
           </li>
         </ToggleButton>
-        <ToggleButton value="2017">
-          <li id="year-2017" name="year-2017">
-            2017
-          </li>
-        </ToggleButton>
       </ToggleButtonGroup>
       <span className="yearlyBanner__dropShadow"/>
     </div>

@@ -38,15 +38,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Capital/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -75,15 +66,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/FingerLakes/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/FingerLakes/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -122,15 +104,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Central/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -164,15 +137,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Southern/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -192,11 +156,6 @@ const PhotoBubbles = ({ year, regionName }) => {
         case "2018":
           images = importImages(
             require.context(`../Images/North/2018`, false, /\.(png|jpe?g|svg)$/)
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(`../Images/North/2017`, false, /\.(png|jpe?g|svg)$/)
           );
           break;
         default:
@@ -232,10 +191,34 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
+        default:
+          console.log("The year's haven't been seen.");
+      }
+      break;
+    case "Hudson Valley":
+      switch (year) {
+        case "2020":
           images = importImages(
             require.context(
-              `../Images/MohawkValley/2017`,
+              `../Images/HudsonValley/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/HudsonValley/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/HudsonValley/2018`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -244,11 +227,6 @@ const PhotoBubbles = ({ year, regionName }) => {
         default:
           console.log("The year's haven't been seen.");
       }
-      break;
-    case "Hudson Valley":
-      images = importImages(
-        require.context(`../Images/HudsonValley`, false, /\.(png|jpe?g|svg)$/)
-      );
       break;
     case "New York City":
       switch (year) {
@@ -274,15 +252,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/NewYorkCity/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/NewYorkCity/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -321,15 +290,6 @@ const PhotoBubbles = ({ year, regionName }) => {
             )
           );
           break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/LongIsland/2017`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
         default:
           console.log("The year's haven't been seen.");
       }
@@ -358,15 +318,6 @@ const PhotoBubbles = ({ year, regionName }) => {
           images = importImages(
             require.context(
               `../Images/Western/2018`,
-              false,
-              /\.(png|jpe?g|svg)$/
-            )
-          );
-          break;
-        case "2017":
-          images = importImages(
-            require.context(
-              `../Images/Western/2017`,
               false,
               /\.(png|jpe?g|svg)$/
             )
@@ -408,7 +359,7 @@ const PhotoBubbles = ({ year, regionName }) => {
     let filteredYear = filteredRegion.map((item) =>
       item.years.find((yr) => yr.year === year)
     );
-    filteredStory = (filteredYear[0].stories.find(findStory).media);
+    filteredStory = filteredYear[0].stories.find(findStory).media;
     console.log("it stopped at the first img passed");
   };
 
@@ -419,10 +370,10 @@ const PhotoBubbles = ({ year, regionName }) => {
       .map((keyName, i) => {
         dynamicWidth();
         let image = images[keyName].default;
-        console.log(image,"old image name being passed")
+        console.log(image, "old image name being passed");
         getStory(regionName, image, year);
-        let newRegion = regionName.replace(/\s+/g,'-').toLowerCase();
-        let newName = filteredStory.name.replace(/\s+/g,'-').toLowerCase();
+        let newRegion = regionName.replace(/\s+/g, "-").toLowerCase();
+        let newName = filteredStory.name.replace(/\s+/g, "-").toLowerCase();
         return (
           <Link
             key={i}
@@ -439,20 +390,33 @@ const PhotoBubbles = ({ year, regionName }) => {
               },
             }}
           >
-            <img
-              src={image}
-              style={{
-                // backgroundImage: `url(${image})`,
-                // backgroundPosition: "center",
-                // backgroundSize: "cover",
-                // backgroundRepeat: "no-repeat",
-                width: measurement ? measurement : 10,
-                height: measurement ? measurement : 10,
-                // border: "solid",
-                objectFit: "cover",
-              }}
-              className="photoBubbles"
-            />
+            <div
+              className="photo
+            Bubbles__overlap"
+            >
+              <img
+                src={image}
+                style={{
+                  width: measurement ? measurement : 10,
+                  height: measurement ? measurement : 10,
+                  objectFit: "cover",
+                }}
+                className="photoBubbles"
+                alt={`imageof${filteredStory.name}`}
+              />
+              <div
+                className="hidden"
+                style={{
+                  width: measurement ? measurement : 10,
+                  height: measurement ? measurement : 10,
+                }}
+              >
+                <div>
+                  {filteredStory.name}, {filteredStory.age}.
+                </div>
+                <div>{filteredStory.county}</div>
+              </div>
+            </div>
           </Link>
         );
       });
