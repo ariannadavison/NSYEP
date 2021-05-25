@@ -27,20 +27,20 @@
   color: #2DDDFF;
 }
 
-.map__regionName--blue {
-  color: #2D8EFF;
-}
-
 .map__regionName--pink {
-  color: #FF2D5B;
+  color: #fa446c;
 }
 
 .map__regionName--ind {
   color: #9488ff;
 }
 
+.map__regionName--lime {
+  color: #5CEE29;
+}
+
 .map__regionName--gold {
-  color: #F1C336;
+  color: #ffca29;
 }
 
 .map__regionName--red {
@@ -51,19 +51,19 @@
   color: #1DEAB9;
 }
 
-.map__regionName--purp {
-  color: #c049f5;
+.map__regionName--blue {
+  color: #2D8EFF;
 }
 
 .map__regionName--sun {
-  color: #FFD32A;
+  color: #f9f22b;
 }
 
-.map__regionName--lime {
-  color: #5CEE29;
+.map__regionName--purp {
+  color: #c152f3;
 }
 
-.map__regionName:hover {
+.map__regionName a:hover {
   color: silver;
   text-decoration: none;
 }
