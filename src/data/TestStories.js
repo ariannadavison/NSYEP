@@ -526,7 +526,7 @@ export const storyBank = [
         year: "2020",
         stories: [
           {
-            img: "portraitgirl", //hudson valley 2020 img: Copy of DCWIB Success Story Photo 2020 SYEP - Poughkeepsie Farm Project - Meredith Madden
+            img: "Copy of DCWIB Success Story Photo 2020 SYEP - Poughkeepsie Farm Project - Meredith Madden", 
             media: {
               name: "Sandra Bullock",
               age: "40",
@@ -542,7 +542,29 @@ export const storyBank = [
         year: "2019",
         stories: [
           {
-            img: "portraitgirl", //imgs: Hannah Carroll_MidHudson, K.Reynolds SYEP_Mid-Hudson, Terrance Nogue_Midhudson
+            img: "Terrance Nogue_Midhudson",
+            media: {
+              name: "Adam Bullock",
+              age: "40",
+              county: "A place",
+              job: "an undercover cop",
+              jobTitle: "wow",
+              interview: "STUFF",
+            },
+          },
+          {
+            img: "K.Reynolds SYEP_Mid-Hudson",
+            media: {
+              name: "Adam Bullock",
+              age: "40",
+              county: "A place",
+              job: "an undercover cop",
+              jobTitle: "wow",
+              interview: "STUFF",
+            },
+          },
+          {
+            img: "Hannah Carroll_MidHudson", 
             media: {
               name: "Adam Bullock",
               age: "40",
@@ -558,7 +580,29 @@ export const storyBank = [
         year: "2018",
         stories: [
           {
-            img: "portraitgirl", //imgs: Chris Blanschan Jr, Kyrell Brown @ YMCA Farm Project (34), Lewis Mori and Alex Morales @ Myer
+            img: "Chris Blanschan Jr", //imgs: Chris Blanschan Jr, Kyrell Brown @ YMCA Farm Project (34), Lewis Mori and Alex Morales @ Myer
+            media: {
+              name: "Sandra Bullock",
+              age: "40",
+              county: "A place",
+              job: "an undercover cop",
+              jobTitle: "wow",
+              interview: "STUFF",
+            },
+          },
+          {
+            img: "Kyrell Brown @ YMCA Farm Project (34)", //imgs: Chris Blanschan Jr, Kyrell Brown @ YMCA Farm Project (34), Lewis Mori and Alex Morales @ Myer
+            media: {
+              name: "Sandra Bullock",
+              age: "40",
+              county: "A place",
+              job: "an undercover cop",
+              jobTitle: "wow",
+              interview: "STUFF",
+            },
+          },
+          {
+            img: "Lewis Mori and Alex Morales @ Myer", //imgs: Chris Blanschan Jr, Kyrell Brown @ YMCA Farm Project (34), Lewis Mori and Alex Morales @ Myer
             media: {
               name: "Sandra Bullock",
               age: "40",

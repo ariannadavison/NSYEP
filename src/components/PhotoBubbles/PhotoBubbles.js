@@ -196,9 +196,37 @@ const PhotoBubbles = ({ year, regionName }) => {
       }
       break;
     case "Hudson Valley":
-      images = importImages(
-        require.context(`../Images/HudsonValley`, false, /\.(png|jpe?g|svg)$/)
-      );
+      switch (year) {
+        case "2020":
+          images = importImages(
+            require.context(
+              `../Images/HudsonValley/2020`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2019":
+          images = importImages(
+            require.context(
+              `../Images/HudsonValley/2019`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        case "2018":
+          images = importImages(
+            require.context(
+              `../Images/HudsonValley/2018`,
+              false,
+              /\.(png|jpe?g|svg)$/
+            )
+          );
+          break;
+        default:
+          console.log("The year's haven't been seen.");
+      }
       break;
     case "New York City":
       switch (year) {
