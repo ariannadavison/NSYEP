@@ -1,5 +1,5 @@
 .footer__outerContainer {
-  width: 100vw;
+  width: 100%;
   background-color: var(--banner-color-accent);
   color: rgb(245, 238, 229);  
   padding: 3rem 0 3rem 0;
