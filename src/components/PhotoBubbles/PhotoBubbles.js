@@ -359,7 +359,7 @@ const PhotoBubbles = ({ year, regionName }) => {
     let filteredYear = filteredRegion.map((item) =>
       item.years.find((yr) => yr.year === year)
     );
-    filteredStory = (filteredYear[0].stories.find(findStory).media);
+    filteredStory = filteredYear[0].stories.find(findStory).media;
     console.log("it stopped at the first img passed");
   };
 
@@ -370,10 +370,10 @@ const PhotoBubbles = ({ year, regionName }) => {
       .map((keyName, i) => {
         dynamicWidth();
         let image = images[keyName].default;
-        console.log(image,"old image name being passed")
+        console.log(image, "old image name being passed");
         getStory(regionName, image, year);
-        let newRegion = regionName.replace(/\s+/g,'-').toLowerCase();
-        let newName = filteredStory.name.replace(/\s+/g,'-').toLowerCase();
+        let newRegion = regionName.replace(/\s+/g, "-").toLowerCase();
+        let newName = filteredStory.name.replace(/\s+/g, "-").toLowerCase();
         return (
           <Link
             key={i}
@@ -390,20 +390,33 @@ const PhotoBubbles = ({ year, regionName }) => {
               },
             }}
           >
-            <img
-              src={image}
-              style={{
-                // backgroundImage: `url(${image})`,
-                // backgroundPosition: "center",
-                // backgroundSize: "cover",
-                // backgroundRepeat: "no-repeat",
-                width: measurement ? measurement : 10,
-                height: measurement ? measurement : 10,
-                // border: "solid",
-                objectFit: "cover",
-              }}
-              className="photoBubbles"
-            />
+            <div
+              className="photo
+            Bubbles__overlap"
+            >
+              <img
+                src={image}
+                style={{
+                  width: measurement ? measurement : 10,
+                  height: measurement ? measurement : 10,
+                  objectFit: "cover",
+                }}
+                className="photoBubbles"
+                alt={`imageof${filteredStory.name}`}
+              />
+              <div
+                className="hidden"
+                style={{
+                  width: measurement ? measurement : 10,
+                  height: measurement ? measurement : 10,
+                }}
+              >
+                <div>
+                  {filteredStory.name}, {filteredStory.age}.
+                </div>
+                <div>{filteredStory.county}</div>
+              </div>
+            </div>
           </Link>
         );
       });

@@ -1,15 +1,13 @@
 .photoBubbles {
-  /* border: blue solid; */
   border-radius: 50%;
   cursor: pointer;
-  /* padding: 5rem; */
+  display: block;
 }
 
 .photoBubbles__bubbleContainer {
   display: flex;
   flex-flow: row wrap;
-  /* border: red solid; */
-  justify-content:center;
+  justify-content: center;
   background-color: var(--banner-color);
   border-radius: 5px;
   margin-top: 1rem;
@@ -18,5 +16,26 @@
 }
 
 .photoBubbles:hover {
-  filter:grayscale(100%)
+  filter: grayscale(100%);
+}
+
+.photoBubbles__overlap {
+  position: relative;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  border: red solid;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.photoBubbles:hover + .hidden {
+  opacity: 1;
 }
