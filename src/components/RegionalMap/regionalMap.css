@@ -1,16 +1,17 @@
 .map {
+  border: solid;
   display: grid;
-  grid-template-columns: 275px 1fr;
-  column-gap: 2rem;
-  margin: 50px 100px;
+  grid-template-columns: 25% 75%;
+  width: 100%;
 }
 
 .map__regionNames {
   align-self: center;
-  justify-self: end;
+  justify-self: flex-start;
   background-color: var(--near-black);
   padding: 1rem 2rem;
   flex: 0.5;
+  height: 100%;
 }
 
 .map__regionNames ul {
