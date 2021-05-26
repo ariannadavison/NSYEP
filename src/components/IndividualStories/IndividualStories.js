@@ -34,69 +34,67 @@ const IndividualStories = () => {
 
   return (
     <div className="individualStories__container margins">
-      <div className="individualStories__innerContent">
-        <img
-          className="individualStories_studentPicture"
-          src={state.image}
-          alt={`${state.name}`}
-        />
+      <img
+        className="individualStories_studentPicture"
+        src={state.image}
+        alt={`${state.name}`}
+      />
 
-        <div className="individualStories__nameDetailsBox">
-          <div className="individualStories__nameAgeCountry">
-            <div className="individualStories__textContain">
-              {/*OPTION 1: NAME: name AGE: age*/}
-              <Typography variant="h5" className={styles.headers}>
-                Name:
-              </Typography>
-              <Typography variant="h6">{state.name}</Typography>
-            </div>
-            <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.headers}>
-                Age:
-              </Typography>
-              <Typography variant="h6">{state.age}</Typography>
-            </div>
-            <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.headers}>
-                County:
-              </Typography>
-              <Typography variant="h6">{state.county}</Typography>
-            </div>
-            <div className="individualStories__jobPlacement"></div>
-            <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.headers}>
-                SYEP Job Placement:
-              </Typography>
-              <Typography variant="h6">{state.job}</Typography>
-            </div>
-            <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.headers}>
-                Job title:
-              </Typography>
-              <Typography variant="h6">{state.jobTitle}</Typography>
-            </div>
-          </div>
-          <p>{state.interview}</p>
+      <div className="individualStories__nameDetailsBox">
+        {/* <div className="individualStories__textContain">
+          *OPTION 1: NAME: name AGE: age*
+          <Typography variant="h5" className={styles.headers}>
+            Name:
+          </Typography>
+          <Typography variant="h6">{state.name}</Typography>
+        </div>
+        <div className="individualStories__textContain">
+          <Typography variant="h5" className={styles.headers}>
+            Age:
+          </Typography>
+          <Typography variant="h6">{state.age}</Typography>
+        </div>
+        <div className="individualStories__textContain">
+          <Typography variant="h5" className={styles.headers}>
+            County:
+          </Typography>
+          <Typography variant="h6">{state.county}</Typography>
+        </div>
+        <div className="individualStories__jobPlacement"></div>
+        <div className="individualStories__textContain">
+          <Typography variant="h5" className={styles.headers}>
+            SYEP Job Placement:
+          </Typography>
+          <Typography variant="h6">{state.job}</Typography>
+        </div>
+        <div className="individualStories__textContain">
+          <Typography variant="h5" className={styles.headers}>
+            Job title:
+          </Typography>
+          <Typography variant="h6">{state.jobTitle}</Typography>
+        </div>
+        <p>{state.interview}</p> */}
 
-          {/* OPTION 2: not header stuff */}
-          <div className="individualStories__nameAgeCountry">
-            <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.name}>
-                {state.name}.
-              </Typography>
-              <Typography variant="h5" className={styles.age}>{state.age}.</Typography>
-              <Typography variant="h5" className={styles.job}>
-                {state.county}.
-              </Typography>
-            </div>
-          </div>
-          <div className="individualStories__jobPlacement">
+        {/* OPTION 2: not header stuff */}
+        <div className="individualStories__nameAgeCountry">
           <div className="individualStories__textContain">
-              <Typography variant="h5" className={styles.headers}>
-                SYEP Job Placement:
-              </Typography>
-              <Typography variant="h6">{state.job}</Typography>
-            </div>
+            <Typography variant="h5" className={styles.name}>
+              {state.name}.
+            </Typography>
+            <Typography variant="h5" className={styles.age}>
+              {state.age}.
+            </Typography>
+            <Typography variant="h5" className={styles.job}>
+              {state.county}.
+            </Typography>
+          </div>
+        </div>
+        <div className="individualStories__jobPlacement">
+          <div className="individualStories__textContain">
+            <Typography variant="h5" className={styles.headers}>
+              SYEP Job Placement:
+            </Typography>
+            <Typography variant="h6">{state.job}</Typography>
           </div>
         </div>
       </div>

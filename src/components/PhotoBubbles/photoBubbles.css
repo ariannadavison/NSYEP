@@ -1,7 +1,6 @@
 .photoBubbles {
   border-radius: 50%;
   cursor: pointer;
-  display: block;
 }
 
 .photoBubbles__bubbleContainer {
@@ -20,7 +19,7 @@
 }
 
 .photoBubbles__overlap {
-  position: relative;
+  position: fixed;
 }
 
 .hidden {
