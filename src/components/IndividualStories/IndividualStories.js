@@ -38,7 +38,7 @@ const IndividualStories = () => {
         <img
           className="individualStories_studentPicture"
           src={state.image}
-          alt="student"
+          alt={`${state.name}`}
         />
 
         <div className="individualStories__nameDetailsBox">

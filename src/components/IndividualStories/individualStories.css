@@ -6,13 +6,13 @@
 .individualStories__innerContent {
   display: flex;
   flex-direction: row;
-  height: 100vh;
 }
 
 .individualStories_studentPicture {
-    display: block;
+    object-fit: cover;
     margin: 20px;
     border-radius: 10px;
+    border: solid;
   }
   
 .individualStories__nameDetailsBox{
