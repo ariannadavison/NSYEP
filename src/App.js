@@ -49,7 +49,6 @@ function App() {
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
         </Switch>
         <Footer />
-        {/* <IndividualStories /> */}
       </div>
     </Router>
   );

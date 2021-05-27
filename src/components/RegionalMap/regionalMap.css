@@ -1,4 +1,4 @@
-.map {
+.mappy {
   border: solid;
   display: grid;
   grid-template-columns: 25% 75%;
@@ -24,7 +24,11 @@
   font-size: 1.1rem;
 }
 
-.map__regionName--turq {
+#map__regionNameLinks {
+  color: white;
+}
+
+/* .map__regionName--turq {
   color: #2DDDFF;
 }
 
@@ -67,9 +71,9 @@
 .map__regionName:hover {
   color: silver;
   text-decoration: none;
-}
+} */
 
-.map__wrapper {
+/* .map__wrapper {
   position: relative;
   overflow: hidden;
   padding-top: 63%;
@@ -94,4 +98,4 @@
   .map__wrapper {
     padding-top: 550px;
   }
-}
+} */
