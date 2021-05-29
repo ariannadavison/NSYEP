@@ -77,7 +77,9 @@ const RegionalMap = () => {
           </li>
         </ul>
       </div>
-      <MapV2 />
+      <div className="regionMappy">
+        <MapV2 />
+      </div>
     </div>
   );
 };
