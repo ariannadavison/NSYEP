@@ -25,7 +25,6 @@ const RegionalMap = () => {
     <div className="mappy">
       <div className="map__regionNames">
         <ul>
-<<<<<<< HEAD
           <li className="map__regionName">
             <Link to="/western" id="map__regionNameLinks">
               Western
@@ -76,18 +75,6 @@ const RegionalMap = () => {
               Long Island
             </Link>
           </li>
-=======
-          <li className="map__regionName"><Link to="/western" className="map__regionName--turq">Western</Link></li>
-          <li className="map__regionName"><Link to="/finger-lakes" className="map__regionName--pink">Finger Lakes</Link></li>
-          <li className="map__regionName"><Link to="/central" className="map__regionName--ind">Central</Link></li>
-          <li className="map__regionName"><Link to="/southern" className="map__regionName--lime">Southern</Link></li>
-          <li className="map__regionName"><Link to="/north" className="map__regionName--gold">North</Link></li>
-          <li className="map__regionName"><Link to="/mohawk-valley" className="map__regionName--red">Mohawk Valley</Link></li>
-          <li className="map__regionName"><Link to="/capital" className="map__regionName--mint">Capital</Link></li>
-          <li className="map__regionName"><Link to="/hudson-valley" className="map__regionName--blue">Hudson Valley</Link></li>
-          <li className="map__regionName"><Link to="/new-york-city" className="map__regionName--sun">New York City</Link></li>
-          <li className="map__regionName"><Link to="/long-island" className="map__regionName--purp">Long Island</Link></li>
->>>>>>> c40d66d4a8f2583250cd8c4641abf3c72d8f693e
         </ul>
       </div>
       <div className="regionMappy">

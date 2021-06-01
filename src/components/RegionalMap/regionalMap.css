@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 15% 85%;
   width: 100%;
+  justify-content: center;
 }
 
 .map__regionNames {
@@ -32,70 +33,11 @@
   font-size: 1.1rem;
 }
 
-<<<<<<< HEAD
 #map__regionNameLinks {
   color: white;
 }
 
 .regionMappy {
-=======
-.map__regionName--turq {
-  color: #2DDDFF;
-}
-
-.map__regionName--pink {
-  color: #fa446c;
-}
-
-.map__regionName--ind {
-  color: #9488ff;
-}
-
-.map__regionName--lime {
-  color: #5CEE29;
-}
-
-.map__regionName--gold {
-  color: #ffca29;
-}
-
-.map__regionName--red {
-  color: #FF544E;
-}
-
-.map__regionName--mint {
-  color: #1DEAB9;
-}
-
-.map__regionName--blue {
-  color: #2D8EFF;
-}
-
-.map__regionName--sun {
-  color: #f9f22b;
-}
-
-.map__regionName--purp {
-  color: #c152f3;
-}
-
-.map__regionName a:hover {
-  color: silver;
-  text-decoration: none;
-}
-
-.map__wrapper {
-  position: relative;
-  overflow: hidden;
-  padding-top: 63%;
-  flex: 2;
-}
-
-.map__wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 20;
->>>>>>> c40d66d4a8f2583250cd8c4641abf3c72d8f693e
   width: 100%;
   height: 100%;
 }
