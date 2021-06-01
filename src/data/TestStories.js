@@ -444,17 +444,17 @@ export const storyBank = [
       {
         year: "2019",
         stories: [
-          {
-            img: "",
-            media: {
-              name: "Sandra Bullock",
-              age: "40",
-              county: "A place",
-              job: "an undercover cop",
-              jobTitle: "wow",
-              interview: "STUFF",
-            },
-          },
+          // {
+          //   img: "",
+          //   media: {
+          //     name: "Sandra Bullock",
+          //     age: "40",
+          //     county: "A place",
+          //     job: "an undercover cop",
+          //     jobTitle: "wow",
+          //     interview: "STUFF",
+          //   },
+          // },
         ],
       },
       {
