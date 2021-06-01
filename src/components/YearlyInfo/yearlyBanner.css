@@ -1,0 +1,50 @@
+.yearlyBannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yearly-banner-component li {
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.yearly-banner-component {
+  background: var(--year-nav-pointed-arrow);
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  height: 55px;
+  width: 269px;
+}
+
+.yearly-banner-component::before {
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid var(--year-nav-pointed-arrow);
+  border-top: 25px solid transparent;
+  content: "";
+  height: 0;
+  left: -30px;
+  top: 0;
+  width: 0;
+}
+
+.yearly-banner-component li:hover{
+  color: var(--link-hover);
+}
+
+.yearly-banner-component li:active{
+  color: var(--link-active);
+}
+
+.yearlyBanner__dropShadow {
+  width: 0;
+  height: 0;
+  border-top: 40px solid var(--year-nav-drop-shadow);
+  border-left: 40px solid transparent;
+  position: absolute;
+  margin-top: 53px;
+  z-index: -1;
+}
+

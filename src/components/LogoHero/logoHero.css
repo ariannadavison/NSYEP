@@ -1,7 +1,7 @@
 .logoHero__container {
-  border:solid;
-  width: 100vw;
-  height: 60vh;
+  background: var(--banner-color-accent);
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
