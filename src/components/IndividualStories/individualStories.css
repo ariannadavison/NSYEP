@@ -1,24 +1,15 @@
 .individualStories__container {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.individualStories__innerContent {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .individualStories_studentPicture {
-    display: block;
-    margin: 20px;
+    object-fit: cover;
     border-radius: 10px;
   }
-  
-.individualStories__nameDetailsBox{
-    margin: 20px;
-    padding: 5rem;
-}
 
 .individualStories__textContain {
   display: flex;

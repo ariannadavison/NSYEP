@@ -45,7 +45,7 @@ const Header = () => {
     };
     setResponsiveness();
     window.addEventListener("resize", () => setResponsiveness());
-  }, []);
+  }, [mobileView]);
 
   const useStyles = makeStyles(() => ({
     header: {

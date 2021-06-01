@@ -42,6 +42,7 @@ const RegionalMap = () => {
         <iframe
           src="https://createaclickablemap.com/map.php?id=101499&maplocation=ny&online=true"
           style={{ border: "none" }}
+          title="interactive NY map"
         />
       </div>
     </div>
