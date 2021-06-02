@@ -41,7 +41,9 @@ const Navbar = (props) => {
           </DropdownMenu>
         </Dropdown>
         <NavItem>
-          <NavLink href="/contact" className="navbar__link">Get in Touch with NSYEP Sites</NavLink>
+          <NavLink>
+            <Link to="/contact" className="navbar__link">Get in Touch with NSYEP Sites</Link>
+          </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" className="navbar__link">Link</NavLink>
