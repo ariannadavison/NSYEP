@@ -7,29 +7,24 @@
 
 .footer__columnTitlesContainer {
   display: flex;
-  /* border: green solid; */
   flex-flow: row;
   justify-content: space-between;
 }
 
 .footer__columns {
-  /* border: turquoise solid;   */
-  padding-right: 10rem;
+  padding-right: 10%;
 }
 
 .footer_columnsInfo {
-  margin-left: 1rem;
+  margin-left: 1%;
 }
 
 .footer__extraDiv {
   height: 2px;
-  /* margin: 1rem; */
   flex: 1 0;
-  /* border: solid rgb(10, 116, 209); */
 }
 
 .footer__bottomSection {
-  /* border: solid green; */
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
@@ -38,11 +33,9 @@
 .footer__bottomLinksSection {
   display: flex;
   flex-flow: row;
-  /* border: solid; */
 }
 
 .footer__copywriteSection {
-  /* border: solid blue; */
   display: flex;
   align-items: flex-end;
   padding: 0;
@@ -52,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 3%;
   cursor: pointer;
 }
 
