@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: fit-content;
-  width: 100vw;
+  width: 100%;
 }
 
 .pageDivider__left, .pageDivider__right {
@@ -13,7 +13,7 @@
 }
 
 .pageDivider__left {
-  flex: 2;
+  flex: 10;
   border-right: 1rem solid transparent;
   border-left: 2rem solid var(--logo-green);
 }

@@ -1,0 +1,662 @@
+#states a path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #213f99;
+}
+#states a:hover path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #c0c0c0 !important;
+}
+#states #s10 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--finger-lakes);
+}
+#states #s10 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s11 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s11 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s12 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #9488ff;
+}
+#states #s12 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s13 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #5cee29;
+}
+#states #s13 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s14 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s14 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s15 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2dddff;
+}
+#states #s15 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s16 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ffca29;
+}
+#states #s16 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s17 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ffca29;
+}
+#states #s17 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s18 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s18 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s19 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s19 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s20 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s20 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s21 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ffca29;
+}
+#states #s21 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s22 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s22 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s23 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ffca29;
+}
+#states #s23 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s24 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #f9f22b;
+}
+#states #s24 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s25 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s25 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s26 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s26 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s27 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s27 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s28 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s28 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s29 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #c152f3;
+}
+#states #s29 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s30 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #f9f22b;
+}
+#states #s30 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s31 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2dddff;
+}
+#states #s31 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s32 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #9488ff;
+}
+#states #s32 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s33 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s33 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s34 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s34 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s35 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s35 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s36 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #9488ff;
+}
+#states #s36 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s37 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s37 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s38 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s38 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s39 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #f9f22b;
+}
+#states #s39 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s40 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s40 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s41 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #f9f22b;
+}
+#states #s41 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s42 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s42 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s43 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s43 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s44 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s44 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s45 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s45 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s46 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #5cee29;
+}
+#states #s46 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s47 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s47 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s48 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ffca29;
+}
+#states #s48 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s49 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #5cee29;
+}
+#states #s49 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s50 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #c152f3;
+}
+#states #s50 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s51 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s51 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s52 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #5cee29;
+}
+#states #s52 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s53 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #5cee29;
+}
+#states #s53 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s54 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s54 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s55 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s55 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s56 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #1deab9;
+}
+#states #s56 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s57 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s57 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s58 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #2d8eff;
+}
+#states #s58 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s59 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s59 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s60 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #fa446c;
+}
+#states #s60 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s61 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #9488ff;
+}
+#states #s61 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s62 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #ff544e;
+}
+#states #s62 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s01 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--north);
+}
+#states #s01 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s02 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--capital);
+}
+#states #s02 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s03 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--mid-hudson);
+}
+#states #s03 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s04 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--nyc);
+}
+#states #s04 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s05 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--long-island);
+}
+#states #s05 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s06 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--mohawk-valley);
+}
+#states #s06 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s07 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--southern);
+}
+#states #s07 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s08 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--western);
+}
+#states #s08 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states #s09 path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: var(--central);
+}
+#states #s09 path:hover {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states a:hover path {
+  cursor: pointer;
+  fill: #c0c0c0;
+}
+#states a text {
+  cursor: pointer;
+  fill: #22c4f4;
+}
+#states a:hover text {
+  fill: #eba023;
+  color: #eba023;
+}
+#states a.inverse text:hover {
+  fill: #eba023;
+}
+#states a.inverse text {
+  fill: #222222;
+}
+.CCMcredit a {
+  color: #213f99;
+}
+#states a text {
+  font-size: 8px;
+}
+#states a text {
+  display: none;
+}
+.hover-color {
+  fill: #c0c0c0;
+}

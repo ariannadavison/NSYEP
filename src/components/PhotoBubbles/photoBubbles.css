@@ -1,17 +1,44 @@
 .photoBubbles {
-  /* border: blue solid; */
   border-radius: 50%;
   cursor: pointer;
-  /* padding: 5rem; */
+  position: relative;
+  border: white 6px solid;
 }
 
 .photoBubbles__bubbleContainer {
   display: flex;
   flex-flow: row wrap;
-  /* border: red solid; */
-  justify-content:center;
+  justify-content: center;
+  background-color: var(--banner-color);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 3rem;
 }
 
 .photoBubbles:hover {
-  filter:grayscale(100%)
+  filter: grayscale(100%);
+}
+
+.photoBubbles__overlap {
+  position: relative;
+}
+
+.hidden {
+  position: absolute;
+  display: hidden;
+}
+
+.photoBubbles:hover + .hidden {
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0, -100%);
+
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  border: red solid;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
