@@ -11,14 +11,18 @@
 }
 
 .footer__info {
-  text-transform: uppercase;
-  color: #102768;
-  font-weight: bold;
+  color: white;
+  letter-spacing: 0.025rem;
+  font-weight: light;
   font-size: 1.1rem;
 }
 
 .footer__info p {
   margin-bottom: 0;
+}
+
+.footer__info p:first-of-type {
+  font-weight: bold;
 }
 
 .footer__social {
