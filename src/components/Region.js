@@ -1,6 +1,7 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-// import YearlyInfo from "./YearlyInfo/YearlyInfo";
+import "./region.css";
+import { makeStyles, Typography } from "@material-ui/core";
 
 export default function Region(props) {
   // console.log(props.match.params.regionName);
@@ -26,8 +27,32 @@ export default function Region(props) {
       images = importImages(
         require.context(`./Images/Capital`, false, /\.(png|jpe?g|svg)$/)
       );
-      // console.log(images, "images");
       break;
+    case "Central":
+      images = importImages(
+        require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Finger Lakes":
+      images = importImages(
+        require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "Long Island":
+      images = importImages(
+        require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
+      );
+    //   break;
+    // case "Central":
+    //   images = importImages(
+    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+    //   );
+    //   break;
+    // case "Central":
+    //   images = importImages(
+    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+    //   );
+    //   break;
     default:
       console.log("it's not doing what you think it's doing");
   }
@@ -45,25 +70,42 @@ export default function Region(props) {
     return file ? file.default : null;
   };
 
+  const useStyles = makeStyles({
+    root: {
+      width: "100%",
+      maxWidth: 500,
+    },
+    headers: {
+      textTransform: "uppercase",
+      fontWeight: "bold",
+    },
+  });
+
+  const styles = useStyles();
+
   return (
     <div>
       <RegionBanner region={name} />
 
-      <div className="region__content">
+      <div className="region__content margins">
         {/* probably will be a map as according to the number of things to put into the page */}
 
         {content.map((c, key) => {
           let image = getRightImage(c.image);
+          console.log("key", key % 2 === 0)
           return (
-            <div key={key}>
-              {c.title}
-              <img src={image ? image : null} />
-              {c.copy}
+            <div key={key} className={key % 2 === 0? "region__copyContainer"  : "region__copyContainer keepRight"}>
+              <img src={image ? image : null} className="region__image"/>
+              <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
+                <Typography variant="h6" className={styles.headers}>
+                  {c.title}
+                </Typography>
+                {c.copy}
+              </div>
             </div>
           );
         })}
       </div>
-      {/* <YearlyInfo regionName={name} /> */}
     </div>
   );
 }
