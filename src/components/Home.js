@@ -1,16 +1,13 @@
 import MottoBanner from "./MottoBanner/MottoBanner";
-import Paragraph from "./Paragraph/Paragraph";
-import PageDivider from "./PageDivider/PageDivider";
-import RegionalMap from "./RegionalMap/RegionalMap";
+import IntroParagraph from "./IntroParagraph/IntroParagraph";
+import WhatIs from './WhatIs/WhatIs';
 
 export default function Home() {
   return (
     <div>
       <MottoBanner />
-      {/* COPY */}
-      <Paragraph />
-      <PageDivider />
-      <RegionalMap />
+      <IntroParagraph />
+      <WhatIs />
     </div>
   );
 }

@@ -3,8 +3,15 @@ import "./mottoBanner.css";
 
 const MottoBanner = () => {
   return (
-    <div className="banner__container">
-      <span className="banner__motto">Summer Youth Employment Matters</span>
+    <div className="motto__banner">
+      <p className="motto__text">
+        <span>Summer Youth</span><br />
+        <div className="motto__bg"></div>
+        <span>Employment</span><br />
+        <div className="motto__bg"></div>
+        <span>Matters</span>
+        <div className="motto__bg"></div>
+      </p>
       <div className="banner__decorativeLine"></div>
     </div>
   );
