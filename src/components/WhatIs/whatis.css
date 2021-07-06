@@ -1,0 +1,36 @@
+.what {
+  display: flex;
+}
+
+.what__picture {
+  max-width: 300px;
+  max-height: 300px;
+  flex-basis: 300px;
+  margin: 0 1rem;
+  align-self: center;
+  object-fit: cover;
+}
+
+.what__text {
+  flex: 1;
+}
+
+.what__text h2 {
+  text-transform: uppercase;
+  color: var(--logo-navy);
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+}
+
+.what__header-bg {
+  height: 30px;
+  width: 250px;
+  position: relative;
+  z-index: -1;
+  margin: -1rem;
+  background: var(--logo-orange);
+  top: -20px;
+  left: 45px;
+}
