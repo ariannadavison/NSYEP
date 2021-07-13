@@ -1,0 +1,44 @@
+.impact__header {
+  text-transform: uppercase;
+  color: var(--logo-navy);
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+}
+
+.impact__header-bg {
+  height: 30px;
+  width: 550px;
+  position: relative;
+  z-index: -1;
+  margin: -1rem;
+  background: var(--logo-orange);
+  top: -20px;
+  left: 45px;
+}
+
+.impact__img {
+  max-height: 200px;
+  margin: 0 1rem;
+}
+
+.impact__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.impact__part {
+  font-weight: bold;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact__slash {
+  max-height: 200px;
+}
