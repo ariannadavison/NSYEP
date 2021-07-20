@@ -1,20 +1,21 @@
-.what {
+.why {
   display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.what__picture {
+.why__picture {
   max-width: 300px;
-  max-height: 300px;
   flex-basis: 300px;
   margin: 0 1rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-.what__text {
+.why__text {
   flex: 1;
 }
 
-.what__text h2 {
+.why__text h2 {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -23,13 +24,17 @@
   font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
 }
 
-.what__header-bg {
+.why__header-bg {
   height: 30px;
-  width: 250px;
+  width: 350px;
   position: relative;
   z-index: -1;
   margin: -1rem;
   background: var(--logo-orange);
   top: -20px;
   left: 45px;
+}
+
+.why__text p {
+  margin-top: 1rem;
 }
