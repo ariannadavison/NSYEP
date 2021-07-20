@@ -1,8 +1,8 @@
 :root {
-  --banner-color: #1FBCF2;
+  --banner-color: var(--logo-orange);
   --banner-color-accent: #39383A;
   /* decorative text color*/
-  --text-color-deco: white;
+  --text-color-deco: var(--logo-navy);
 
   --logo-navy: #203A83;
   --logo-green: #7BBF50;

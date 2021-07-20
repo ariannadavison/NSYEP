@@ -16,3 +16,14 @@
   text-transform: uppercase;
   color: var(--text-color-deco);
 }
+
+.regionBanner__rect {
+  height: 33px;
+  width: 280px;
+  background-color: white;
+  /* position: relative;
+  top: -1.3rem;
+  left: 14%;
+  z-index: -1;
+  margin: -1.5rem; */
+}
