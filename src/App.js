@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import IndividualStories from "./components/IndividualStories/IndividualStories";
 import Header from "./components/Header/Header";
+import RegionalMap from "./components/RegionalMap/RegionalMap";
 
 //*Structure for Region Page:
 // <logoHero />
@@ -41,6 +42,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
+          <Route path="/regions" component={RegionalMap} />
           {/* fun react-router knowledge fact: this long path has to go first because its path is more precise */}
           <Route path="/:regionName/:storyName" component={IndividualStories} />
           <Route path="/:regionName" component={Region} />
