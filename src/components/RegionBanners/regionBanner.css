@@ -15,15 +15,16 @@
   font-weight: bold;
   text-transform: uppercase;
   color: var(--text-color-deco);
+  z-index: 1;
 }
 
 .regionBanner__rect {
-  height: 33px;
-  width: 280px;
+  height: 55px;
+  width: 450px;
   background-color: white;
-  /* position: relative;
-  top: -1.3rem;
-  left: 14%;
-  z-index: -1;
-  margin: -1.5rem; */
+  position: relative;
+  top: 4.0rem;
+  left: 1%;
+  margin: -1.5rem;
+  /* z-index: -1; */
 }
