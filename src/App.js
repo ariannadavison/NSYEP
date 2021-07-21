@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Region from "./components/Region";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import RegionalMap from "./components/RegionalMap/RegionalMap";
 
 //*Structure for Region Page:
 // <logoHero />
@@ -38,9 +39,10 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/regions" component={RegionalMap} />
           {/* fun react-router knowledge fact: this long path has to go first because its path is more precise */}
           <Route path="/:regionName" component={Region} />
-
+          
           {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
         </Switch>
