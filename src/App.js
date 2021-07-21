@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LogoHero from "./components/LogoHero/LogoHero";
 import Home from "./components/Home";
 import Region from "./components/Region";
-import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import IndividualStories from "./components/IndividualStories/IndividualStories";
 import Header from "./components/Header/Header";
 
 //*Structure for Region Page:
@@ -40,9 +38,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/contact" component={Contact} />
           {/* fun react-router knowledge fact: this long path has to go first because its path is more precise */}
-          <Route path="/:regionName/:storyName" component={IndividualStories} />
           <Route path="/:regionName" component={Region} />
 
           {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
