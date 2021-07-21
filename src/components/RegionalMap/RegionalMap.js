@@ -80,7 +80,6 @@ const RegionalMap = () => {
     
       <div className="regionMappy">
         <MapV2 />
-
       </div>
     </div>
   );
