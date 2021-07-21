@@ -1,0 +1,55 @@
+.footer {
+  background-image: linear-gradient(to bottom right, #1DBBF1 25%, #213D88);
+  color: white;
+  padding: 2rem;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__info {
+  color: white;
+  letter-spacing: 0.025rem;
+  font-weight: light;
+  font-size: 1.1rem;
+}
+
+.footer__info p {
+  margin-bottom: 0;
+}
+
+.footer__info p:first-of-type {
+  font-weight: bold;
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__social .social-placeholder {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  margin: 0.5rem;
+}
+
+.footer__social .twitter {
+  background-color: #1DA1F2;
+}
+
+.footer__social .linkedin {
+  background-color: #0e76a8;
+}
+
+.footer__social .facebook {
+  background-color: #3b5998;
+}
+
+.footer__social .instagram {
+  background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}

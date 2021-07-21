@@ -14,5 +14,17 @@
   font-size: clamp(1rem, -0.875rem + 8.333vw, 4.5rem);
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--deco-text-color);
+  color: var(--text-color-deco);
+  z-index: 1;
+}
+
+.regionBanner__rect {
+  height: 55px;
+  width: 450px;
+  background-color: white;
+  position: relative;
+  top: 4.0rem;
+  left: 1%;
+  margin: -1.5rem;
+  /* z-index: -1; */
 }

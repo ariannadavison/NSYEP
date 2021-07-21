@@ -1,0 +1,16 @@
+:root {
+  --banner-color: var(--logo-orange);
+  --banner-color-accent: #39383A;
+  /* decorative text color*/
+  --text-color-deco: var(--logo-navy);
+
+  --logo-navy: #203A83;
+  --logo-green: #7BBF50;
+  --logo-orange: #E89620;
+  --logo-tan: #F0C67D;
+  --logo-blue: #1FBCF2;
+  --logo-dark-gray: #5D5858;
+  --logo-darkest-gray: #39383a;
+  --near-black: #1f1f1f;
+  --logo-pink: #F08E8E;
+}

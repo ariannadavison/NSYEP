@@ -1,9 +1,13 @@
-import React from 'react';
-import LogoHero from './components/LogoHero/LogoHero';
-import MottoBanner from './components/MottoBanner/MottoBanner';
-import PageDivider from './components/PageDivider/PageDivider';
-import Footer from './components/footer/Footer';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LogoHero from "./components/LogoHero/LogoHero";
+import Home from "./components/Home";
+import Region from "./components/Region";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import IndividualStories from "./components/IndividualStories/IndividualStories";
+import Header from "./components/Header/Header";
+import RegionalMap from "./components/RegionalMap/RegionalMap";
 
 //*Structure for Region Page:
 // <logoHero />
@@ -29,19 +33,26 @@ import './App.css';
 // <Form /> beyond mvp
 // <Footer />
 
-
-
 function App() {
   return (
-    <div className="App">
-      <LogoHero />
-      {/* <Navbar /> */}
-      <MottoBanner />
-      {/* COPY */}
-      <PageDivider />
-      {/* MAP */}
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <LogoHero />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/regions" component={RegionalMap} />
+          {/* fun react-router knowledge fact: this long path has to go first because its path is more precise */}
+          <Route path="/:regionName/:storyName" component={IndividualStories} />
+          <Route path="/:regionName" component={Region} />
+          
+          {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
+          {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

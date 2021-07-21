@@ -1,0 +1,30 @@
+.region__copyContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--logo-orange);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.keepRight {
+  flex-flow: row-reverse;
+}
+
+.addMarginRight {
+  margin-right: .5 rem;
+}
+
+.region__image {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.region__copy {
+  font-size: clamp(0.01rem, 5vw, 1rem); 
+  flex-flow: column wrap;
+  width: 100%;
+  margin-left: .5rem;
+  color: white;
+}

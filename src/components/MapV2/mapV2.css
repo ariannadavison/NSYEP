@@ -1,0 +1,69 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 1200px;
+  height: 0px;
+}
+
+#message,
+#title {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+#message {
+  top: 10px;
+  z-index: 99999;
+}
+#title {
+  bottom: 10px;
+}
+#states a {
+  cursor: pointer;
+}
+#states a:hover {
+  color: #ffffff;
+}
+#states a line {
+  stroke: #444;
+  stroke-width: 1px;
+}
+#maplocation {
+  display: hidden;
+}
+.CCMcredit {
+  float: right;
+  position: relative;
+  top: -10px;
+  color: #425957;
+}
+.CCMcredit a {
+  color: #0000ff;
+}
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+.disablelink {
+  pointer-events: none;
+}
+.white-label {
+  paint-order: stroke !important;
+  fill: #000000 !important;
+  stroke: #ffffff !important;
+  stroke-width: 4px !important;
+  stroke-linecap: butt !important;
+  stroke-linejoin: miter !important;
+  font-weight: 800 !important;
+}
+.bold {
+  font-weight: 700;
+}
