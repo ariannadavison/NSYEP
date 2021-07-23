@@ -24,14 +24,15 @@ const RegionalMap = () => {
   return (
     <div className="mappy">
       <div className="map__regionNames">
+
         <ul>
           <li className="map__regionName">
-            <Link to="/western" id="map__regionNameLinks">
+            <Link to="/western" id="map_regionNameLinks">
               Western
             </Link>
           </li>
           <li className="map__regionName">
-            <Link to="/finger-lakes" id="map__regionNameLinks">
+            <Link to="/finger-lakes" id="map_regionNameLinks">
               Finger Lakes
             </Link>
           </li>
@@ -77,7 +78,7 @@ const RegionalMap = () => {
           </li>
         </ul>
       </div>
-    
+
       <div className="regionMappy">
         <MapV2 />
       </div>
