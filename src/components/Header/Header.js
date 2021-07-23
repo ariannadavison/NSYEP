@@ -9,7 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-
+import MottoBanner from "../MottoBanner/MottoBanner"
 const headersOptions = [
   {
     label: "Home",
@@ -122,6 +122,7 @@ const Header = () => {
 
   return (
     <div>
+      <MottoBanner />
       <header>
         <AppBar className={classes.header} position="relative">
           {mobileView ? displayMobile() : displayDesktop()}

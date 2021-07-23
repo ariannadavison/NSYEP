@@ -1,5 +1,5 @@
 .motto__banner {
-  background-color: var(--logo-orange);
+  background-color: white;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
 .motto__bg {
   height: 33px;
   width: 280px;
-  background-color: white;
+  background-color: var(--logo-orange);
   position: relative;
   top: -1.3rem;
   left: 14%;

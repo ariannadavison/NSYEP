@@ -9,7 +9,7 @@
 .map__regionNames {
   align-self: center;
   justify-self: flex-start;
-  background-color: var(--banner-color-accent);
+  background-color: var(--logo-navy);
   /* flex: 0.5; */
   height: 100%;
   width: 100%;
