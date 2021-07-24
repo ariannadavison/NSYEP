@@ -24,26 +24,8 @@ const Navbar = (props) => {
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-        <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle className="navbar__link" nav caret>
-            Regions
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem href="/regionalmap">Find Your Region
-            </DropdownItem>
-
-            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
-
-          </DropdownMenu>
-        </Dropdown>
-        <NavItem>
-          <NavLink>
-            <Link to="/contact" className="navbar__link">Get in Touch with NSYEP Sites</Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#" className="navbar__link">Link</NavLink>
-        </NavItem>
+          <NavLink href="/regions" className="navbar__link">Find Your Region
+        </NavLink>
       </Nav>
     </div>
   );
