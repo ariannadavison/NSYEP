@@ -21,13 +21,11 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       <Nav className="navbar__items" tabs>
-        {/* <NavItem>
-          <NavbarBrand href="/" className="navbar__link">BRAND</NavbarBrand>
-        </NavItem> */}
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-          <NavLink href="/regions" className="navbar__link">Find Your Region</NavLink>
+          <NavLink href="/regions" className="navbar__link">Find Your Region
+        </NavLink>
       </Nav>
     </div>
   );
