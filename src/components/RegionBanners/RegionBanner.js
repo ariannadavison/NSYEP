@@ -5,7 +5,7 @@ const RegionBanner = ({region}) => {
   return (
     <div className="regionBanner__container">
       <div className="regionBanner__rect"/>
-      <span className="regionBanner__regionName">{region}</span>
+      <span className="regionBanner__regionName">{region} Region</span>
     </div>
   );
 };
