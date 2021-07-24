@@ -4,10 +4,10 @@ import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import { Link } from "react-router-dom";
-import MapV2 from "./MapV2/MapV2";
-import { regions } from "../data/Regions";
-import "./RegionalMap/regionalMap.css";
-import "../variables.css";
+import MapV2 from "../MapV2/MapV2.js";
+import { regions } from "../../data/Regions";
+import "./regionalMap.css";
+import "../../variables.css";
 
 const regionData = regions.map((region) => {
     return region;
