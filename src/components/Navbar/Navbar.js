@@ -19,7 +19,7 @@ const Navbar = (props) => {
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-          <NavLink href="/regions" className="navbar__link">Find Your Region</NavLink>
+          <NavLink href="/regionalmap" className="navbar__link">Find Your Region</NavLink>
           <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
       </Nav>
     </div>
