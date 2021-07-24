@@ -15,7 +15,6 @@
   font-weight: bold;
   text-transform: uppercase;
   color: var(--text-color-deco);
-  z-index: 1;
 }
 
 .regionBanner__rect {
