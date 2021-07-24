@@ -1,5 +1,4 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
-// import YearlyInfo from "./YearlyInfo/YearlyInfo";
 
 export default function Region(props) {
   console.log(props.match.params.regionName);
