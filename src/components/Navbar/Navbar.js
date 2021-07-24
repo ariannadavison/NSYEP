@@ -27,25 +27,27 @@ const Navbar = (props) => {
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-          <NavLink href="/regions" className="navbar__link">Find Your Region</NavLink>
-        {/* <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle className="navbar__link" nav caret> */}
-            
-          {/* </DropdownToggle> */}
-          {/* <DropdownMenu> */}
-            {/* <DropdownItem href="#">Find Your Region */}
+        <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+          <DropdownToggle className="navbar__link" nav caret>
+            Regions
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem href="#">Find Your Region
             {/* href points to interactive map */}
-            {/* </DropdownItem> */}
+            </DropdownItem>
 
-            {/* {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)} */}
+            {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
 
-          {/* </DropdownMenu> */}
-        {/* </Dropdown> */}
-        {/* <NavItem>
+          </DropdownMenu>
+        </Dropdown>
+        <NavItem>
           <NavLink>
             <Link to="/contact" className="navbar__link">Get in Touch with NSYEP Sites</Link>
           </NavLink>
-        </NavItem> */}
+        </NavItem>
+        <NavItem>
+          <NavLink href="#" className="navbar__link">Link</NavLink>
+        </NavItem>
       </Nav>
     </div>
   );
