@@ -1,17 +1,25 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
-import { regions } from "../data/Regions.js";
-import { makeStyles } from "@material-ui/styles";
+import { regions } from "../data/Regions";
+import "./region.css";
+import { makeStyles, Typography } from "@material-ui/core";
 
 export default function Region(props) {
+  // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
+  // the name comes through as the url, so we must name-ify it.
   name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
+  // console.log(name, "name");
+  //gotta locate the right object that's holding the region name:
 
   console.log(regions, "regions")
 
   let region = regions.filter((r) => r.region === name);
 
   let content = region[0].content;
+  // console.log(content, "filtered region");
+
+  // console.log("Does name === Capital", name === "Capital");
 
   let images;
 
@@ -78,15 +86,29 @@ export default function Region(props) {
 
   const styles = useStyles();
 
-
   return (
     <div>
       <RegionBanner region={name} />
-      <div className="margins">
-        i am a region.<br />
-        specifically, the region known as {name}.
+
+      <div className="region__content margins">
+        {/* probably will be a map as according to the number of things to put into the page */}
+
+        {content.map((c, key) => {
+          let image = getRightImage(c.image);
+          console.log("key", key % 2 === 0)
+          return (
+            <div key={key} className={key % 2 === 0? "region__copyContainer"  : "region__copyContainer keepRight"}>
+              <img src={image ? image : null} className="region__image"/>
+              <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
+                <Typography variant="h6" className={styles.headers}>
+                  {c.title}
+                </Typography>
+                {c.copy}
+              </div>
+            </div>
+          );
+        })}
       </div>
-      {/* <YearlyInfo regionName={name} /> */}
     </div>
-  )
+  );
 }
