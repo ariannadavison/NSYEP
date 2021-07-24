@@ -1,11 +1,16 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
+import { regions } from "../data/Regions.js";
+import { makeStyles } from "@material-ui/styles";
 
 export default function Region(props) {
   let name = props.match.params.regionName;
   name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
 
+  console.log(regions, "regions")
+
   let region = regions.filter((r) => r.region === name);
+
   let content = region[0].content;
 
   let images;
