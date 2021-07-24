@@ -12,7 +12,10 @@ export default function Region(props) {
   // console.log(name, "name");
   //gotta locate the right object that's holding the region name:
 
+  console.log(regions, "regions")
+
   let region = regions.filter((r) => r.region === name);
+
   let content = region[0].content;
   // console.log(content, "filtered region");
 

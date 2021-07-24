@@ -29,7 +29,7 @@ const RegionalMapV2 = () => {
                                 {region.counties.map((county) => {
                                     return (
                                         <AccordionDetails className='map__counties'>
-                                            <Link to={"./" + county.regionURL} id="map__regionNameLinks">{county}</Link>
+                                            <Link to={"./" + region.regionURL} id="map__regionNameLinks">{county}</Link>
                                         </AccordionDetails>
                                     );
                                 })}
