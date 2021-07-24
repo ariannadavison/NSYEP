@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./variables.css";
 import "./index.css";
-import "./responsiveFont.css";
-import "./honeyaiVariables.css";
+import "./honeyaiVariables.css"
 import App from "./App";
 
 ReactDOM.render(
