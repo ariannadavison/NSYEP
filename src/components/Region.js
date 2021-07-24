@@ -4,19 +4,12 @@ import "./region.css";
 import { makeStyles, Typography } from "@material-ui/core";
 
 export default function Region(props) {
-  // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
-  // the name comes through as the url, so we must name-ify it.
   name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
-  // console.log(name, "name");
-  //gotta locate the right object that's holding the region name:
 
   let region = regions.filter((r) => r.region === name);
   let content = region[0].content;
-  // console.log(content, "filtered region");
-
-  // console.log("Does name === Capital", name === "Capital");
 
   let images;
 
