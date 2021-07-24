@@ -21,9 +21,6 @@ const Navbar = (props) => {
   return (
     <div className="navbar">
       <Nav className="navbar__items" tabs>
-        {/* <NavItem>
-          <NavbarBrand href="/" className="navbar__link">BRAND</NavbarBrand>
-        </NavItem> */}
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
@@ -32,8 +29,7 @@ const Navbar = (props) => {
             Regions
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem href="#">Find Your Region
-            {/* href points to interactive map */}
+            <DropdownItem href="/regionalmap">Find Your Region
             </DropdownItem>
 
             {regions.map(r => <Link to={`/${r.regionURL}`} key={r.regionID}><DropdownItem>{r.region}</DropdownItem></Link>)}
