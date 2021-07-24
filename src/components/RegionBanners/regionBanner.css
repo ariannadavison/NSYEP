@@ -18,12 +18,12 @@
 }
 
 .regionBanner__rect {
-  height: 33px;
-  width: 280px;
-  background-color: white;
-  /* position: relative;
-  top: -1.3rem;
-  left: 14%;
-  z-index: -1;
-  margin: -1.5rem; */
+  height: 55px;
+  width: 850px;
+  background-color: var(--logo-orange);
+  position: relative;
+  top: 4.0rem;
+  left: 1%;
+  margin: -1.5rem;
+  /* z-index: -1; */
 }

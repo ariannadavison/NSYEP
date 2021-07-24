@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Nav,
   NavItem,
-  Dropdown,
-  DropdownItem,
-  DropdownToggle,
-  DropdownMenu,
   NavLink,
-  NavbarBrand
 } from "reactstrap";
 import { regions } from '../../data/Regions';
 import './navbar.css';
@@ -24,8 +19,8 @@ const Navbar = (props) => {
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-          <NavLink href="/regions" className="navbar__link">Find Your Region
-        </NavLink>
+          <NavLink href="/regions" className="navbar__link">Find Your Region</NavLink>
+          <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
       </Nav>
     </div>
   );

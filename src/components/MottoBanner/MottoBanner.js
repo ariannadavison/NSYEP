@@ -12,6 +12,7 @@ const MottoBanner = () => {
         <span>Matters</span>
         <div className="motto__bg"></div>
       </p>
+      <div className="banner__decorativeLine"></div>
     </div>
   );
 };
