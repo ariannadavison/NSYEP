@@ -7,6 +7,8 @@
   --link-hover: rgb(127, 127, 206);
   --link-active: rgb(35, 159, 74);
 
+  /* Navbar background color */
+  --navbar: var(--logo-navy);
   /* footer social link variables */
   --facebook: rgb(59, 89, 152);
   --twitter: rgb(29, 161, 242);
