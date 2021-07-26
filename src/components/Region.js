@@ -1,6 +1,6 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-// import "./region.css";
+import "./region.css";
 import { makeStyles, Typography } from "@material-ui/core";
 
 export default function Region(props) {
