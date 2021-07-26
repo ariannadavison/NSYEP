@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path='/regionalmap' component={RegionalMapV2} />
+          <Route path='/regional-map' component={RegionalMapV2} />
           <Route path="/:regionName" component={Region} />
         </Switch>
         <Footer />

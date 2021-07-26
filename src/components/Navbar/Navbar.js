@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import {
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
-import { regions } from '../../data/Regions';
-import './navbar.css';
+import { Link } from "react-router-dom";
+import { Nav, NavItem, NavLink } from "reactstrap";
+import "./navbar.css";
 
 const Navbar = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -17,10 +12,18 @@ const Navbar = (props) => {
     <div className="navbar">
       <Nav className="navbar__items" tabs>
         <NavItem>
-          <NavLink href="/" className="navbar__link">Home</NavLink>
+          <NavLink href="/" className="navbar__link">
+            Home
+          </NavLink>
         </NavItem>
-          <NavLink href="/regionalmap" className="navbar__link">Find Your Region</NavLink>
-          <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
+        <NavLink  >
+          <Link to="/regional-map" className="navbar__link">
+          Find Your Region
+          </Link>
+        </NavLink>
+        <NavLink href="/about-us" className="navbar__link">
+          About NYATEP
+        </NavLink>
       </Nav>
     </div>
   );
