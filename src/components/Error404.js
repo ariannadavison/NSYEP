@@ -1,6 +1,12 @@
-const Error404 = () => {
+
+import { withRouter } from "react-router"
+const Error404 = (props) => {
     return (
-        "error 404"
+        <div>
+
+            error 404
+            <div>{props.match.params.regionName} is not a region</div>
+        </div>
     )
 }
-export default Error404
+export default withRouter(Error404)

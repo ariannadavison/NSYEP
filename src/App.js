@@ -5,12 +5,14 @@ import Home from "./components/Home";
 import Region from "./components/Region";
 import Footer from "./components/Footer/Footer";
 //HEAD
+import { Redirect } from "react-router";
+import { regions } from './data/Regions'
 import Error404 from './components/Error404'
 // import IndividualStories from "./components/IndividualStories/IndividualStories";
 import Header from "./components/Header/Header";
-import MapV2 from './components/MapV2/MapV2';
+
 import RegionalMapV2 from "./components/RegionalMap/RegionalMapV2"
-import RegionalMap from "./components/RegionalMap/RegionalMap";
+
 //*Structure for Region Page:
 // <logoHero />
 // navbar
@@ -23,7 +25,9 @@ import RegionalMap from "./components/RegionalMap/RegionalMap";
 
 
 
-function App() {
+function App(props) {
+
+
   return (
     <Router>
       <div className="App">
@@ -34,15 +38,23 @@ function App() {
           <Route path='/regionalmap' component={RegionalMapV2} />
 
           {/* <Route path="/:regionName/:storyName" component={IndividualStories} /> */}
-          <Route path="/:regionName" exact component={Region} />
+          <Route path="/:regionName" component={Region}>
+
+          </Route>
+
+
+          {/* <Route component={Error404} /> */}
+
 
           {/* note from myself to remember how to pass props to a component here. this is code from a work project */}
           {/* <Route path="/users" render={() => <UserManagement currentUser={this.state.currentUser} />} /> */}
-          <Route component={Error404} />
 =======
-          <Route path="/:regionName" component={Region} />
 
-        </Switch>
+
+
+
+
+    </Switch>
       <Footer />
       </div>
     </Router >

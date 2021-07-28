@@ -1,152 +1,129 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
-
-// import YearlyInfo from "./YearlyInfo/YearlyInfo";
-import Regions, { regions } from '../data/Regions'
-import Error404 from "./Error404";
-
 import { regions } from "../data/Regions";
 // import "./region.css";
 import { makeStyles, Typography } from "@material-ui/core";
+import { Redirect, Route } from "react-router";
+import Error404 from "./Error404";
 
 export default function Region(props) {
   // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
   // the name comes through as the url, so we must name-ify it.
-
-  const regionArray = regions.map((region) => {
-    return region.region.toLowerCase()
-  })
-  console.log(regionArray)
-  name = name.replace(/-/g, ' ');
+  name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
-  const getRegion = () => {
+  // console.log(name, "name");
+  //gotta locate the right object that's holding the region name:
+  let content = []
+  console.log(regions, "regions")
+  let region = regions.filter((r) => r.region === name);
+  console.log(region.length)
+  if (region.length > 0) {
 
-    let output = ""
-    if (regionArray.indexOf(name.toLowerCase()) == -1) {
-      output = <Error404 />
-
-    }
-    else {
-      output =
-        <div className="margins">
-          <RegionBanner region={name} />
-          i am a region.<br />
-          specifically, the region known as {name}.
-        </div>
-
-    }
-    return output
-
-
+    content = region[0].content;
   }
 
-  return (
-    <div>
-      <div className="margins">
-        {getRegion()}
-        name = name.replace(/-/g, " ");
-  name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
-        // console.log(name, "name");
-        //gotta locate the right object that's holding the region name:
 
-        console.log(regions, "regions")
+  // console.log(content, "filtered region");
 
-  let region = regions.filter((r) => r.region === name);
+  // console.log("Does name === Capital", name === "Capital");
 
-        let content = region[0].content;
-        // console.log(content, "filtered region");
-
-        // console.log("Does name === Capital", name === "Capital");
-
-        let images;
+  let images;
 
   const importImages = (r) => r.keys().map(r);
 
-        switch (name) {
+  switch (name) {
     case "Capital":
-        images = importImages(
+      images = importImages(
         require.context(`./Images/Capital`, false, /\.(png|jpe?g|svg)$/)
-        );
-        break;
-        case "Central":
-        images = importImages(
+      );
+      break;
+    case "Central":
+      images = importImages(
         require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-        );
-        break;
-        case "Finger Lakes":
-        images = importImages(
+      );
+      break;
+    case "Finger Lakes":
+      images = importImages(
         require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
-        );
-        break;
-        case "Long Island":
-        images = importImages(
+      );
+      break;
+    case "Long Island":
+      images = importImages(
         require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
-        );
-        //   break;
-        // case "Central":
-        //   images = importImages(
-        //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-        //   );
-        //   break;
-        // case "Central":
-        //   images = importImages(
-        //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-        //   );
-        //   break;
-        default:
-        console.log("it's not doing what you think it's doing");
+      );
+    //   break;
+    // case "Central":
+    //   images = importImages(
+    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+    //   );
+    //   break;
+    // case "Central":
+    //   images = importImages(
+    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+    //   );
+    //   break;
+    default:
+      console.log("it's not doing what you think it's doing");
   }
-        let file;
+  let file;
   const getRightImage = (imageName) => {
-          //@imageName is gunna be c.image which will be only the file name without extensions
-          file = images.find(
-            (i) =>
-              i.default
-                .split("/")
-                .pop()
-                .replace(/\.[^/.]+$/, "")
-                .replace(/\.[^/.]+$/, "") === imageName
-          );
-        return file ? file.default : null;
+    //@imageName is gunna be c.image which will be only the file name without extensions
+    file = images.find(
+      (i) =>
+        i.default
+          .split("/")
+          .pop()
+          .replace(/\.[^/.]+$/, "")
+          .replace(/\.[^/.]+$/, "") === imageName
+    );
+    return file ? file.default : null;
   };
 
-        const useStyles = makeStyles({
-          root: {
-          width: "100%",
-        maxWidth: 500,
+  const useStyles = makeStyles({
+    root: {
+      width: "100%",
+      maxWidth: 500,
     },
-        headers: {
-          textTransform: "uppercase",
-        fontWeight: "bold",
+    headers: {
+      textTransform: "uppercase",
+      fontWeight: "bold",
     },
   });
 
-        const styles = useStyles();
+  const styles = useStyles();
+  if (region.length == 0) {
+    return (
+      <div>
+        {<Redirect to="/Error404" />}
+        <Error404 />
+      </div>
+    )
+  }
+  else {
+    return (
+      <div>
+        <RegionBanner region={name} />
 
-        return (
-        <div>
-          <RegionBanner region={name} />
+        <div className="region__content margins">
+          {/* probably will be a map as according to the number of things to put into the page */}
 
-          <div className="region__content margins">
-            {/* probably will be a map as according to the number of things to put into the page */}
-
-            {content.map((c, key) => {
-              let image = getRightImage(c.image);
-              console.log("key", key % 2 === 0)
-              return (
-                <div key={key} className={key % 2 === 0 ? "region__copyContainer" : "region__copyContainer keepRight"}>
-                  <img src={image ? image : null} className="region__image" />
-                  <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
-                    <Typography variant="h6" className={styles.headers}>
-                      {c.title}
-                    </Typography>
-                    {c.copy}
-                  </div>
+          {content.map((c, key) => {
+            let image = getRightImage(c.image);
+            console.log("key", key % 2 === 0)
+            return (
+              <div key={key} className={key % 2 === 0 ? "region__copyContainer" : "region__copyContainer keepRight"}>
+                <img src={image ? image : null} className="region__image" />
+                <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
+                  <Typography variant="h6" className={styles.headers}>
+                    {c.title}
+                  </Typography>
+                  {c.copy}
                 </div>
-              );
-            })}
->>>>>>> 149f085c2dce9128e36ee42f43077fb258376d57
-          </div>
+              </div>
+            );
+          })}
         </div>
-        );
+      </div>
+    );
+  }
 }

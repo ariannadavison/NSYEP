@@ -22,7 +22,7 @@
 .map__regionNames {
   align-self: center;
   justify-self: flex-start;
-  background-color: var(--banner-color-accent);
+  /* background-color: var(--banner-color-accent); */
   color: white;
   flex: 0.5;
 
@@ -38,19 +38,17 @@
   justify-content: space-evenly;
   align-items: flex-start;
   list-style: none;
-  margin-bottom: 0;
+
   height: 100%;
   color: white;
-  background-color: var(--banner-color-accent);
+  /* background-color: var(--banner-color-accent); */
 }
 
 .map__regionName {
-  margin: 1rem 0;
   font-size: 1.1rem;
   width: 100%;
   /* background-color: var(--banner-color-accent); */
-  display: flex;
-  flex-flow: row;
+  margin-bottom: 0;
   max-width: 100%;
   background-color: none;
 }
@@ -60,6 +58,12 @@
   max-width: 100%;
   text-decoration: underline 1pt;
   text-decoration: none;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+}
+#map__regionNameLinks div {
+  margin: 0;
 }
 #map__regionNameLinks:hover {
   text-decoration: underline 0.5pt;
@@ -74,14 +78,33 @@
   color: white;
   /* overflow-y: hidden; */
   max-width: 100%;
+  margin: 0px;
+  /* width: 100%; */
 }
 .map__regionNames span {
   /* background-color: var(--banner-color-accent); */
   color: white;
   /* overflow-y: hidden; */
   max-width: 100%;
+  width: 100%;
 }
 .MuiIconButton-label {
   background-color: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 0px;
+  max-width: 100%;
+}
+.MuiCollapse-wrapper {
+  margin: 0;
+  width: 100%;
+}
+.MuiTouchRipple-root {
+  box-shadow: 0;
+  margin: 0;
+  background-color: none;
+  max-width: 100%;
+  width: 100%;
+}
+.MuiCollapse-root {
+  width: 100%;
 }
