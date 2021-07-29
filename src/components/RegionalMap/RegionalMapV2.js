@@ -21,16 +21,17 @@ const RegionalMapV2 = () => {
                     {regions.map((region) => {
                         return (
                             <Accordion className='map__regionNames'>
-                                <AccordionSummary >
+                                <AccordionSummary expandIcon={'\u25be'} className="map__regionName">
                                     <Link to={"/" + region.regionURL} id="map__regionNameLinks">
                                         <b>{region.region}</b>
                                     </Link>
-                                </AccordionSummary>
+                                </AccordionSummary >
                                 {region.counties.map((county) => {
                                     return (
-                                        <AccordionDetails className='map__counties'>
-                                            <Link to={"./" + region.regionURL} id="map__regionNameLinks">{county}</Link>
-                                        </AccordionDetails>
+                                        <Link to={"/" + region.regionURL} id="map__regionNameLinks">
+                                            <AccordionDetails target={"/" + region.regionURL} className='map__counties'>{county}
+                                            </AccordionDetails>
+                                        </Link>
                                     );
                                 })}
                             </Accordion>
