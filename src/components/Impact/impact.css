@@ -43,3 +43,24 @@
 .impact__slash {
   max-height: 200px;
 }
+
+@media (max-width: 767px) {
+  .impact__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .impact__header-bg {
+    height: 22px;
+    width: 455px;
+    top: -22px;
+  }
+
+  .impact__img {
+    max-height: 125px;
+  }
+
+  .impact__slash {
+    max-height: 150px;
+  }
+}
