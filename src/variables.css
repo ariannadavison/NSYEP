@@ -1,6 +1,6 @@
 :root {
   --banner-color: var(--logo-orange);
-  --banner-color-accent: var( --logo-orange);
+  --banner-color-accent: white;
   /* decorative text color*/
   --text-color-deco: var(--logo-navy);
 

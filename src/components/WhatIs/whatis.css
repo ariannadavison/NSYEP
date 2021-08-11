@@ -5,16 +5,11 @@
 .what__picture {
   max-width: 300px;
   max-height: 300px;
-  flex-basis: 300px;
   margin: 0 1rem;
   object-fit: cover;
 }
 
-.what__text {
-  flex: 1;
-}
-
-.what__text h2 {
+.what__header {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -32,4 +27,21 @@
   background: var(--logo-orange);
   top: -20px;
   left: 45px;
+}
+
+@media (max-width: 767px) {
+  .what__picture {
+    max-width: 200px;
+  }
+
+  .what__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .what__header-bg {
+    height: 22px;
+    width: 175px;
+    top: -22px;
+  }
 }

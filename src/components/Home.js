@@ -5,7 +5,7 @@ import Impact from './Impact/Impact';
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <IntroParagraph />
       <WhatIs />
       <WhySYEP />
