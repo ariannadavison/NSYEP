@@ -1,0 +1,19 @@
+#error__container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#error__404 {
+  font-size: 8rem;
+  font-family: monospace;
+  display: block;
+}
+
+#error__message {
+  display: block;
+  font-size: 2rem;
+}

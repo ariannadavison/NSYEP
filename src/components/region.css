@@ -1,32 +1,40 @@
 .region__copyContainer {
   width: 100%;
+
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: var(--logo-orange);
   padding: 1rem;
   border-radius: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .keepRight {
   flex-flow: row-reverse;
-}
-
-.addMarginRight {
-  margin-right: .5 rem;
+  justify-content: space-between;
+  margin-right: 1rem;
 }
 
 .region__image {
   max-width: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .region__copy {
-  font-size: clamp(0.01rem, 5vw, 1rem); 
+  font-size: clamp(0.01rem, 5vw, 1rem);
   flex-flow: column wrap;
-  width: 100%;
-  margin-left: .5rem;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  margin-left: 1rem;
   color: white;
+  text-align: justify;
 }
-
- 
+.addMarginRight {
+  margin-right: 1rem;
+  margin-left: 0rem;
+  /* text-align: justify; */
+}
