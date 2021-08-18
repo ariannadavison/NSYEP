@@ -4,7 +4,7 @@ import { regions } from "../data/Regions";
 import { makeStyles, Typography } from "@material-ui/core";
 import { Redirect, Route } from "react-router";
 import Error404 from "./Error404";
-
+import './region.css'
 export default function Region(props) {
   // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
@@ -14,13 +14,12 @@ export default function Region(props) {
   // console.log(name, "name");
   //gotta locate the right object that's holding the region name:
   let content = []
-  console.log(regions, "regions")
   let region = regions.filter((r) => r.region === name);
-  console.log(region.length)
   if (region.length > 0) {
 
     content = region[0].content;
   }
+
 
 
   // console.log(content, "filtered region");
@@ -94,7 +93,7 @@ export default function Region(props) {
   if (region.length == 0) {
     return (
       <div>
-        {<Redirect to="/Error404" />}
+        {/* {<Redirect to="/Error404" />} */}
         <Error404 />
       </div>
     )
