@@ -1,10 +1,11 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-// import "./region.css";
+import { NoContent } from "./Error/NoContent";
 import { makeStyles, Typography } from "@material-ui/core";
 import { Redirect, Route } from "react-router";
 import Error404 from "./Error404";
-import './region.css'
+import "./region.css";
+import { Autocomplete } from "@material-ui/lab";
 export default function Region(props) {
   // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
@@ -13,14 +14,11 @@ export default function Region(props) {
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
   // console.log(name, "name");
   //gotta locate the right object that's holding the region name:
-  let content = []
+  let content = [];
   let region = regions.filter((r) => r.region === name);
   if (region.length > 0) {
-
     content = region[0].content;
   }
-
-
 
   // console.log(content, "filtered region");
 
@@ -46,21 +44,31 @@ export default function Region(props) {
         require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
       );
       break;
+    case "Hudson Valley":
+      images = importImages(
+        require.context(`./Images/HudsonValley`, false, /\.(png|jpe?g|svg|mp4)$/)
+      );
+      break;
     case "Long Island":
       images = importImages(
         require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
       );
-    //   break;
-    // case "Central":
-    //   images = importImages(
-    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-    //   );
-    //   break;
-    // case "Central":
-    //   images = importImages(
-    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-    //   );
-    //   break;
+      break;
+    case "Southern":
+      images = importImages(
+        require.context(`./Images/Southern`, false, /\.(png|jpe?g|svg)$/)
+      );
+      break;
+    case "New York City":
+      images = importImages(
+        require.context(`./Images/NewYorkCity`, false, /\.(png|jpe?g|svg|mp4)$/)
+      );
+      break;
+    case "Western":
+      images = importImages(
+        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4)$/)
+      );
+      break;
     default:
       console.log("it's not doing what you think it's doing");
   }
@@ -86,6 +94,7 @@ export default function Region(props) {
     headers: {
       textTransform: "uppercase",
       fontWeight: "bold",
+      textAlign: "auto",
     },
   });
 
@@ -96,9 +105,15 @@ export default function Region(props) {
         {/* {<Redirect to="/Error404" />} */}
         <Error404 />
       </div>
-    )
-  }
-  else {
+    )}
+    else if(!region.content) {
+return(
+<div>
+  <NoContent />
+</div>
+  )
+    
+  } else {
     return (
       <div>
         <RegionBanner region={name} />
@@ -108,11 +123,47 @@ export default function Region(props) {
 
           {content.map((c, key) => {
             let image = getRightImage(c.image);
-            console.log("key", key % 2 === 0)
-            return (
-              <div key={key} className={key % 2 === 0 ? "region__copyContainer" : "region__copyContainer keepRight"}>
+            let imgTag = () => {
+              return image.match("mp4") ? (
+                <video src={image} className={styles.headers}></video>
+              ) : (
                 <img src={image ? image : null} className="region__image" />
-                <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
+              );
+            };
+
+            console.log("key", key % 2 === 0);
+            return (
+              <div
+                key={key}
+                className={
+                  key % 2 === 0
+                    ? "region__copyContainer"
+                    : "region__copyContainer keepRight"
+                }
+              >
+
+                {image.match("mp4") ? (
+                  // <iframe classname='region__image'>
+                  <video
+                    src={image}
+                    controls
+                    muted
+
+                    autoPlay
+                  ></video>
+                ) : (
+                  // </iframe>
+                  <img src={image ? image : null} className="region__image" />
+                )}
+
+                {/* <img src={image ? image : null} className="region__image" /> */}
+                <div
+                  className={
+                    key % 2 === 0
+                      ? "region__copy"
+                      : "region__copy addMarginRight"
+                  }
+                >
                   <Typography variant="h6" className={styles.headers}>
                     {c.title}
                   </Typography>
