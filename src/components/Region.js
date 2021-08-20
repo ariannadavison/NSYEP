@@ -46,7 +46,11 @@ export default function Region(props) {
       break;
     case "Hudson Valley":
       images = importImages(
-        require.context(`./Images/HudsonValley`, false, /\.(png|jpe?g|svg|mp4)$/)
+        require.context(
+          `./Images/HudsonValley`,
+          false,
+          /\.(png|jpe?g|svg|mp4)$/
+        )
       );
       break;
     case "Long Island":
@@ -105,14 +109,13 @@ export default function Region(props) {
         {/* {<Redirect to="/Error404" />} */}
         <Error404 />
       </div>
-    )}
-    else if(!region.content) {
-return(
-<div>
-  <NoContent />
-</div>
-  )
-    
+    );
+  } else if (!content) {
+    return (
+      <div>
+        <NoContent />
+      </div>
+    );
   } else {
     return (
       <div>
@@ -141,14 +144,13 @@ return(
                     : "region__copyContainer keepRight"
                 }
               >
-
                 {image.match("mp4") ? (
                   // <iframe classname='region__image'>
                   <video
                     src={image}
                     controls
                     muted
-
+                    className="region__image"
                     autoPlay
                   ></video>
                 ) : (
