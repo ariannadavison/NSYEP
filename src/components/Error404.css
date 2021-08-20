@@ -1,0 +1,15 @@
+.error {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  font-family: sans-serif;
+  opacity: 0.6;
+}
+.errorMessage {
+  font-size: 2rem;
+}
+
+.error404 {
+  font-size: 4rem;
+}

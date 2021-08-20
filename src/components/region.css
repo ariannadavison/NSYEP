@@ -1,6 +1,7 @@
 .region__copyContainer {
   width: 100%;
 
+  height: 20rem;
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -8,18 +9,25 @@
   padding: 1rem;
   border-radius: 10px;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .keepRight {
   flex-flow: row-reverse;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-right: 1rem;
 }
 
 .region__image {
   max-width: 50%;
+  max-height: 80%;
   object-fit: contain;
+  overflow: hidden;
+}
+video.region__image {
+  max-width: 60%;
+  width: 30%;
+  /* object-fit: contain; */
   overflow: hidden;
 }
 
@@ -27,11 +35,28 @@
   font-size: clamp(0.01rem, 5vw, 1rem);
   flex-flow: column wrap;
   max-width: 80%;
-  height: auto;
+  height: 100%;
   position: relative;
   margin-left: 1rem;
   color: white;
+  justify-content: space-between;
+
   text-align: justify;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+div ::-webkit-scrollbar {
+  background-color: var(--sidebar-orange);
+  margin: 20px;
+  border-spacing: 20px;
+
+  /* width: 10px; */
+
+  /* position: relative; */
+}
+
+div ::-webkit-scrollbar-thumb {
+  background-color: #8b5509a4;
 }
 .addMarginRight {
   margin-right: 1rem;
