@@ -1,11 +1,11 @@
 import React from "react";
 import "./logoHero.css";
-import banner from "./NYATEPBanner.png";
+import { ReactComponent as Banner } from "./NYATEPBanner.svg"
 
 const LogoHero = () => {
   return (
     <div className="logoHero__container">
-      <img src={banner} />
+      <Banner />
     </div>
   );
 };

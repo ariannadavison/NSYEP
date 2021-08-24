@@ -64,7 +64,7 @@ export const regions = [
     region: "Finger Lakes",
     regionID: "02",
     regionURL: "finger-lakes",
-    counties: ['Genesee', 'Livingston', 'Monroe', 'Ontario', 'Orleane', 'Seneca', 'Wayne', 'Wyoming', 'Yates'], content: [
+    counties: ['Genesee', 'Livingston', 'Monroe', 'Ontario', 'Orleane', 'Seneca', 'Wayne', 'Wyoming', 'Yates'],content: [
       {
         title: "Livingston County Workforce Development",
         image: "tainairis goodwill - Mary Guldenschuh",
@@ -86,28 +86,8 @@ export const regions = [
     region: "Hudson Valley",
     regionID: "08",
     regionURL: "hudson-valley",
-    counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester'],
-    content: [
-      {
-        title: "Dutchess County Workforce Investment Board",
-        image: "DCWIB Success Story Photo 2020 SYEP - Poughkeepsie Farm Project - Meredith Madden",
-        copy: "In partnership with the Dutchess County Workforce Investment Board, Poughkeepsie Farm Project was able to provide a ten-week paid summer internship for six Poughkeepsie youth.  The youth crew was involved in every aspect of growing, harvesting, and distributing produce in the community - working both in the farm fields and our educational gardens. In addition to this hands-on training, the youth also gained knowledge about food access in their own community as they acted as youth ambassadors during community harvest events and free produce distributions. These programs highlighted the links between food justice and racial justice as youth explored the historical roots of racial injustices embedded in our nation’s food system.  The final project for the internship was creating an Anti-Racist Timeline and inviting all in the PFP community to consider how they are and can work towards being anti-racist advocates in their daily lives.  Over the course of the summer, the youth expressed the value of not only having a summer job, but also having a job through the year for both supporting their household finances and because of the positive relationships they develop with the adult staff members who serve as supervisors and mentors. This time of COVID also highlighted the importance of access to healthy food for the youth, who were able to take home a weekly share of the produce they helped to grow. Two of our summer interns, who also worked with us last summer and had previously volunteered at Poughkeepsie Farm Project, truly stood out and demonstrated their dedication to the community and to their own learning. We are thrilled that they are able to extend their internship through the fall season and possibly beyond. Young people like Tania and Rakim are our future and we look to them to lead the way toward a just and sustainable food system. "
-      },
-
-        {
-          title: "Ulster County Office of Employment & Training",
-          image: "Ulster County",
-          copy: "During the summer of 2020 the Ulster County Office of Employment & Training created several innovative partnerships that created unique internships along with educational and work readiness/workforce development opportunities for the young adults of Ulster County.  Due to the lack of worksites for SYEP this year because of the pandemic, we teamed up with Albany Can Code to provide an online Front- End Web Development course.  This course was taught virtually and met for 4 weeks @ 20 hours per week with 5 additional hours of self-study each week.  The SYEP youth learned the basics of HTML & CSS: foundational skills in the world of computer programming; received a certificate of completion from the training provider; and an additional $800 incentive for those who successfully completed the online course and built their own website.  It is important to note that the youth in this web development class ranged from 14 to 17 years old and were able to create their own website after four weeks of class! Here’s a website created by Augustin, an SYEP participant who shares his interest in Psychology and how going to college and majoring in Psychology will help him understand how to help others. Quite impressive for the young adults but also for instructors at Albany Can Code for making difficult material seem easy!!!  "
-      },
-      {
-        title: "Greenburgh Department of Community Resources",
-        image: "TDYCC",
-        copy: "Summer of 2020 was very different from our Summer Camp experiences in the years past, as we were faced with many obstacles as a result of COVID-19.  However, we not only overcame these obstacles, but had an extremely fun, exciting and safe Summer camp experience, for both the Staff and campers. We implemented new and exciting Programs to the campers, such as Gardening and Extreme Crafting, and were able to get to know our campers even more, since the groups were kept small.Instead of our typical field trips, we brought an outdoor water experience to the campers, which they LOVED Summer 2020 has shown us just how creative we all are, and proven that although we may be presented with adversities, we will overcome them by working together."
-      },
-      ],
-    
+    counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester']
   },
-
   {
     region: "Long Island",
     regionID: "10",
@@ -130,95 +110,34 @@ export const regions = [
       },
     ],
   },
-
-
   {
     region: "Mohawk Valley",
     regionID: "06",
     regionURL: "mohawk-valley",
-    counties: ['Fulton', 'Herkimer', 'Montgomery', 'Oneida', 'Otsego', 'Schoharie'],
-    content: [
-      {
-        title: "",
-        image: "",
-        copy: ""
-      },
-    ],
+    counties: ['Fulton', 'Herkimer', 'Montgomery', 'Oneida', 'Otsego', 'Schoharie']
   },
-
-
   {
     region: "New York City",
     regionID: "09",
     regionURL: "new-york-city",
-    counties: ['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Richmond'],
-    content: [
-      {
-        title: "United Activities Unlimited",
-        image: "United Activities Unlimited",
-        copy: 'One of many significant highlights of United Activities Unlimited’s Summer Bridge program was its partnership with LinkedIn. We are grateful for the work and opportunity made available to us through ExpandED to connect with the LinkedIn team and ultimately coordinate approximately 25 mentors to serve 50 vulnerable youth over the full 5-week implementation. The LinkedIn partnership, cohorts, and final projects/presentations truly set the standard for not only meaningful virtual programming but for partnership development. With a team of three lead coordinators, LinkedIn was very hands-on and proactive, leading the way with many best practices. The entire LinkedIn team was genuinely committed to the youth they were serving and asked questions from beginning to end, working to refine their efforts and elevate their engagements. Youth explored more than just the LinkedIn platform; meaningful lessons about personal skills, self-worth, confidence-building, social capital, and professional development were all components of the LinkedIn partnership. The culminating activity and response to the Workplace Challenge yielded insight to what youth would recommend to LinkedIn to make their platform more ‘friendly,’ accessible, engaging, and beneficial to youth. LinkedIn invited senior leadership from the company who provided honest, productive feedback on select presentations, while youth offered honest and beneficial insights to the company about their platform. Here is a testimonial from a youth participant about their experience this summer “For me, it was one of the best opportunities I have had. I was able to work, I met new people, many people helped me, many things began to make sense that didn’t before. There were also some difficult things that I overcame, such as the language barrier. I felt it was a great opportunity and I would do it again.”'
-      },
-      {
-        title: "New York City Department of Youth & Community Development",
-        image: "Wynter Dias",
-        copy: '“This year is definitely a year like no other. I have been faced with one of the most difficult times in my entire life. My family was sick with COVID-19. The most difficult task was having to take care of an entire household. I was left in devastation by the loss of two loved ones. I needed an outlet and a break! I was notified that I was able to be a part of SYEP Summer Bridge. Although it was challenging because I had to discipline myself to do the work virtually, I am so grateful I did it. This Summer Bridge experience has given me knowledge and the skills necessary to be successful as I prepare  for college and beyond.”'
-
-      },
-      {
-        title: "Henry Street Settlement",
-        image: "Oscar Pavon_NYC",
-        copy: 'Oscar is a first-generation immigrant from Honduras, who has lived in the United States for seven years. He is studying communications at CUNY Borough of Manhattan Community College and aims to transfer to a four-year institution to pursue a career in journalism. Oscar was concerned about finding a summer job in the midst of Covid, but “With a little bit of luck, I managed to join the SYEP as it was revived by the city,” he says. Oscar also found a job at Chipotle a few blocks from home. A highlight was when a national health care organization, TrialSpark, came to speak to Oscar’s group and asked them to find better ways for hospitals to communicate with their patients during the pandemic. They came up with an app for patients to schedule appointments and get information. “My role was the manager,” Oscar says. “It was cool to have everyone asking me questions; I set up the group chats. Everyone had a role, and I had to make sure the team was on track. The leadership experience was the biggest takeaway.” Back in college, Oscar is taking communications, writing, physics, and quantitative reasoning. “SYEP taught me how to become a better leader and sparked my career interests in a broader sense. I’m looking forward to applying these skills in my professional endeavors,” he says.'
-      },
-    ],
+    counties: ['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Richmond']
   },
   {
     region: "North",
     regionID: "05",
     regionURL: "north",
-    counties: ['Essex', 'Franklin', 'Hamilton', 'Jefferson', 'Lawrence', 'Lewis'],
-    content: [
-      {
-        title: "Clinton County Employment and Training Administration",
-        image: "Markel Mosley - Kathy Bishop",
-        copy: 'This summer through the Clinton County Employment and Training Administration youth were provided with traditional work experiences that involved hands-on work related activities in a variety of career fields. Thirty-eight youth were placed at twenty-three job site locations, where they were afforded the opportunity to enhance their job readiness skills. According to Christina Santor, youth participant who was placed at the YMCA - Camp Jericho "this program is wonderful and many SWEET Workers (SYEP) have later been hired on as staff.”  '
-      },
-    ],
-
+    counties: ['Essex', 'Franklin', 'Hamilton', 'Jefferson', 'Lawrence', 'Lewis']
   },
   {
     region: "Southern",
     regionID: "04",
     regionURL: "southern",
-    counties: ['Broome', 'Chenango', 'Chemung', 'Delaware', 'Schuyler', 'Steuben', 'Tiega', 'Tompkins'],
-    content: [
-      {
-        title: "Tompkins County Workforce Development Board",
-        image: "thumbnail_Dylan cropped - Shannon Alvord",
-        copy: '"My experience with SYEP changed my life in a huge way. Due to my disability I never thought I\'d be able to work again, let alone in art and design.SYEP gave me the opportunity to use my skills to reach the local community and improve on my skills as an artist and employee.The opportunities given to me by Tompkins Workforce have genuinely been the best thing to ever happen to me and I can\'t recommend them enough." -Dylan, age 20'
-      },
-      {
-        title: "Pro Action of Steuben & Yates, Inc.",
-        image: "Rashawn Sabins_Pro Action of Steuben & Yates_Southern Tier",
-        copy: "The success story of Rashawn Sabins demonstrates the strength and capacity of the Steuben County Summer Youth Employment program (SYE). His success came not only from two summers of working in the maintenance department at Pro Action of Steuben & Yates, Inc. and learning the soft and hard skills necessary to be a successful employee, but also from the required pre employment and financial literacy skills training required.  All aspects of this program were necessary for Rashawn to achieve the level of success that he now enjoys.   Rashawn was motivated to succeed when he began with SYE in the summer of 2019. However, he came with some of the barriers to success that are often associated with participants of the program. He did not have positive work role models at home, lived in generational poverty, had no transportation, struggled academically and did not possess any financial literacy skills, which resulted in him spending most of his paycheck soon after he received it. During the summer of 2019, Rashawn learned to work on a team, be a reliable employee (initially struggled with periodic days off), developed problem solving and decision-making skills and learned how to successfully communicate in a work environment.  Fast forward to the summer of 2020 during a worldwide pandemic where businesses in New York were open but operating under strict cleaning protocols. The manager of Pro Action’s maintenance department reached out to see if SYE was going to be funded and if Rashawn was interested in working. Due to Rashawn’s development as a worker in the previous summer, the manager felt he would be an asset to the department’s increased workload. Rashawn worked hard and assumed a leadership role within the maintenance department this summer. Daily, he executed the COVID-19 cleaning protocols to keep Pro Action’s three-story building within state compliance.  During his last week of SYE, a maintenance position was posted by the school district in Rashawn’s hometown which was within walking distance of his home. This opportunity would allow him to attend college during the day as his shift  did not begin until 3PM, in addition to providing him with a full benefits package. Rashawn is now a full-time college student at Corning Community College, is a full-time employee of Haverling Central School District and has moved into his own apartment with a roommate. He is happy to share his story and hopes it inspires all youth who hear it. "
-      },
-    ],
+    counties: ['Broome', 'Chenango', 'Chemung', 'Delaware', 'Schuyler', 'Steuben', 'Tiega', 'Tompkins']
   },
   {
     region: "Western",
     regionID: "01",
     regionURL: "western",
-    counties: ['Allegany', 'Cattaraugus', 'Chautuaque', 'Erie', 'Niagra'],
-    content: [
-      {
-        title: "YMCA of Greater Rochester",
-        image: "YMCA of Greater Rochester_Western New York",
-        copy: "This is the YMCA of Greater Rochester's second year of participating in the Summer Youth Employment Program through RochesterWorks! This year looked a lot different compared to our first year due to COVID-19. A normal program year we would be teaching the youth to implement enrichments within our Power Scholars Academy Program at the YMCA of Greater Rochester. Our summer program with youth was a OCFS licensed program and due to  COVID-19 we didn't allow the program participants to be in classrooms with youth due to safety and licensing concerns. However as an organization we pivoted from doing our program in person but into a program year that allowed us to do our normal programming virtually and provide youth with financial Literacy, job readiness training, and most importantly teaching youth how to implement enrichment programming with young people within a child care setting. We taught the youth how to write STEM and Art lesson plans based on the YMCA 9-Core component model that the YMCA follows. Participants were able to see professional lesson plans and were able to write their own lesson plans within a small group. They gained necessary skills to be able to hopefully get into a career in youth development and implement successful programming. <br> As an organization we are extremely proud that we were able to pivot in such a different way than the year before.Given the circumstances of what was going on throughout the world with COVID - 19 and social injustice issues we were able to successfully complete a program that gave the youth a voice and gave the youth opportunities to grow within themselves.Our success has contributed to youth willing to take the chance on us to lead them and most importantly taking the chance within themselves to try new things or something much different than they have done in the past.I would say all the youth participants were the champions of this program and their willingness to adapt to our world/ program is our success story."
-      },
-      {
-        title: "WIB Inc dba Chautauqua Works",
-        image: "WIB Inc dba Chautauqua Works",
-        copy: "At WIB Inc dba Chautauqua Works every youth participates in a two hour orientation that contains an educational component including logistics of the program, workplace behavior, workplace safety, sexual harassment prevention, COVID-19 health and safety requirements, and financial literacy.  During the program, youth have the opportunity to participate in additional career based educational activities including a career word search activity and a testimonial of their experience in the program.  At the conclusion of the program, youth will complete a resume during a three hour wrap-up session which also includes a workshop on completing a job application and work readiness skills. An additional educational component for 14-15 year olds was developed this year.  It consisted of two 3 hour sessions per week at the Chautauqua Works Jamestown office.  In addition to those sessions, youth were offered activities to complete that provided additional paid employment hours.  Caleb, a young adult participant who worked at  Michael's AJ’s Texas Hots, shares that his favorite part of his experience thi summer was the flexibility he was granted from his worksite and the support he received from the program. Caleb looks forward to pursuing a career in Law Enforcement or Psychology."
-      },
-    ],
+    counties: ['Allegany', 'Cattaraugus', 'Chautuaque', 'Erie', 'Niagra']
   },
 ]

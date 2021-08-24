@@ -1,14 +1,12 @@
 .motto__banner {
-  background-color: var(--logo-orange);
+  background-color: white;
   width: 100vw;
   display: flex;
   justify-content: center;
+  padding-bottom: 1.15rem;
 }
 
 .motto__text {
-  position: relative;
-  z-index: 2;
-  top: -15px;
   max-width: 60%;
   text-align: left;
   font-size: 3.5rem;
@@ -16,12 +14,14 @@
   text-transform: uppercase;
   font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
   color: var(--logo-navy);
+  z-index: 2;
+  position: relative;
 }
 
 .motto__bg {
   height: 33px;
   width: 280px;
-  background-color: white;
+  background-color: var(--logo-orange);
   position: relative;
   top: -1.3rem;
   left: 14%;
