@@ -8,7 +8,7 @@
 .map__regionNames {
   align-self: center;
   justify-self: flex-start;
-  background-color: var(--sidebar-orange);
+  background-color: var(--logo-navy);
   /* flex: 0.5; */
   height: 100%;
   width: 100%;
@@ -74,7 +74,7 @@
   height: 100%;
 }
 .map__regionNames div {
-  background-color: var(--sidebar-orange);
+  background-color: var(--banner-color-accent);
   color: white;
   /* overflow-y: hidden; */
   max-width: 100%;
@@ -93,7 +93,6 @@
   font-size: 1.8rem;
   margin: 0px;
   max-width: 100%;
-  opacity: .8;
 }
 .MuiCollapse-wrapper {
   margin: 0;

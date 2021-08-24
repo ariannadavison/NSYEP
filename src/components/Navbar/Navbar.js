@@ -14,7 +14,7 @@ const Navbar = (props) => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div className="navbar container">
+    <div className="navbar">
       <Nav className="navbar__items" tabs>
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>

@@ -6,11 +6,16 @@
 
 .why__picture {
   max-width: 300px;
+  flex-basis: 300px;
   margin: 0 1rem;
   object-fit: contain;
 }
 
-.why__header {
+.why__text {
+  flex: 1;
+}
+
+.why__text h2 {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -30,19 +35,6 @@
   left: 45px;
 }
 
-@media (max-width: 767px) {
-  .why__picture {
-    max-width: 200px;
-  }
-
-  .why__header {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .why__header-bg {
-    height: 22px;
-    width: 175px;
-    top: -22px;
-  }
+.why__text p {
+  margin-top: 1rem;
 }

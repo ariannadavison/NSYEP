@@ -5,11 +5,9 @@ import Home from "./components/Home";
 import Region from "./components/Region";
 import Footer from "./components/Footer/Footer";
 //HEAD
-import AboutUS from './components/About/AboutUs'
 import { Redirect } from "react-router";
 import { regions } from './data/Regions'
-import Error404 from './components/Error/Error404'
-import NoContent from "./components/Error/NoContent";
+import Error404 from './components/Error404'
 // import IndividualStories from "./components/IndividualStories/IndividualStories";
 import Header from "./components/Header/Header";
 
@@ -38,7 +36,6 @@ function App(props) {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path='/regionalmap' component={RegionalMapV2} />
-          <Route path='/about-us' component={AboutUS} />
 
           {/* <Route path="/:regionName/:storyName" component={IndividualStories} /> */}
           <Route path="/:regionName" component={Region}>
