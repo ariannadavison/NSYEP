@@ -5,7 +5,6 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import { regions } from '../../data/Regions';
 import './navbar.css';
 
 const Navbar = (props) => {
