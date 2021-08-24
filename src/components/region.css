@@ -40,15 +40,18 @@ video.region__image {
   margin-left: 1rem;
   color: white;
   justify-content: space-between;
+  scrollbar-color:  #8b5509a4 var(--sidebar-orange);
+  /* scrollbar-width: thin; */
+  /* scroll-margin-block-start: 20px; */
 
   text-align: justify;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   overflow-y: scroll;
 }
 div ::-webkit-scrollbar {
-  background-color: var(--sidebar-orange);
-  margin: 20px;
-  border-spacing: 20px;
+  background-color: #8b5509a4 var(--sidebar-orange);
+  /* margin: 20px; */
+  /* border-spacing: 20px; */
 
   /* width: 10px; */
 

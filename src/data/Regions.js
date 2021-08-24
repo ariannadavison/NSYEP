@@ -86,8 +86,28 @@ export const regions = [
     region: "Hudson Valley",
     regionID: "08",
     regionURL: "hudson-valley",
-    counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester']
+    counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester'],
+    content: [
+      {
+        title: "Dutchess County Workforce Investment Board",
+        image: "DCWIB Success Story Photo 2020 SYEP - Poughkeepsie Farm Project - Meredith Madden",
+        copy: "In partnership with the Dutchess County Workforce Investment Board, Poughkeepsie Farm Project was able to provide a ten-week paid summer internship for six Poughkeepsie youth.  The youth crew was involved in every aspect of growing, harvesting, and distributing produce in the community - working both in the farm fields and our educational gardens. In addition to this hands-on training, the youth also gained knowledge about food access in their own community as they acted as youth ambassadors during community harvest events and free produce distributions. These programs highlighted the links between food justice and racial justice as youth explored the historical roots of racial injustices embedded in our nation’s food system.  The final project for the internship was creating an Anti-Racist Timeline and inviting all in the PFP community to consider how they are and can work towards being anti-racist advocates in their daily lives.  Over the course of the summer, the youth expressed the value of not only having a summer job, but also having a job through the year for both supporting their household finances and because of the positive relationships they develop with the adult staff members who serve as supervisors and mentors. This time of COVID also highlighted the importance of access to healthy food for the youth, who were able to take home a weekly share of the produce they helped to grow. Two of our summer interns, who also worked with us last summer and had previously volunteered at Poughkeepsie Farm Project, truly stood out and demonstrated their dedication to the community and to their own learning. We are thrilled that they are able to extend their internship through the fall season and possibly beyond. Young people like Tania and Rakim are our future and we look to them to lead the way toward a just and sustainable food system. "
+      },
+
+        {
+          title: "Ulster County Office of Employment & Training",
+          image: "Ulster County",
+          copy: "During the summer of 2020 the Ulster County Office of Employment & Training created several innovative partnerships that created unique internships along with educational and work readiness/workforce development opportunities for the young adults of Ulster County.  Due to the lack of worksites for SYEP this year because of the pandemic, we teamed up with Albany Can Code to provide an online Front- End Web Development course.  This course was taught virtually and met for 4 weeks @ 20 hours per week with 5 additional hours of self-study each week.  The SYEP youth learned the basics of HTML & CSS: foundational skills in the world of computer programming; received a certificate of completion from the training provider; and an additional $800 incentive for those who successfully completed the online course and built their own website.  It is important to note that the youth in this web development class ranged from 14 to 17 years old and were able to create their own website after four weeks of class! Here’s a website created by Augustin, an SYEP participant who shares his interest in Psychology and how going to college and majoring in Psychology will help him understand how to help others. Quite impressive for the young adults but also for instructors at Albany Can Code for making difficult material seem easy!!!  "
+      },
+      {
+        title: "Greenburgh Department of Community Resources",
+        image: "TDYCC",
+        copy: "Summer of 2020 was very different from our Summer Camp experiences in the years past, as we were faced with many obstacles as a result of COVID-19.  However, we not only overcame these obstacles, but had an extremely fun, exciting and safe Summer camp experience, for both the Staff and campers. We implemented new and exciting Programs to the campers, such as Gardening and Extreme Crafting, and were able to get to know our campers even more, since the groups were kept small.Instead of our typical field trips, we brought an outdoor water experience to the campers, which they LOVED Summer 2020 has shown us just how creative we all are, and proven that although we may be presented with adversities, we will overcome them by working together."
+      },
+      ],
+    
   },
+
   {
     region: "Long Island",
     regionID: "10",

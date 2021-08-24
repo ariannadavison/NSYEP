@@ -1,0 +1,148 @@
+.about {
+  display: flex;
+  flex-flow: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 10px;
+}
+
+.about__picture {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 1rem;
+  object-fit: cover;
+}
+
+.about__header {
+  text-transform: uppercase;
+  color: var(--logo-navy);
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Barlow Semi Condensed", Montserrat, Arial, sans-serif;
+}
+
+.about__header-bg {
+  height: 30px;
+  width: 250px;
+  position: relative;
+  z-index: -1;
+  margin: -1rem;
+  background: var(--logo-orange);
+  top: -20px;
+  left: 45px;
+  margin-bottom: 2px;
+}
+.about__separator {
+  border-bottom: solid var(--logo-navy) 0.5pt;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  align-self: center;
+}
+.about__section {
+  width: 100%;
+}
+/* @media (max-width: 767px) {
+  .about__picture {
+    max-width: 200px;
+  } */
+
+/* .about__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  } */
+
+/* .about__header-bg {
+  height: 22px;
+  width: 175px;
+  top: -22px;
+} */
+.about__subHead {
+  width: 30%;
+}
+.about__subHead li {
+  margin-top: 4px;
+}
+.about__subHeaders {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 0.5rem; */
+  width: 100%;
+}
+.about__subHeader__text {
+  color: var(--logo-navy);
+  font-weight: bold;
+  width: 100%;
+  font-size: 1rem;
+
+  /* font-style: italic; */
+}
+.about__text {
+  /* font-style: italic; */
+  color: black;
+  /* border-style: solid; */
+  font-weight: normal;
+  font-size: 16px;
+}
+/* Staff */
+.staffImage {
+  overflow: hidden;
+  align-items: center;
+  /* margin: 20px; */
+  margin-bottom: 10px;
+  display: flex;
+  height: 240px;
+  width: 240px;
+  /* border-style: solid; */
+  align-items: flex-start;
+  justify-content: center;
+  /* overflow-y: hidden; */
+}
+
+.staffImage img {
+  object-fit: cover;
+
+  overflow: hidden;
+  /* border-style: solid; */
+}
+.staffMember {
+  padding: 1rem;
+  width: 33%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.staffContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.staffName {
+  font-size: 16pt;
+}
+
+/* page navigation bar  */
+
+#pageNavigation {
+  /* align-self: center; */
+  text-align: center;
+  /* border: solid black; */
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+#pageNavigation a {
+  background-color: var(--sidebar-orange);
+  color: white;
+}
+#pageNavigation span {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: white outset 0.5pt;
+  background-color: var(--sidebar-orange);
+}
