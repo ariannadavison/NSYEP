@@ -10,7 +10,7 @@
   object-fit: contain;
 }
 
-.why__header {
+.why__header-text {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -36,7 +36,7 @@
     max-width: 200px;
   }
 
-  .why__header {
+  .why__header-text {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -52,5 +52,9 @@
   .why {
     display: flex;
     flex-direction: column;
+  }
+
+  .why__header {
+    order: -1;
   }
 }

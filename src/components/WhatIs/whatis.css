@@ -9,7 +9,7 @@
   object-fit: cover;
 }
 
-.what__header {
+.what__header-text {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -35,7 +35,7 @@
     max-width: 200px;
   }
 
-  .what__header {
+  .what__header-text {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -50,5 +50,9 @@
 @media (max-width: 576px) {
   .what {
     flex-direction: column;
+  }
+
+  .what__header {
+    order: -1;
   }
 }
