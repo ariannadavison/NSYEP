@@ -1,7 +1,11 @@
 .logoHero__container {
-  /* background: var(--logo-green); */
-  width: 100%;
+  background: var(--logo-orange);
+  max-width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.logoHero__container img {
+  max-width: 100vw;
 }
 

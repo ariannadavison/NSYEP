@@ -4,7 +4,7 @@
   position: relative;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", Montserrat, Arial, sans-serif;
 }
 
 .impact__header-bg {
@@ -24,9 +24,11 @@
 }
 
 .impact__inner {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .impact__part {
@@ -42,4 +44,26 @@
 
 .impact__slash {
   max-height: 200px;
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  .impact__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .impact__header-bg {
+    height: 22px;
+    width: 455px;
+    top: -22px;
+  }
+
+  .impact__img {
+    max-height: 125px;
+  }
+
+  .impact__slash {
+    max-height: 150px;
+  }
 }
