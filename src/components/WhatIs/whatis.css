@@ -21,6 +21,7 @@
 .what__header-bg {
   height: 30px;
   width: 250px;
+  max-width: 100vw;
   position: relative;
   z-index: -1;
   margin: -1rem;
@@ -43,5 +44,11 @@
     height: 22px;
     width: 175px;
     top: -22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .what {
+    flex-direction: column;
   }
 }

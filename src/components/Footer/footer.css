@@ -53,3 +53,9 @@
 .footer__social .instagram {
   background-color: #833AB4;
 }
+
+@media (max-width: 576px) {
+  .footer__columns {
+    flex-direction: column;
+  }
+}

@@ -10,6 +10,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import MottoBanner from "../MottoBanner/MottoBanner"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 const headersOptions = [
   {
     label: "Home",
@@ -100,14 +102,13 @@ const Header = () => {
             onClick: handleMenuOpen,
           }}
         >
-          Menu Icon
+          <FontAwesomeIcon icon={faBars} size="lg" />
         </IconButton>
         <Drawer
           {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen }}
         >
           <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-        <div> A Logo </div>
       </Toolbar>
     );
   };
