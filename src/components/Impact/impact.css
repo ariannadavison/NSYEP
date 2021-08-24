@@ -28,6 +28,7 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .impact__part {
@@ -43,6 +44,7 @@
 
 .impact__slash {
   max-height: 200px;
+  align-self: center;
 }
 
 @media (max-width: 767px) {

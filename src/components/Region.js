@@ -1,9 +1,10 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-import { NoContent } from "./Error/NoContent";
+
 import { makeStyles, Typography } from "@material-ui/core";
 import { Redirect, Route } from "react-router";
-import Error404 from "./Error404";
+import NoContent from "./Error/NoContent";
+import Error404 from "./Error/Error404";
 import "./region.css";
 import { Autocomplete } from "@material-ui/lab";
 export default function Region(props) {
@@ -49,7 +50,7 @@ export default function Region(props) {
         require.context(
           `./Images/HudsonValley`,
           false,
-          /\.(png|jpe?g|svg|mp4)$/
+          /\.(png|jpe?g|svg|mp4|HEIC)$/
         )
       );
       break;
@@ -70,7 +71,12 @@ export default function Region(props) {
       break;
     case "Western":
       images = importImages(
-        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4)$/)
+        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4|HEIC)$/)
+      );
+      break;
+    case "Mohawk Valley":
+      images = importImages(
+        require.context(`./Images/MohawkValley`, false, /\.(png|jpe?g|svg|mp4)$/)
       );
       break;
     default:
@@ -101,7 +107,7 @@ export default function Region(props) {
       textAlign: "auto",
     },
   });
-
+  console.log(content)
   const styles = useStyles();
   if (region.length == 0) {
     return (
@@ -110,7 +116,8 @@ export default function Region(props) {
         <Error404 />
       </div>
     );
-  } else if (!content) {
+  }
+  else if (!content[0].image) {
     return (
       <div>
         <NoContent />
@@ -149,9 +156,9 @@ export default function Region(props) {
                   <video
                     src={image}
                     controls
-                    muted
+                    // muted
                     className="region__image"
-                    autoPlay
+                  // autoPlay
                   ></video>
                 ) : (
                   // </iframe>
