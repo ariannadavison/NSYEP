@@ -4,14 +4,14 @@ import "./mottoBanner.css";
 const MottoBanner = () => {
   return (
     <div className="motto__banner">
-      <p className="motto__text">
+      <div className="motto__text mb-3">
         <span>Summer Youth</span><br />
         <div className="motto__bg"></div>
         <span>Employment</span><br />
         <div className="motto__bg"></div>
         <span>Matters</span>
         <div className="motto__bg"></div>
-      </p>
+      </div>
       <div className="banner__decorativeLine"></div>
     </div>
   );
