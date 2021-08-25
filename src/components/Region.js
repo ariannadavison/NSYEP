@@ -32,17 +32,17 @@ export default function Region(props) {
   switch (name) {
     case "Capital":
       images = importImages(
-        require.context(`./Images/Capital`, false, /\.(png|jpe?g|svg)$/)
+        require.context(`./Images/Capital`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "Central":
       images = importImages(
-        require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
+        require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "Finger Lakes":
       images = importImages(
-        require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/)
+        require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "Hudson Valley":
@@ -50,38 +50,44 @@ export default function Region(props) {
         require.context(
           `./Images/HudsonValley`,
           false,
-          /\.(png|jpe?g|svg|mp4|HEIC)$/
+          /\.(png|jpe?g|svg|mp4|HEIC)$/i
         )
       );
       break;
     case "Long Island":
       images = importImages(
-        require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/)
+        require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "Southern":
       images = importImages(
-        require.context(`./Images/Southern`, false, /\.(png|jpe?g|svg)$/)
+        require.context(`./Images/Southern`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "New York City":
       images = importImages(
-        require.context(`./Images/NewYorkCity`, false, /\.(png|jpe?g|svg|mp4)$/)
+        require.context(`./Images/NewYorkCity`, false, /\.(png|jpe?g|svg|mp4)$/i)
       );
       break;
     case "Western":
       images = importImages(
-        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4|HEIC)$/)
+        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4|HEIC)$/i)
       );
       break;
     case "Mohawk Valley":
       images = importImages(
-        require.context(`./Images/MohawkValley`, false, /\.(png|jpe?g|svg|mp4)$/)
+        require.context(`./Images/MohawkValley`, false, /\.(png|jpe?g|svg|mp4)$/i)
+      );
+      break;
+    case "North":
+      images = importImages(
+        require.context(`./Images/North`, false, /\.(png|jpe?g|svg|mp4)$/i)
       );
       break;
     default:
       console.log("it's not doing what you think it's doing");
   }
+  console.log(images)
   let file;
   const getRightImage = (imageName) => {
     //@imageName is gunna be c.image which will be only the file name without extensions
@@ -107,23 +113,25 @@ export default function Region(props) {
       textAlign: "auto",
     },
   });
-  console.log(content)
+
   const styles = useStyles();
   if (region.length == 0) {
     return (
       <div>
-        {/* {<Redirect to="/Error404" />} */}
+
         <Error404 />
       </div>
     );
   }
   else if (!content[0].image) {
+
     return (
       <div>
         <NoContent />
       </div>
     );
   } else {
+    console.log(!content[0].image)
     return (
       <div>
         <RegionBanner region={name} />

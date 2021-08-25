@@ -20,7 +20,7 @@ const RegionalMapV2 = () => {
                 <div className="map__regionNames">
                     {regions.map((region) => {
                         return (
-                            <Accordion className='map__regionNames'>
+                            <Accordion className='map__regionNames__dropdown'>
                                 <AccordionSummary expandIcon={'\u25be'} className="map__regionName">
                                     <Link to={"/" + region.regionURL} id="map__regionNameLinks">
                                         <b>{region.region}</b>
