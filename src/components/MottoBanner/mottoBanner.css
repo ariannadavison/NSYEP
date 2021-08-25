@@ -9,6 +9,7 @@
   position: relative;
   z-index: 2;
   max-width: 60%;
+  /* top: -15px; */
   text-align: left;
   font-size: 3.5rem;
   font-weight: 600;
