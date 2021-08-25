@@ -9,7 +9,7 @@
 
 .impact__header-bg {
   height: 30px;
-  width: 550px;
+  max-width: 550px;
   position: relative;
   z-index: -1;
   margin: -1rem;
@@ -43,6 +43,7 @@
 }
 
 .impact__slash {
+  margin: auto 2rem;
   max-height: 200px;
   align-self: center;
 }
@@ -55,7 +56,7 @@
 
   .impact__header-bg {
     height: 22px;
-    width: 455px;
+    width: calc(100% - 22px);
     top: -22px;
   }
 
@@ -65,5 +66,24 @@
 
   .impact__slash {
     max-height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact__header-bg {
+    width: calc(100% - 22px);
+    max-width: 100%;
+  }
+
+  .impact__slash {
+    display: none;
+  }
+
+  .impact__inner {
+    flex-direction: column;
+  }
+
+  .impact__img {
+    max-width: 100%;
   }
 }
