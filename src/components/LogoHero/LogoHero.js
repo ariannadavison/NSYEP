@@ -6,7 +6,7 @@ import banner from "./Banner.png";
 const LogoHero = () => {
   return (
     <div className="logoHero__container">
-      <img src={banner} className="mb-2"/>
+      <img src={banner} />
     </div>
   );
 };
