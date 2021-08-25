@@ -20,18 +20,18 @@
 
 .impact__img {
   max-height: 200px;
-  margin: 0 1rem;
+  max-width: 100%;
+  margin: 1rem;
 }
 
 .impact__inner {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .impact__part {
+  padding: 1rem;
   font-weight: bold;
   max-width: 300px;
   max-height: 300px;
