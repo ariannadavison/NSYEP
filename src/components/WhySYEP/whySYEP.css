@@ -1,12 +1,10 @@
 .why {
-  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .why__picture {
   max-width: 300px;
-  margin: 0 1rem;
   object-fit: contain;
 }
 
@@ -48,13 +46,8 @@
   }
 }
 
-@media (max-width: 576px) {
-  .why {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .why__header {
-    order: -1;
+@media (min-width: 425px) {
+  .why__picture {
+    float: right;
   }
 }
