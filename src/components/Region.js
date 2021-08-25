@@ -113,12 +113,12 @@ export default function Region(props) {
       textAlign: "auto",
     },
   });
-  console.log(content[0].image)
+
   const styles = useStyles();
   if (region.length == 0) {
     return (
       <div>
-        {/* {<Redirect to="/Error404" />} */}
+
         <Error404 />
       </div>
     );
