@@ -1,11 +1,14 @@
 .logoHero__container {
-  background: var(--logo-orange);
+  background: var(--logo-navy);
   max-width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
+  align-items: middle;
 }
 
 .logoHero__container img {
   max-width: 100vw;
+  max-height: 325px;
 }
 
