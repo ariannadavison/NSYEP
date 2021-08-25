@@ -1,16 +1,14 @@
 .why {
-  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .why__picture {
   max-width: 300px;
-  margin: 0 1rem;
   object-fit: contain;
 }
 
-.why__header {
+.why__header-text {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -36,7 +34,7 @@
     max-width: 200px;
   }
 
-  .why__header {
+  .why__header-text {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -48,9 +46,8 @@
   }
 }
 
-@media (max-width: 576px) {
-  .why {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 425px) {
+  .why__picture {
+    float: right;
   }
 }
