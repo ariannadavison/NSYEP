@@ -8,8 +8,8 @@
 .motto__text {
   position: relative;
   z-index: 2;
-  top: -15px;
   max-width: 60%;
+  /* top: -15px; */
   text-align: left;
   font-size: 3.5rem;
   font-weight: 600;
@@ -31,4 +31,45 @@
 
 .motto__bg:nth-of-type(2) {
   left: 22%;
+}
+
+@media (max-width: 767px) {
+  .motto__text {
+    font-size: 3rem;
+  }
+
+  .motto__bg {
+    width: calc(100% - 15px);
+    height: 25px;
+    top: -1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .motto__text {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    white-space: nowrap;
+  }
+
+  .motto__bg {
+    width: calc(100% - 25px);
+    max-width: 100%;
+    height: 19px;
+    top: -0.6rem;
+    left: 17%;
+  }
+}
+
+@media (max-width: 290px) {
+  .motto__text {
+    font-size: 1.5rem;
+  }
+
+  .motto__bg {
+    height: 14px;
+    width: calc(100% - 16px);
+    top: -0.3rem;
+    left: 20%;
+  }
 }

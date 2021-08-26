@@ -4,7 +4,7 @@ export const regions = [
     region: "Capital",
     regionID: "07",
     regionURL: "capital",
-    counties: ['Albany', 'Clinton', 'Columbia', 'Greene', 'Rensselaer', 'Saratoga', 'Schedectady', 'Warren', 'Washington'],
+    counties: ['Albany', 'Columbia', 'Greene', 'Rensselaer', 'Saratoga', 'Schenectady', 'Warren', 'Washington'],
     content: [
       {
         title: "City of Albany Department of Recreation - Youth and Workforce Services",
@@ -41,7 +41,7 @@ export const regions = [
     region: "Central",
     regionID: "03",
     regionURL: "central",
-    counties: ['Cayuga', 'Certland', 'Madison', 'Onondega', 'Oswego'],
+    counties: ['Cayuga', 'Cortland', 'Madison', 'Onondaga', 'Oswego'],
     content: [
       {
         title: "Cayuga Cortland Workforce Development Board",
@@ -64,7 +64,7 @@ export const regions = [
     region: "Finger Lakes",
     regionID: "02",
     regionURL: "finger-lakes",
-    counties: ['Genesee', 'Livingston', 'Monroe', 'Ontario', 'Orleane', 'Seneca', 'Wayne', 'Wyoming', 'Yates'], content: [
+    counties: ['Genesee', 'Livingston', 'Monroe', 'Ontario', 'Orleans', 'Seneca', 'Wayne', 'Wyoming', 'Yates'], content: [
       {
         title: "Livingston County Workforce Development",
         image: "tainairis goodwill - Mary Guldenschuh",
@@ -151,7 +151,7 @@ export const regions = [
     region: "New York City",
     regionID: "09",
     regionURL: "new-york-city",
-    counties: ['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Richmond'],
+    counties: ['Bronx', 'Brooklyn (Kings)', 'Manhattan (New York)', 'Queens', 'Staten Island (Richmond)'],
     content: [
       {
         title: "United Activities Unlimited",
@@ -175,7 +175,7 @@ export const regions = [
     region: "North",
     regionID: "05",
     regionURL: "north",
-    counties: ['Essex', 'Franklin', 'Hamilton', 'Jefferson', 'Lawrence', 'Lewis'],
+    counties: ['Clinton', 'Essex', 'Franklin', 'Hamilton', 'Jefferson', 'Lewis', 'St. Lawrence'],
     content: [
       {
         title: "Clinton County Employment and Training Administration",
@@ -189,7 +189,7 @@ export const regions = [
     region: "Southern",
     regionID: "04",
     regionURL: "southern",
-    counties: ['Broome', 'Chenango', 'Chemung', 'Delaware', 'Schuyler', 'Steuben', 'Tiega', 'Tompkins'],
+    counties: ['Broome', 'Chenango', 'Chemung', 'Delaware', 'Schuyler', 'Steuben', 'Tioga', 'Tompkins'],
     content: [
       {
         title: "Tompkins County Workforce Development Board",
@@ -207,7 +207,7 @@ export const regions = [
     region: "Western",
     regionID: "01",
     regionURL: "western",
-    counties: ['Allegany', 'Cattaraugus', 'Chautuaque', 'Erie', 'Niagra'],
+    counties: ['Allegany', 'Cattaraugus', 'Chautauqua', 'Erie', 'Niagara'],
     content: [
       {
         title: "YMCA of Greater Rochester",

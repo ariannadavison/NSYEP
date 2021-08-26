@@ -1,16 +1,14 @@
 .why {
-  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .why__picture {
   max-width: 300px;
-  margin: 0 1rem;
   object-fit: contain;
 }
 
-.why__header {
+.why__header-text {
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -22,6 +20,7 @@
 .why__header-bg {
   height: 30px;
   width: 350px;
+  max-width: 100vw;
   position: relative;
   z-index: -1;
   margin: -1rem;
@@ -35,7 +34,7 @@
     max-width: 200px;
   }
 
-  .why__header {
+  .why__header-text {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -44,5 +43,11 @@
     height: 22px;
     width: 175px;
     top: -22px;
+  }
+}
+
+@media (min-width: 425px) {
+  .why__picture {
+    float: right;
   }
 }

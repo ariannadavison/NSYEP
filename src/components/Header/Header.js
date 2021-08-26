@@ -14,6 +14,10 @@ import Navbar from "../Navbar/Navbar";
 import MottoBanner from "../MottoBanner/MottoBanner"
 // import "../../variables.css";
 import { whileStatement } from "@babel/types";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fontawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 const headersOptions = [
   {
     label: "Home",
@@ -70,7 +74,7 @@ const Header = () => {
       backgroundColor: "var(--text-color-deco)",
       height: "100%",
       color: "white",
-      backgroundColor: "var(--text-color-deco)",
+
     },
 
     toolbar: {
@@ -144,9 +148,16 @@ const Header = () => {
             onClick: handleMenuOpen,
           }}
         >
-          <MenuIcon />
+          {/* <MenuIcon /> */}
+          <FontAwesomeIcon icon={faBars} size="lg" />
         </IconButton>
         {/* <div> A Logo </div> */}
+        {/* 
+        <Drawer
+          {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen }}
+        >
+          <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
+        </Drawer> */}
       </Toolbar>
     );
   };
