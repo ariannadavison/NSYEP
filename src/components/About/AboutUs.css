@@ -87,40 +87,42 @@
 }
 /* Staff */
 .staffImage {
-  /* overflow: hidden; */
-  align-items: center;
-  /* margin: 20px; */
+  align-items: flex-end;
+
   margin-bottom: 10px;
   display: flex;
   height: 100%;
   width: 100%;
 
   align-items: flex-start;
-  justify-content: center;
-  /* overflow-y: hidden; */
+  justify-content: last-baseline;
+  overflow-y: hidden;
+  max-width: 70%;
+  max-height: 70%;
+  box-shadow: 1px 1px 1px 1px rgb(121, 120, 120, 0.6);
 }
 
 .staffImage img {
   object-fit: cover;
   position: relative;
-  overflow: hidden;
+
   height: 100%;
+  object-position: top;
   width: 100%;
 }
 
 .staffMember {
   padding: 1rem;
-  max-width: 33%;
-  /* width: 33%; */
+  max-width: 30%;
+
   overflow: hidden;
-  /* position: relative; */
+
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: last baseline;
   align-items: center;
-  margin-bottom: 2rem;
-
-  max-height: 400px;
+  margin: 1rem;
+  /* margin-bottom: 2rem; */
 }
 @media screen and (max-width: 600px) {
   .staffMember {
@@ -137,7 +139,7 @@
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  font-size: 90%;
+  font-size: 100%;
 }
 
 /* page navigation bar  */
