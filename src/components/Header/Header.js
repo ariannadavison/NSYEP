@@ -6,20 +6,27 @@ import {
   MenuItem,
   Toolbar,
 } from "@material-ui/core";
+import MenuIcon from '@material-ui/icons/Menu';
+import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import MottoBanner from "../MottoBanner/MottoBanner"
+// import "../../variables.css";
+import { whileStatement } from "@babel/types";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fontawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const headersOptions = [
   {
     label: "Home",
     href: "/",
+
   },
   {
     label: "Find Your Region",
-    href: "#", //the href of the interactive map
+    href: "/regionalmap", //the href of the interactive map
   },
   {
     label: "Contact NSYEP Sites",
@@ -61,11 +68,24 @@ const Header = () => {
     },
     drawerContainer: {
       padding: "1rem",
+      // backgroundColor: "var(--logo-navy)",
+      height: "100%",
+      textDecoration: "none",
+      backgroundColor: "var(--text-color-deco)",
+      height: "100%",
+      color: "white",
+
     },
+
     toolbar: {
       display: "flex",
+
       justifyContent: "space-between",
     },
+
+
+
+
   }));
 
   const classes = useStyles();
@@ -73,16 +93,19 @@ const Header = () => {
   const getDrawerChoices = () => {
     return headersOptions.map(({ label, href }) => {
       return (
+
         <Link
           {...{
             to: href,
             color: "inherit",
-            style: { textDecoration: "none" },
+            style: { textDecoration: "none", color: "white", },
             key: label,
           }}
         >
-          <MenuItem>{label}</MenuItem>
-        </Link>
+          <MenuItem
+            {...{ style: { borderBottom: "white solid .5pt", width: "100%", margin: "10px", marginLeft: "0px" } }}>{label}</MenuItem>
+        </Link >
+
       );
     });
   };
@@ -91,24 +114,50 @@ const Header = () => {
     const handleMenuOpen = () => {
       setMenuOpen(!menuOpen);
     };
+
+
     return (
       <Toolbar>
+
+        <Drawer
+          {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen, }}
+        >
+          <div className={classes.drawerContainer}>
+            <IconButton
+              {...{
+
+                color: "inherit",
+                style: { color: "white", display: "flex", justifyContent: "flex-end", width: "100%", },
+                "aria-label": "menu",
+                "aria-haspopup": "true",
+                onClick: handleMenuOpen,
+              }}
+            >
+              <MenuOpenIcon {...{ style: { height: "40px", width: "20%", } }}></MenuOpenIcon>
+            </IconButton>
+            {getDrawerChoices()}
+          </div>
+        </Drawer>
         <IconButton
           {...{
             edge: "start",
             color: "inherit",
+
             "aria-label": "menu",
             "aria-haspopup": "true",
             onClick: handleMenuOpen,
           }}
         >
+          {/* <MenuIcon /> */}
           <FontAwesomeIcon icon={faBars} size="lg" />
         </IconButton>
+        {/* <div> A Logo </div> */}
+        {/* 
         <Drawer
           {...{ anchor: "left", open: menuOpen, onClose: handleMenuOpen }}
         >
           <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
-        </Drawer>
+        </Drawer> */}
       </Toolbar>
     );
   };
