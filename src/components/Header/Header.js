@@ -6,18 +6,16 @@ import {
   MenuItem,
   Toolbar,
 } from "@material-ui/core";
-import MenuIcon from '@material-ui/icons/Menu';
-import MenuOpenIcon from '@material-ui/icons/MenuOpen';
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import MottoBanner from "../MottoBanner/MottoBanner"
-// import "../../variables.css";
+
 import { whileStatement } from "@babel/types";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars } from "@fontawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faAngleLeft, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const headersOptions = [
   {
     label: "Home",
@@ -133,7 +131,9 @@ const Header = () => {
                 onClick: handleMenuOpen,
               }}
             >
-              <MenuOpenIcon {...{ style: { height: "40px", width: "20%", } }}></MenuOpenIcon>
+              <FontAwesomeIcon icon={faChevronLeft} size="lg" />
+
+
             </IconButton>
             {getDrawerChoices()}
           </div>
