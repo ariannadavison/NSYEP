@@ -1,37 +1,8 @@
 
-
+import { staffMembers } from '../../data/About.js'
 const Staff = () => {
-    const staffMembers = [
-        {
-            name: "Megan Farry",
-            title: "",
-            image: "Megan Farry",
-        },
 
-        {
-            name: "Jenine Loche",
-            title: "",
-            image: "Jenine Headshot",
-        },
-
-        {
-            name: "Melinda Mack",
-            title: "",
-            image: "Melinda Mack",
-        },
-
-        {
-            name: "Evelyn Ortiz",
-            title: "",
-            image: "Evelyn Ortiz",
-        },
-
-        {
-            name: "Molly Tocin",
-            title: "",
-            image: "Molly Tocin",
-        },
-    ]
+    console.log(staffMembers)
     var length = staffMembers.length
     const importImages = (r) => r.keys().map(r);
     var images = importImages(require.context(`./StaffImages/`, false, /\.(png|jpe?g|svg)$/))
@@ -56,7 +27,7 @@ const Staff = () => {
 
                 {staffMembers.map((s, key) => {
                     var src = getImageFile(s.image)[0].default
-                    console.log()
+
                     return (
 
                         <div className="staffMember">

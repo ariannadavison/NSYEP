@@ -11,7 +11,6 @@
     display: flex;
     flex-flow: column;
     width: 100%;
-    border-style: solid;
     justify-content: center;
     align-items: center;
   }
@@ -70,7 +69,7 @@
   overflow-x: visible;
   position: relative;
   text-align: left;
-  /* margin-left: 1rem; */
+
   padding-left: 1.5rem;
   font-size: 80%;
 }
