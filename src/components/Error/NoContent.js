@@ -3,10 +3,11 @@ import './NoContent.css'
 const NoContent = (props) => {
     console.log(props.match)
     let name = props.match.params.regionName.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase())
-    console.log(name.match(/-*/))
+    var index = name.indexOf('-')
+    var formatName = name.replace(name[index + 1], name[index + 1].toUpperCase()).replace("-", " ")
     return (
         <div className='errorMessage'>
-            {name} Updates Coming Soon!
+            {formatName} Updates Coming Soon!
         </div>
     )
 }
