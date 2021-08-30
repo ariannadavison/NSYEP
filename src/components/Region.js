@@ -2,28 +2,23 @@ import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
 
 import { makeStyles, Typography } from "@material-ui/core";
-import { Redirect, Route } from "react-router";
+
 import NoContent from "./Error/NoContent";
 import Error404 from "./Error/Error404";
 import "./region.css";
-import { Autocomplete } from "@material-ui/lab";
+
 export default function Region(props) {
-  // console.log(props.match.params.regionName);
   let name = props.match.params.regionName;
   // the name comes through as the url, so we must name-ify it.
   name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
-  // console.log(name, "name");
+
   //gotta locate the right object that's holding the region name:
   let content = [];
   let region = regions.filter((r) => r.region === name);
   if (region.length > 0) {
     content = region[0].content;
   }
-
-  // console.log(content, "filtered region");
-
-  // console.log("Does name === Capital", name === "Capital");
 
   let images;
 
@@ -66,17 +61,29 @@ export default function Region(props) {
       break;
     case "New York City":
       images = importImages(
-        require.context(`./Images/NewYorkCity`, false, /\.(png|jpe?g|svg|mp4)$/i)
+        require.context(
+          `./Images/NewYorkCity`,
+          false,
+          /\.(png|jpe?g|svg|mp4)$/i
+        )
       );
       break;
     case "Western":
       images = importImages(
-        require.context(`./Images/Western`, false, /\.(png|jpe?g|svg|mp4|HEIC)$/i)
+        require.context(
+          `./Images/Western`,
+          false,
+          /\.(png|jpe?g|svg|mp4|HEIC)$/i
+        )
       );
       break;
     case "Mohawk Valley":
       images = importImages(
-        require.context(`./Images/MohawkValley`, false, /\.(png|jpe?g|svg|mp4)$/i)
+        require.context(
+          `./Images/MohawkValley`,
+          false,
+          /\.(png|jpe?g|svg|mp4)$/i
+        )
       );
       break;
     case "North":
@@ -87,7 +94,7 @@ export default function Region(props) {
     default:
       console.log("it's not doing what you think it's doing");
   }
-  console.log(images)
+
   let file;
   const getRightImage = (imageName) => {
     //@imageName is gunna be c.image which will be only the file name without extensions
@@ -115,23 +122,20 @@ export default function Region(props) {
   });
 
   const styles = useStyles();
-  if (region.length == 0) {
+  if (region.length === 0) {
     return (
       <div>
-
         <Error404 />
       </div>
     );
-  }
-  else if (!content[0].image) {
-
+  } else if (!content[0].image) {
     return (
       <div>
         <NoContent />
       </div>
     );
   } else {
-    console.log(!content[0].image)
+
     return (
       <div>
         <RegionBanner region={name} />
@@ -149,7 +153,7 @@ export default function Region(props) {
               );
             };
 
-            console.log("key", key % 2 === 0);
+
             return (
               <div
                 key={key}
@@ -159,21 +163,18 @@ export default function Region(props) {
                     : "region__copyContainer keepRight"
                 }
               >
-                {image.match("mp4") ? (
-                  // <iframe classname='region__image'>
-                  <video
-                    src={image}
-                    controls
-                    // muted
-                    className="region__image"
-                  // autoPlay
-                  ></video>
-                ) : (
-                  // </iframe>
-                  <img src={image ? image : null} className="region__image" />
-                )}
+                <div className="region__imageContainer">
+                  {image.match("mp4") ? (
+                    <video
+                      src={image}
+                      controls
+                      className="region__image"
+                    ></video>
+                  ) : (
+                    <img src={image ? image : null} className="region__image" />
+                  )}
+                </div>
 
-                {/* <img src={image ? image : null} className="region__image" /> */}
                 <div
                   className={
                     key % 2 === 0
