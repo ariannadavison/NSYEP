@@ -42,20 +42,40 @@
   background-color: #1DA1F2;
 }
 
+.footer__social .twitter:hover {
+  background-color: #28aafa;
+}
+
 .footer__social .linkedin {
   background-color: #0e76a8;
+}
+
+.footer__social .linkedin:hover {
+  background-color: #1280b3;
 }
 
 .footer__social .facebook {
   background-color: #3b5998;
 }
 
+.footer__social .facebook:hover {
+  background-color: #4364ab;
+}
+
 .footer__social .instagram {
   background-color: #833AB4;
+}
+
+.footer__social .instagram:hover {
+  background-color: #9041c4;
 }
 
 @media (max-width: 576px) {
   .footer__columns {
     flex-direction: column;
   }
+}
+
+.footer__social a {
+  color: inherit;
 }

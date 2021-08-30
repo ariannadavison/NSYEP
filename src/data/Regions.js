@@ -33,7 +33,9 @@ export const regions = [
       {
         title: "Warren County Employment & Training",
         image: "John",
-        copy: "Requesting access from evelyn",
+        copy: `Warren County's Summer Youth Employment Program concluded another successful season, culminating in a virtual awards ceremony on August 28, 2020. Due to the pandemic, this year's program faced new challenges including a late start date. Worksites had to have safety plans in place and the work provided to the participating youth had to be primarily outdoors and able to allow for proper social distancing. The group of young participants were exceptional workers who rose to the challenges in order to flourish in their roles. Duties performed at participating worksites include preparing and serving lunch through Operation Food Chain's summer lunch program; staining wood planks at Square Nail Rustics; feeding and caring for animals at Blackberry Hill Farm; and outdoor maintenance at The Fort William Henry, The Georgian Resort, Cornell Cooperative Extension, Warrensburg Parks and Recreation, the Town of Johnsburg, and the Thurman Highway Department. Supervisors at each site were impressed with the positive attitudes and eagerness of their youth employees while the teens seemed to genuinely enjoy their experience as well. While the program typically concludes with an in-person celebratory picnic, this year's SYEP celebration went virtual. Youth participants joined in a Zoom presentation highlighting each worksite and showing photos and videos of the teens in action. Teen participants were honored with certificates recognizing distinct traits that they displayed throughout the program. The highest honor, "Employee of the Summer," was granted to John Briggss. John's supervisors at Warrensburg Parks and Recreation described him as being the most polite teenager and were beyond impressed with his ability to seamlessly work alongside his adult colleagues as well as his willingness to perform any task asked of him. 
+
+        `
       },
     ]
   },
