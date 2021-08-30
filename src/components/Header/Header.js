@@ -58,7 +58,7 @@ const Header = () => {
 
   const useStyles = makeStyles(() => ({
     header: {
-      backgroundColor: "var(--text-color-deco)",
+      backgroundColor: "var(--banner-color-accent)",
       paddingRight: "40px",
       // paddingLeft: "40px", //probably change this
       "@media (max-width: 900px)": {

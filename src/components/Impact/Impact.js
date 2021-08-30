@@ -6,7 +6,7 @@ import employer from './employer.png'
 
 const Impact = () => {
   return (
-    <div className="impact">
+    <div className="impact margins">
       <h2 className="impact__header">2020 Statewide TANF SYEP Impact</h2>
       <div className="impact__header-bg"></div>
 
