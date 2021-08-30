@@ -2,15 +2,10 @@ import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
 // import "./region.css";
 import { makeStyles, Typography } from "@material-ui/core";
-<<<<<<< HEAD
-import { Redirect, Route } from "react-router";
-import Error404 from "./Error404";
-=======
 
 import NoContent from "./Error/NoContent";
 import Error404 from "./Error/Error404";
 import "./region.css";
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 
 export default function Region(props) {
   let name = props.match.params.regionName;
@@ -28,14 +23,6 @@ export default function Region(props) {
     content = region[0].content;
   }
 
-<<<<<<< HEAD
-
-  // console.log(content, "filtered region");
-
-  // console.log("Does name === Capital", name === "Capital");
-
-=======
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   let images;
 
   const importImages = (r) => r.keys().map(r);
@@ -56,8 +43,6 @@ export default function Region(props) {
         require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
-<<<<<<< HEAD
-=======
     case "Hudson Valley":
       images = importImages(
         require.context(
@@ -67,24 +52,10 @@ export default function Region(props) {
         )
       );
       break;
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
     case "Long Island":
       images = importImages(
         require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/i)
       );
-<<<<<<< HEAD
-    //   break;
-    // case "Central":
-    //   images = importImages(
-    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-    //   );
-    //   break;
-    // case "Central":
-    //   images = importImages(
-    //     require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/)
-    //   );
-    //   break;
-=======
       break;
     case "Southern":
       images = importImages(
@@ -123,7 +94,6 @@ export default function Region(props) {
         require.context(`./Images/North`, false, /\.(png|jpe?g|svg|mp4)$/i)
       );
       break;
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
     default:
       console.log("it's not doing what you think it's doing");
   }
@@ -157,14 +127,6 @@ export default function Region(props) {
   if (region.length === 0) {
     return (
       <div>
-<<<<<<< HEAD
-        {<Redirect to="/Error404" />}
-        <Error404 />
-      </div>
-    )
-  }
-  else {
-=======
         <Error404 />
       </div>
     );
@@ -176,7 +138,6 @@ export default function Region(props) {
     );
   } else {
 
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
     return (
       <div>
         <RegionBanner region={name} />
@@ -186,13 +147,6 @@ export default function Region(props) {
 
           {content.map((c, key) => {
             let image = getRightImage(c.image);
-<<<<<<< HEAD
-            console.log("key", key % 2 === 0)
-            return (
-              <div key={key} className={key % 2 === 0 ? "region__copyContainer" : "region__copyContainer keepRight"}>
-                <img src={image ? image : null} className="region__image" />
-                <div className={key % 2 === 0 ? "region__copy" : "region__copy addMarginRight"}>
-=======
             let imgTag = () => {
               return image.match("mp4") ? (
                 <video src={image} className={styles.headers}></video>
@@ -230,7 +184,6 @@ export default function Region(props) {
                       : "region__copy addMarginRight"
                   }
                 >
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
                   <Typography variant="h6" className={styles.headers}>
                     {c.title}
                   </Typography>

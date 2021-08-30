@@ -25,10 +25,6 @@
 }
 
 .impact__inner {
-<<<<<<< HEAD
-  margin-top: 1rem;
-=======
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   display: flex;
   justify-content: space-between;
 }
@@ -48,9 +44,6 @@
 .impact__slash {
   margin: auto 2rem;
   max-height: 200px;
-<<<<<<< HEAD
-}
-=======
   align-self: center;
 }
 
@@ -93,4 +86,3 @@
     max-width: 100%;
   }
 }
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836

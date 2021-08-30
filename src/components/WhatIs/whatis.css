@@ -1,24 +1,11 @@
 .what__picture {
   max-width: 300px;
-<<<<<<< HEAD
-  max-height: 300px;
-  flex-basis: 300px;
-=======
   height: 300px;
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   margin: 0 1rem;
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-.what__text {
-  flex: 1;
-}
-
-.what__text h2 {
-=======
 .what__header-text {
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -37,8 +24,6 @@
   background: var(--logo-orange);
   top: -20px;
   left: 45px;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 767px) {
@@ -62,5 +47,4 @@
   .what__picture {
     float: left;
   }
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }

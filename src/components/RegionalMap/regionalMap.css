@@ -24,14 +24,8 @@
 }
 .map__regionNames {
   justify-self: flex-start;
-<<<<<<< HEAD
-  background-color: var(--logo-navy);
-  /* flex: 0.5; */
-  height: 100%;
-=======
   background-color: var(--sidebar-orange);
 
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   width: 100%;
   flex-basis: 20%;
   display: flex;
@@ -106,15 +100,12 @@
   font-size: 100%;
   margin: 0px;
   max-width: 100%;
-<<<<<<< HEAD
-=======
   opacity: 0.8;
 
   position: relative;
 }
 .MuiButtonBase-root {
   overflow: hidden;
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }
 .MuiCollapse-wrapper {
   margin: 0;

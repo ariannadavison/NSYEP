@@ -1,23 +1,15 @@
 .logoHero__container {
-<<<<<<< HEAD
-  /* background: var(--logo-green); */
-  width: 100%;
-=======
   background-image: linear-gradient(110deg, #213D88, #213D88 25%, #1DBBF1);
   /* background-color: var(--logo-orange); */
   max-width: 100vw;
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
   align-items: middle;
 }
 
-<<<<<<< HEAD
-=======
 .logoHero__container img {
   max-width: 100vw;
   max-height: 250px;
 }
 
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
