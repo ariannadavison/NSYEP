@@ -1,6 +1,5 @@
 .motto__banner {
   background-color: var(--logo-orange);
-
   display: flex;
   justify-content: center;
 }
