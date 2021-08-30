@@ -1,6 +1,5 @@
 .motto__banner {
-  background-color: white;
-  width: 100vw;
+  background-color: var(--logo-orange);
   display: flex;
   justify-content: center;
   padding-bottom: 1.15rem;
