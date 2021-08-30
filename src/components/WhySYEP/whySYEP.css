@@ -1,11 +1,11 @@
 .why {
-  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .why__picture {
   max-width: 300px;
+<<<<<<< HEAD
   flex-basis: 300px;
   margin: 0 1rem;
   object-fit: contain;
@@ -16,6 +16,12 @@
 }
 
 .why__text h2 {
+=======
+  object-fit: contain;
+}
+
+.why__header-text {
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -27,6 +33,7 @@
 .why__header-bg {
   height: 30px;
   width: 350px;
+  max-width: 100vw;
   position: relative;
   z-index: -1;
   margin: -1rem;
@@ -35,6 +42,30 @@
   left: 45px;
 }
 
+<<<<<<< HEAD
 .why__text p {
   margin-top: 1rem;
+=======
+@media (max-width: 767px) {
+  .why__picture {
+    max-width: 200px;
+  }
+
+  .why__header-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .why__header-bg {
+    height: 22px;
+    width: 175px;
+    top: -22px;
+  }
+}
+
+@media (min-width: 425px) {
+  .why__picture {
+    float: right;
+  }
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }

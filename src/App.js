@@ -5,13 +5,20 @@ import Home from "./components/Home";
 import Region from "./components/Region";
 import Footer from "./components/Footer/Footer";
 //HEAD
+<<<<<<< HEAD
 import { Redirect } from "react-router";
 import { regions } from './data/Regions'
 import Error404 from './components/Error404'
+=======
+
+import AboutUS from './components/About/AboutUs'
+
+
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 // import IndividualStories from "./components/IndividualStories/IndividualStories";
 import Header from "./components/Header/Header";
 
-import RegionalMapV2 from "./components/RegionalMap/RegionalMapV2"
+import RegionalMap from "./components/RegionalMap/RegionalMap"
 
 //*Structure for Region Page:
 // <logoHero />
@@ -35,7 +42,12 @@ function App(props) {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+<<<<<<< HEAD
           <Route path='/regionalmap' component={RegionalMapV2} />
+=======
+          <Route path='/regionalmap' component={RegionalMap} />
+          <Route path='/about-us' component={AboutUS} />
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 
           {/* <Route path="/:regionName/:storyName" component={IndividualStories} /> */}
           <Route path="/:regionName" component={Region}>

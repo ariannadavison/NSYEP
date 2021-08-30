@@ -6,10 +6,16 @@
   background-color: var(--logo-orange);
   padding: 1rem;
   border-radius: 10px;
+<<<<<<< HEAD
+=======
+  align-items: space;
+  justify-content: space-between;
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }
 
 .keepRight {
   flex-flow: row-reverse;
+<<<<<<< HEAD
 }
 
 .addMarginRight {
@@ -18,15 +24,68 @@
 
 .region__image {
   max-width: 50%;
+=======
+  margin-right: 1rem;
+}
+
+.region__image {
+  height: 100%;
+  object-fit: cover;
+
+  overflow: hidden;
+}
+video.region__image {
+  height: 100%;
+  object-fit: contain;
+}
+.region__imageContainer {
+  display: flex;
+  height: 100%;
+
+  width: fit-content;
+
+  max-width: 40%;
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   object-fit: cover;
 }
 
 .region__copy {
   font-size: clamp(0.01rem, 5vw, 1rem); 
   flex-flow: column wrap;
+<<<<<<< HEAD
   width: 100%;
   margin-left: .5rem;
   color: white;
 }
 
  
+=======
+
+  height: 100%;
+  position: relative;
+  margin-left: 1rem;
+  color: white;
+  justify-content: space-between;
+  scrollbar-color: #8b5509a4 var(--sidebar-orange);
+  text-align: left;
+  overflow-y: scroll;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+div ::-webkit-scrollbar {
+  background-color: #8b5509a4 var(--sidebar-orange);
+}
+
+div ::-webkit-scrollbar-thumb {
+  background-color: #8b5509a4;
+}
+.addMarginRight {
+  margin-right: 1rem;
+  margin-left: 0rem;
+}
+
+/* image container */
+.keepRight div {
+  justify-content: flex-end;
+}
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836

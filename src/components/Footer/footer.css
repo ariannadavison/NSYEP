@@ -1,5 +1,5 @@
 .footer {
-  background-image: linear-gradient(to bottom right, #1DBBF1 25%, #213D88);
+  background-image: linear-gradient(to bottom right, #1DBBF1 20%, #213D88);
   color: white;
   padding: 1rem 2rem;
 }
@@ -27,26 +27,55 @@
   display: flex;
 }
 
-.footer__social .social-placeholder {
+.footer__social .social-bg {
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  background-color: blue;
+  height: 38px;
+  width: 38px;
   margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .footer__social .twitter {
   background-color: #1DA1F2;
 }
 
+.footer__social .twitter:hover {
+  background-color: #28aafa;
+}
+
 .footer__social .linkedin {
   background-color: #0e76a8;
+}
+
+.footer__social .linkedin:hover {
+  background-color: #1280b3;
 }
 
 .footer__social .facebook {
   background-color: #3b5998;
 }
 
+.footer__social .facebook:hover {
+  background-color: #4364ab;
+}
+
 .footer__social .instagram {
-  background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  background-color: #833AB4;
+}
+
+.footer__social .instagram:hover {
+  background-color: #9041c4;
+}
+
+@media (max-width: 576px) {
+  .footer__columns {
+    flex-direction: column;
+  }
+}
+
+.footer__social a {
+  color: inherit;
 }

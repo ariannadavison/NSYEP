@@ -1,53 +1,65 @@
 .mappy {
-  display: grid;
-  grid-template-columns: 15% 85%;
+  display: flex;
+  grid-template-columns: 20% 85%;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
+@media screen and (max-width: 900px) {
+  .mappy {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .map__regionNames {
+    max-width: 90%;
+  }
+  #container {
+    display: none;
+  }
+}
 .map__regionNames {
-  align-self: center;
   justify-self: flex-start;
+<<<<<<< HEAD
   background-color: var(--logo-navy);
   /* flex: 0.5; */
   height: 100%;
+=======
+  background-color: var(--sidebar-orange);
+
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   width: 100%;
+  flex-basis: 20%;
   display: flex;
+
   flex-flow: column;
 
   justify-content: center;
   align-items: center;
 }
 
-.map__regionNames {
+.map__regionNames__dropdown {
   align-self: center;
+  height: 100%;
   justify-self: flex-start;
-  /* background-color: var(--banner-color-accent); */
-  color: white;
-  flex: 0.5;
 
+  color: white;
   width: 100%;
+
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-.map__regionNames {
-  display: flex;
-  flex-flow: span;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  list-style: none;
-
-  height: 100%;
-  color: white;
-  /* background-color: var(--banner-color-accent); */
 }
 
 .map__regionName {
   font-size: 1.1rem;
   width: 100%;
-  /* background-color: var(--banner-color-accent); */
+
   margin-bottom: 0;
   max-width: 100%;
   background-color: none;
@@ -55,15 +67,20 @@
 
 #map__regionNameLinks {
   color: white;
-  max-width: 100%;
+  width: 100%;
   text-decoration: underline 1pt;
   text-decoration: none;
   margin-bottom: 0;
   width: 100%;
-  max-width: 100%;
+  overflow-x: visible;
+  position: relative;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 80%;
 }
 #map__regionNameLinks div {
-  margin: 0;
+  overflow-y: visible;
+  width: 100%;
 }
 #map__regionNameLinks:hover {
   text-decoration: underline 0.5pt;
@@ -76,26 +93,32 @@
 .map__regionNames div {
   background-color: var(--banner-color-accent);
   color: white;
-  /* overflow-y: hidden; */
+
   max-width: 100%;
-  margin: 0px;
-  /* width: 100%; */
 }
 .map__regionNames span {
-  /* background-color: var(--banner-color-accent); */
   color: white;
-  /* overflow-y: hidden; */
-  max-width: 100%;
+
   width: 100%;
 }
 .MuiIconButton-label {
   background-color: none;
-  font-size: 1.8rem;
+  font-size: 100%;
   margin: 0px;
   max-width: 100%;
+<<<<<<< HEAD
+=======
+  opacity: 0.8;
+
+  position: relative;
+}
+.MuiButtonBase-root {
+  overflow: hidden;
+>>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }
 .MuiCollapse-wrapper {
   margin: 0;
+
   width: 100%;
 }
 .MuiTouchRipple-root {
@@ -103,8 +126,11 @@
   margin: 0;
   background-color: none;
   max-width: 100%;
+  position: relative;
   width: 100%;
 }
 .MuiCollapse-root {
   width: 100%;
+  overflow: hidden;
+  padding-left: 1rem;
 }
