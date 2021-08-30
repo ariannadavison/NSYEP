@@ -1,6 +1,6 @@
 .motto__banner {
   background-color: var(--logo-orange);
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
 }
@@ -14,7 +14,7 @@
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", Montserrat, Arial, sans-serif;
   color: var(--logo-navy);
 }
 
