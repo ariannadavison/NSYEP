@@ -54,7 +54,7 @@
 
   .motto__bg {
     width: calc(100% - 25px);
-    max-width: 100%;
+    max-width: 100vw;
     height: 19px;
     top: -0.6rem;
     left: 17%;
