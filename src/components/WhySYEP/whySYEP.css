@@ -5,23 +5,10 @@
 
 .why__picture {
   max-width: 300px;
-<<<<<<< HEAD
-  flex-basis: 300px;
-  margin: 0 1rem;
-  object-fit: contain;
-}
-
-.why__text {
-  flex: 1;
-}
-
-.why__text h2 {
-=======
   object-fit: contain;
 }
 
 .why__header-text {
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
   text-transform: uppercase;
   color: var(--logo-navy);
   position: relative;
@@ -42,10 +29,6 @@
   left: 45px;
 }
 
-<<<<<<< HEAD
-.why__text p {
-  margin-top: 1rem;
-=======
 @media (max-width: 767px) {
   .why__picture {
     max-width: 200px;
@@ -67,5 +50,4 @@
   .why__picture {
     float: right;
   }
->>>>>>> eab4389a4dd394ae936fae86a7725f3f36682836
 }
