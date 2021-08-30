@@ -1,10 +1,10 @@
 import React from "react";
-import "./mapV2.css";
+import "./map.css";
 import "./mapToolTip.css";
 import "./mapInnerSvg.css";
 import { Link } from "react-router-dom";
 
-const MapV2 = () => {
+const Map = () => {
   return (
     <div className="svg-container" id="container">
       <svg
@@ -955,4 +955,4 @@ const MapV2 = () => {
   );
 };
 
-export default MapV2;
+export default Map;

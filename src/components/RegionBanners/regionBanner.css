@@ -19,7 +19,7 @@
 
 .regionBanner__rect {
   height: 55px;
-  width: 850px;
+  /* width: 850px; */
   background-color: var(--logo-orange);
   position: relative;
   top: 4rem;

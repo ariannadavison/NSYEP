@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+
 import {
   Nav,
   NavItem,
@@ -18,8 +18,8 @@ const Navbar = (props) => {
         <NavItem>
           <NavLink href="/" className="navbar__link">Home</NavLink>
         </NavItem>
-          <NavLink href="/regionalmap" className="navbar__link">Find Your Region</NavLink>
-          <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
+        <NavLink href="/regionalmap" className="navbar__link">Find Your Region</NavLink>
+        <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
       </Nav>
     </div>
   );
