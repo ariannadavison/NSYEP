@@ -1,5 +1,6 @@
 .motto__banner {
   background-color: var(--logo-orange);
+
   display: flex;
   justify-content: center;
 }
@@ -13,7 +14,7 @@
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", Montserrat, Arial, sans-serif;
   color: var(--logo-navy);
 }
 
@@ -53,7 +54,7 @@
 
   .motto__bg {
     width: calc(100% - 25px);
-    max-width: 100vw;
+    max-width: 100%;
     height: 19px;
     top: -0.6rem;
     left: 17%;
@@ -72,4 +73,3 @@
     left: 20%;
   }
 }
-/*  */

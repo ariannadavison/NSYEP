@@ -28,7 +28,7 @@ const headersOptions = [
     href: "/regionalmap", //the href of the interactive map
   },
   {
-    label: "About NSYEP",
+    label: "About NYATEP",
     href: "/about-us",
   },
 ];
@@ -59,7 +59,7 @@ const Header = () => {
     header: {
       backgroundColor: "var(--text-color-deco)",
       paddingRight: "40px",
-      // paddingLeft: "40px", //probably change this
+
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
@@ -67,7 +67,8 @@ const Header = () => {
     },
     drawerContainer: {
       padding: "1rem",
-      // backgroundColor: "var(--logo-navy)",
+
+
       height: "100%",
       textDecoration: "none",
       backgroundColor: "var(--text-color-deco)",
