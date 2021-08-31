@@ -2,9 +2,6 @@
   display: flex;
   justify-content: center;
   flex-flow: column;
-  align-items: center;
-  /* height: 100%; */
-  /* width: 100%; */
 }
 
 .error404 {
