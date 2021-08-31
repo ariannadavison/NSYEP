@@ -86,9 +86,9 @@ export default function Region(props) {
         )
       );
       break;
-    case "North":
+    case "North Country":
       images = importImages(
-        require.context(`./Images/North`, false, /\.(png|jpe?g|svg|mp4)$/i)
+        require.context(`./Images/NorthCountry`, false, /\.(png|jpe?g|svg|mp4)$/i)
       );
       break;
     default:
@@ -195,3 +195,4 @@ export default function Region(props) {
     );
   }
 }
+

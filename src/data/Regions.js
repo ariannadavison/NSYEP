@@ -174,9 +174,9 @@ export const regions = [
     ],
   },
   {
-    region: "North",
+    region: "North Country",
     regionID: "05",
-    regionURL: "north",
+    regionURL: "north-country",
     counties: ['Clinton', 'Essex', 'Franklin', 'Hamilton', 'Jefferson', 'Lewis', 'St. Lawrence'],
     content: [
       {
