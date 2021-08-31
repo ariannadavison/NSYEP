@@ -1,0 +1,490 @@
+[33mcommit a3bba19adbc916be8fa398a294526f33c9b3c5c0[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop-branch[m[33m)[m
+Merge: 7a217ff 1353db9
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:45:26 2021 -0400
+
+    Merge branch 'arianna-final' into develop-branch
+
+[33mcommit 1353db9087c09b2d0d6d8b0daf33da69fb2a8558[m[33m ([m[1;32marianna-final[m[33m)[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:40:14 2021 -0400
+
+    header styles
+
+[33mcommit 7a217ffa03c8f6dae13f132a97e9166c6cbe2e46[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 3e6aab9 3ed9a79
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:33:15 2021 -0400
+
+    Merge branch 'arianna-final'
+
+[33mcommit 3ed9a79acbf90089d72016a9e2e5ef4fe1695de3[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:33:00 2021 -0400
+
+    header styles
+
+[33mcommit 3e6aab9a26a62629978a7979990d34abdc70af42[m
+Merge: 09da933 eb27d92
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:31:38 2021 -0400
+
+    Merge branch 'arianna-final'
+
+[33mcommit eb27d92ccfac91ba076dafe254c5bf4f1b224f79[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:31:17 2021 -0400
+
+    header styles
+
+[33mcommit 09da933d5fad8576df7c148afbaf79209a544c94[m
+Merge: f6f8b90 a5bc50e
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:14:11 2021 -0400
+
+    update main
+
+[33mcommit a5bc50e6bcc0ed9f1c7b5c2b17ae5bab85fd068c[m[33m ([m[1;31morigin/arianna-final[m[33m, [m[1;32mdevelop-branch-the-sequel[m[33m)[m
+Merge: 100d069 d004698
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 15:01:23 2021 -0400
+
+    Merge branch 'develop-branch-the-sequel' into develop-branch
+
+[33mcommit 100d0694d0004dc726140019c341721e9526181d[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 14:52:51 2021 -0400
+
+    reorder staff
+
+[33mcommit 08614f335d6bfb0ba4d7ab69a0cb3e097c1d7b18[m
+Merge: 0b008a5 ed41302
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 14:47:13 2021 -0400
+
+    merge
+
+[33mcommit 0b008a52c8f9fbba7b2af1e0e1b0e16795fbb05a[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 31 14:39:01 2021 -0400
+
+    sidebar update
+
+[33mcommit ed41302c19354cb0173ee397cd2a0ca62c158a4a[m[33m ([m[1;31morigin/develop-branch[m[33m)[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Tue Aug 31 13:37:34 2021 -0400
+
+    footer js format
+
+[33mcommit bea007523c9d417f65b42f38cb6c3107ae8664be[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Tue Aug 31 13:35:54 2021 -0400
+
+    fully changed north to north country and removed instagram as they didn't have an account
+
+[33mcommit 7ac04dbfb7b2e742e6d16985f69524335a773c3d[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Tue Aug 31 13:29:54 2021 -0400
+
+    changed north to north country
+
+[33mcommit f6f8b9035f9a3aaa6bb46ddcbb3d61d71a7b159b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:32:40 2021 -0400
+
+    merge conflicts
+
+[33mcommit 0b6a8621ba5e2dcc271b71bdbb86fe13ec57b0a1[m
+Merge: aaad426 8d4fc2c
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:31:21 2021 -0400
+
+    accepting incoming changes from develop
+
+[33mcommit 8d4fc2c41f2ffe9da7802e62b255a088c2ae6370[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:29:18 2021 -0400
+
+    small spaces to get git to recognize all files
+
+[33mcommit aaad426ac5e764184c00f13406973add2b406324[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:23:43 2021 -0400
+
+    deleted extra files from upload
+
+[33mcommit 5859652ee8a4a429b3e1d90eb00f9aedd397ed01[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:21:22 2021 -0400
+
+    added more missing files from about to main
+
+[33mcommit afc3aae79d9dadf9a53386292f9e85a4d8431c20[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:17:34 2021 -0400
+
+    adding missing about us component files from develop to main
+
+[33mcommit de93bafebf7148018d9ea312ea7ad230bfd147b3[m
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 20:15:21 2021 -0400
+
+    Add files via upload
+
+[33mcommit 09686c09d45a7b393644743abd3ecfe30a6e26fb[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:07:37 2021 -0400
+
+    another attempt of getting main to match with develop
+
+[33mcommit 070ba86da54378600a99115cd2df9957d0944cfe[m
+Merge: 9b3d70e e873e7e
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:05:59 2021 -0400
+
+    Merge branch 'develop-branch' of https://github.com/honeyai/NSYEP into main
+
+[33mcommit e873e7e9fe12e561190abd926448fc78b63395a3[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 20:05:44 2021 -0400
+
+    made changes so that git can maybe stop being mean
+
+[33mcommit 9b3d70ee9fce6553bde1fcc820428c6e15044c5f[m
+Merge: 5721eab ac75144
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:43:47 2021 -0400
+
+    Merge branch 'main' of https://github.com/honeyai/NSYEP into main
+
+[33mcommit 5721eab4ac11dffdd028af296f2fe0854eab9cb4[m
+Merge: 469dff9 235abf5
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:43:40 2021 -0400
+
+    merging changes from develop branch
+
+[33mcommit ac75144d9a2d4b314177bb65b77a894f29098cfc[m
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 19:41:41 2021 -0400
+
+    Add files via upload
+
+[33mcommit d004698f72eb7de82f9b5cf0d987891d800f8283[m
+Merge: 11288f6 235abf5
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Mon Aug 30 19:34:19 2021 -0400
+
+    Merge branch 'develop-branch' of https://github.com/honeyai/NSYEP into develop-branch-the-sequel
+
+[33mcommit 235abf5b1eaf12e5dc46234a7047926acf721e7c[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:34:03 2021 -0400
+
+    deleted the width measurement of motto_banner
+
+[33mcommit 11288f66f64d4ebbcdd5fc759d2f18d3e2d2d327[m
+Merge: 4c4a29a 8707ce7
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Mon Aug 30 19:30:22 2021 -0400
+
+    Merge branch 'develop-branch' of https://github.com/honeyai/NSYEP into develop-branch-the-sequel
+
+[33mcommit 8707ce7cdfaee0c3664b06049759864872dc6769[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:28:42 2021 -0400
+
+    fixed banner import
+
+[33mcommit 469dff9e27d2e568417929ff51baccde377b1720[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:23:12 2021 -0400
+
+    accepting changes from develop
+
+[33mcommit 938ce50b302d88126b354238f689b299d6f59bed[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:17:26 2021 -0400
+
+    accpeted changes from develop into main
+
+[33mcommit 0981b5c27e255d8c487be65abd3e81bf21cd4aac[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 19:16:56 2021 -0400
+
+    accepted changes from develop into main
+
+[33mcommit 394ed2ea56b5959d11384780454b10df4f968277[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 18:57:16 2021 -0400
+
+    pulled develop into main
+
+[33mcommit 2b20befd2b554777cace4a5af99bd08f59e423c8[m
+Merge: a813792 eab4389
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 18:53:31 2021 -0400
+
+    Merge branch 'develop-branch' of https://github.com/honeyai/NSYEP into main
+
+[33mcommit 4c4a29a32e6f2db42576ef7e051ff9f4b30fd712[m
+Merge: c4875fd e3d66fd
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Mon Aug 30 18:46:37 2021 -0400
+
+    banner change
+
+[33mcommit c4875fd64b8de96be4d203360f6ef70e6d7a862b[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Mon Aug 30 18:43:05 2021 -0400
+
+    changes
+
+[33mcommit e3d66fd9f4d8d77acef01388c219492a0ba4dfa2[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Mon Aug 30 18:35:10 2021 -0400
+
+    styling bugs
+
+[33mcommit eab4389a4dd394ae936fae86a7725f3f36682836[m
+Merge: 130edbc f0f837f
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 18:27:48 2021 -0400
+
+    Merge pull request #77 from honeyai/honeyai/lastChanges
+    
+    changed the width of mottoBanner from 100% to 100vw to make the other…
+
+[33mcommit f0f837f23cdbc325550756f31c6bf4dc2c719c01[m[33m ([m[1;31morigin/honeyai/lastChanges[m[33m)[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 18:27:13 2021 -0400
+
+    changed the width of mottoBanner from 100% to 100vw to make the other measurements
+
+[33mcommit 130edbc07a56f8cf091eb1e2b1e5484a34e9e23f[m
+Merge: 82c9ac5 999c6d9
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 18:23:25 2021 -0400
+
+    Merge pull request #76 from honeyai/honeyai/lastChanges
+    
+    Honeyai/last changes
+
+[33mcommit 999c6d995bdb3a0975b5b5ffb2192113639a161b[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 18:16:50 2021 -0400
+
+    added social links and the the last story to the data block
+
+[33mcommit 18b9d634e351d3cd0bfed51896e5c30c41aa78f2[m
+Merge: abcac97 82c9ac5
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 17:29:48 2021 -0400
+
+    Merge branch 'develop-branch' of https://github.com/honeyai/NSYEP into develop-branch
+    elase enter a commit message to explain why this merge is necessary,
+
+[33mcommit abcac97cd5c5286ae95f782ca1da76c460dd138e[m
+Author: Jessica Sanchez <contact.jessicasanchez@gmail.com>
+Date:   Mon Aug 30 17:29:42 2021 -0400
+
+    added material icons to the package
+
+[33mcommit 82c9ac5f50a44f3200ca38bd0fd100421f2b5fe7[m
+Merge: 4127b70 11aed7e
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 17:08:38 2021 -0400
+
+    Merge pull request #75 from honeyai/arianna-final
+    
+    Arianna final
+
+[33mcommit 11aed7e257aed200b326eebeb5185a5839adcde0[m
+Merge: 83363d2 4127b70
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Mon Aug 30 17:08:32 2021 -0400
+
+    Merge branch 'develop-branch' into arianna-final
+
+[33mcommit 83363d27d6b429104ad50d51ff8ea427275f749e[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Sat Aug 28 17:21:12 2021 -0400
+
+    image formatting and a few other things
+
+[33mcommit 4127b700b88a917fe567031422e22df8ea72b4d9[m
+Merge: 1894d64 cdd8919
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Fri Aug 27 21:32:31 2021 -0400
+
+    Merge pull request #74 from honeyai/ariannald-menu-styling
+    
+    mobile view
+
+[33mcommit 8c0b4114dc741718fcf2da0185cdf9839ff20eeb[m[33m ([m[1;31morigin/ariannald-menu-styling[m[33m, [m[1;32mariannald-menu-styling[m[33m)[m
+Merge: cdd8919 1894d64
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Fri Aug 27 18:43:43 2021 -0400
+
+    Merge remote-tracking branch 'origin/develop-branch' into ariannald-menu-styling
+
+[33mcommit cdd89195d0705123a2e2a893ddd29a9c3a872cfa[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Fri Aug 27 18:42:40 2021 -0400
+
+    mobile view
+
+[33mcommit 1894d64fdbe654e55054ca54e680587fbf3dd6d5[m
+Merge: 1f10a92 0f6cd3e
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Fri Aug 27 15:38:49 2021 -0400
+
+    Merge pull request #73 from honeyai/ariannald-menu-styling
+    
+    Ariannald menu styling
+
+[33mcommit 0f6cd3ea3517c376a631ea9111a19778f3b87950[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Fri Aug 27 13:56:54 2021 -0400
+
+    closing icon
+
+[33mcommit e72b5533f71f35ee9359c4442135edd06e8d07d0[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Fri Aug 27 13:54:12 2021 -0400
+
+    closing icon
+
+[33mcommit 1f10a92d9a138ddcb1bd088ab0fe49842579f94c[m
+Merge: de86bd8 e0ba823
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Thu Aug 26 17:49:21 2021 -0400
+
+    Merge pull request #72 from honeyai/ariannald-menu-styling
+    
+    Ariannald menu styling
+
+[33mcommit e0ba8231db4aa0e1e530581c634576a26061d788[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Thu Aug 26 16:03:34 2021 -0400
+
+    about image resizing
+
+[33mcommit d4f383e205eaa70fe6c02cd2c964f0fe83a2f228[m
+Merge: 16d0cb8 de86bd8
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Thu Aug 26 15:12:05 2021 -0400
+
+    menu icons
+
+[33mcommit 16d0cb8312c27caf1a74bd09c22d4f86d50394e5[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Thu Aug 26 14:07:54 2021 -0400
+
+    hamburger
+
+[33mcommit de86bd84498df03178bd9f17e8f6d3688987a277[m
+Merge: 5b3c496 1f2f3d9
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Wed Aug 25 18:50:45 2021 -0400
+
+    Merge pull request #70 from honeyai/ariannald-about-page
+    
+    Ariannald about page
+
+[33mcommit 5b3c496a58447abbb6a458bb1e55628eb8c6f924[m
+Merge: a57d99d c2e6b4b
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Wed Aug 25 17:30:54 2021 -0400
+
+    Merge pull request #68 from honeyai/ameliadz/header
+    
+    banner
+
+[33mcommit a57d99d35fdf9d5fd026f37409145a40b9f9cd13[m
+Merge: 999638e d733172
+Author: Jessica Sanchez <66699748+honeyai@users.noreply.github.com>
+Date:   Wed Aug 25 17:30:24 2021 -0400
+
+    Merge pull request #69 from honeyai/ameliadz/responsive-homepage
+    
+    Homepage
+
+[33mcommit 1f2f3d9967c73a2a2b9ed8ddd589181d4b59f52a[m[33m ([m[1;31morigin/ariannald-about-page[m[33m, [m[1;32mariannald-about-page[m[33m)[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Wed Aug 25 15:54:13 2021 -0400
+
+    responsive updates
+
+[33mcommit c2e6b4b86e68240ac9df450396ef8d80e1dfe7bd[m[33m ([m[1;31morigin/ameliadz/header[m[33m)[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Wed Aug 25 00:54:29 2021 -0400
+
+    comments for development - swap lines to see different versions
+
+[33mcommit 597458b306505c2e3e40d0a303a7fdf3327c14de[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Wed Aug 25 00:33:06 2021 -0400
+
+    added gradient
+
+[33mcommit 833b9b7c71e6a173321fbe05609ac39d25ec9d25[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Wed Aug 25 00:20:53 2021 -0400
+
+    simpler header style
+
+[33mcommit d733172d0445453e66969ac5057ead937f67fa2d[m[33m ([m[1;31morigin/ameliadz/responsive-homepage[m[33m)[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 23:55:06 2021 -0400
+
+    alt text and spacing tweaks
+
+[33mcommit b3e5aebe509199d5f5b3c135fadcfd1717c88106[m
+Merge: 4f44393 39f486c
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 23:45:57 2021 -0400
+
+    Merge branch 'ameliadz/responsive-homepage' of https://github.com/honeyai/NSYEP into ameliadz/responsive-homepage
+
+[33mcommit 4f44393e211ca6ab805a329ef6807693ce797a80[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 20:25:36 2021 -0400
+
+    further re-alignment at small breakpoints
+
+[33mcommit 91a0f8030aeba28b255ac5dbef8882d175c56acd[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 20:10:46 2021 -0400
+
+    responsive homepage sections
+
+[33mcommit 2510e332a0af7d268f1eeae92555a552ffb5ebd2[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 19:39:56 2021 -0400
+
+    alignment changes for small breakpoints
+
+[33mcommit 39f486c8c87fba3a80f95767cbcc60870ed58ad4[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 20:25:36 2021 -0400
+
+    further re-alignment at small breakpoints
+
+[33mcommit 6c0a9448db15eb7dcd81ed5bc4d0ef1c92ce4ca3[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 20:10:46 2021 -0400
+
+    responsive homepage sections
+
+[33mcommit be2a1d2a5db3b0c87ca70bb2a21f0a1d862bcf73[m
+Author: Arianna Davison <arianna.davison@gmail.com>
+Date:   Tue Aug 24 19:51:31 2021 -0400
+
+    region error
+
+[33mcommit 063ce95c6eae4d3f31a83c8ac42020e6b8853eb2[m
+Author: Amelia Zecker <47397924+ameliadz@users.noreply.github.com>
+Date:   Tue Aug 24 19:39:56 2021 -0400
+
+    alignment changes for small breakpoints

@@ -14,7 +14,6 @@ export const staffMembers = [
         title: "",
         image: "Megan Farry",
     },
-
     {
         name: "Molly Tocin",
         title: "",
