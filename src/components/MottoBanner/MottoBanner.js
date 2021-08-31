@@ -17,4 +17,5 @@ const MottoBanner = () => {
   );
 };
 
+
 export default MottoBanner;

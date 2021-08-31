@@ -5,6 +5,7 @@ import "./footer.css";
 import { footerInfo } from "../../data/FooterContacts.js";
 
 const Footer = () => {
+  
   return (
     <div className="footer">
       <div className="footer__columns">

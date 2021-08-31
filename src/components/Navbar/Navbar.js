@@ -9,7 +9,6 @@ import './navbar.css';
 
 const Navbar = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
