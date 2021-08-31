@@ -22,7 +22,6 @@ const headersOptions = [
   {
     label: "Home",
     href: "/",
-
   },
   {
     label: "Find Your Region",

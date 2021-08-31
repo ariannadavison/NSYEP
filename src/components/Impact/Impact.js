@@ -23,7 +23,6 @@ const Impact = () => {
           <p>1,253 employer worksites developed</p>
         </div>
       </div>
-
     </div>
   )
 }

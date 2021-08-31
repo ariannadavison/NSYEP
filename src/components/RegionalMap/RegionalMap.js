@@ -9,7 +9,6 @@ import { regions } from "../../data/Regions";
 import "./regionalMap.css";
 import "../../variables.css";
 
-
 const RegionalMap = () => {
     return (
         <div className="mappy">
