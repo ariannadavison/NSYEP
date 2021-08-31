@@ -67,6 +67,7 @@ const Header = () => {
     },
     drawerContainer: {
       padding: "1rem",
+      backgroundColor: 'blue',
       // backgroundColor: "var(--logo-navy)",
       height: "100%",
       textDecoration: "none",
