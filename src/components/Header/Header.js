@@ -59,7 +59,7 @@ const Header = () => {
     header: {
       backgroundColor: "var(--text-color-deco)",
       paddingRight: "40px",
-      // paddingLeft: "40px", //probably change this
+
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
