@@ -31,11 +31,11 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
           </div>
             </a>
-            <a href={footerInfo.instagram} target="_blank" rel="noopener noreferrer">
+            {/* <a href={footerInfo.instagram} target="_blank" rel="noopener noreferrer">
           <div className="instagram social-bg">
               <FontAwesomeIcon icon={faInstagram} size="lg" />
           </div>
-            </a>
+            </a> */}
         </div>
       </div>
     </div>
