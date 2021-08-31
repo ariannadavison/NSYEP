@@ -29,7 +29,7 @@ const headersOptions = [
     href: "/regionalmap", //the href of the interactive map
   },
   {
-    label: "About NSYEP",
+    label: "About NYATEP",
     href: "/about-us",
   },
 ];
