@@ -1,26 +1,18 @@
 export const staffMembers = [
     {
-        name: "Megan Farry",
-        title: "",
-        image: "Megan Farry",
-    },
-
-    {
-        name: "Jenine Loche",
-        title: "",
-        image: "Jenine Headshot",
-    },
-
-    {
         name: "Melinda Mack",
         title: "",
         image: "Melinda Mack",
     },
-
     {
         name: "Evelyn Ortiz",
         title: "",
         image: "Evelyn Ortiz",
+    },
+    {
+        name: "Megan Farry",
+        title: "",
+        image: "Megan Farry",
     },
 
     {
@@ -28,6 +20,17 @@ export const staffMembers = [
         title: "",
         image: "Molly Tocin",
     },
+    {
+        name: "Jenine Loche",
+        title: "",
+        image: "Jenine Headshot",
+    },
+
+
+
+
+
+
 ]
 
 export const members = [
