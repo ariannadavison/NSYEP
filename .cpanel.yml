@@ -5,5 +5,7 @@ deployment:
 
 
 
-    - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    
+    - /bin/cp -R src $DEPLOYPATH
     
