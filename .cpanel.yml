@@ -2,7 +2,7 @@
 deployment:
   tasks:
 - export DEPLOYPATH=/home/yzjy1r4r28dq/public_html
-    - export REPOPATH=/home/yzjy1r4r28dq/repositories/NSYEP 
+
 
 
     - /bin/cp * $DEPLOYPATH
