@@ -3,7 +3,6 @@ deployment:
   tasks:
 - export DEPLOYPATH=/home/honeyai/public_html
     - export REPOPATH=/home/honeyai/repositories/NSYEP
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -a * $DEPLOYPATH
+
+    - /bin/cp * $DEPLOYPATH
     
