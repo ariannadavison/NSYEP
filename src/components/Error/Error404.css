@@ -1,16 +1,21 @@
 .error {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-flow: column;
+  height: 20%;
 }
 
 .error404 {
   font-size: 4rem;
   font-family: monospace;
   display: block;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .errorMessage {
-  display: block;
+  /* display: block; */
   font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
 }

@@ -19,18 +19,17 @@
 
 .region__image {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 
   overflow: hidden;
 }
 video.region__image {
   height: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 .region__imageContainer {
   display: flex;
   height: 100%;
-
   width: fit-content;
 
   max-width: 40%;
@@ -65,7 +64,36 @@ div ::-webkit-scrollbar-thumb {
 }
 
 /* image container */
-.keepRight div {
+.keepRight {
   justify-content: flex-end;
 }
+@media screen and (max-width: 800px) {
+  .region__imageContainer {
+    max-width: 40%;
+    height: 40%;
+    position: relative;
+    float: left;
+    object-fit: cover;
+    margin-left: 0.5rem;
+  }
 
+  .region__copy {
+    display: flex;
+    flex-flow: column;
+    margin-left: 0;
+  }
+  .region__copyContainer {
+    display: flex;
+    flex-flow: column;
+    height: 24rem;
+  }
+  h6 {
+    /* position: absolute; */
+    text-align: right;
+    display: flex;
+    /* border-style: solid; */
+    width: 100%;
+    margin-right: 0.2rem;
+    /* justify-content: flex-end; */
+  }
+}
