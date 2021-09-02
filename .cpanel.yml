@@ -2,8 +2,15 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/yzjy1r4r28dq/public_html/
+<<<<<<< HEAD
     - /bin/cp build/index.html $DEPLOYPATH
     - /bin/cp build/asset-manifest.json $DEPLOYPATH
     - /bin/cp build/manifest.json $DEPLOYPATH
     - /bin/cp build/favicon.ico $DEPLOYPATH
     - /bin/cp -R build/static/ $DEPLOYPATH
+=======
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
+
+
+>>>>>>> 6f69d6ce5ebe0bdc707f94ed0d493f564e4236b0
