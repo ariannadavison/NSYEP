@@ -195,7 +195,7 @@ export default function Region(props) {
                       const reactStringReplace = require('react-string-replace');
                       const newLink =
                         reactStringReplace(t, "Here's a website", (match, i) => (
-                          <a href="https://auggie-syep-final-project.testing101.repl.co/">{match}</a>)
+                          <a style={{ color: "white", textDecoration: "underline" }} href="https://auggie-syep-final-project.testing101.repl.co/">{match}</a>)
 
                         )
                       return (
@@ -220,7 +220,7 @@ export default function Region(props) {
             );
           })}
         </div>
-      </div>
+      </div >
     );
   }
 }
