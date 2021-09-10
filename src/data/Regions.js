@@ -1,9 +1,14 @@
+import { text } from "@fortawesome/fontawesome-svg-core"
+import reactDom from "react-dom"
+import React from "react"
 // added counties - arianna
+
+
 export const regions = [
   {
-    region: "Capital",
+    region: "Capital Region",
     regionID: "07",
-    regionURL: "capital",
+    regionURL: "capital-region",
     counties: ['Albany', 'Columbia', 'Greene', 'Rensselaer', 'Saratoga', 'Schenectady', 'Warren', 'Washington'],
     content: [
       {
@@ -17,7 +22,7 @@ export const regions = [
         copy: "During Nhyrobie’s first week of work at CVS, she was very quiet and timid. She had a difficult time understanding the tasks that she was required to complete. However, by her second or third week of work, she had improved immensely. She completed her tasks flawlessly, became much chattier and open during our conversations, and began to develop relationships with her coworkers and supervisors. Nhyrobie was always on time for work and never missed a day. During the hours that she was there, she worked diligently and efficiently to complete all of her tasks. At the end of the summer program, Nhyrobie’s supervisor suggested that she apply to CVS directly so that she could continue to be a part of their team. Nhyrobie completed the lengthy application process and was hired on to continue working as a CVS employee. Nhyrobie grew tremendously throughout the summer program and is well on her way to learning the skills needed for future self-sustainability.",
       },
       {
-        title: "Saratoga County Dept. of Employment & Training",
+        title: "Saratoga County Department of Employment & Training",
         image: "Julia_Bacon_SYEP_2020 - Katherine Raymond",
         copy: `Julia started going to The Salvation Army earlier in the year as a program participant in her High School After School program and volunteered for their Elementary After School Program. She was very shy but quickly became comfortable because she loved having a role helping with the kids. 
 
@@ -40,9 +45,9 @@ export const regions = [
     ]
   },
   {
-    region: "Central",
+    region: "Central New York",
     regionID: "03",
-    regionURL: "central",
+    regionURL: "central-new-york",
     counties: ['Cayuga', 'Cortland', 'Madison', 'Onondaga', 'Oswego'],
     content: [
       {
@@ -51,12 +56,12 @@ export const regions = [
         copy: "Malcolm Wilson, 15, of Cortland, NY was one of four participants in Cortland County SYEP’s first ever remote work readiness and career exploration training. Because of the lack of worksites for SYEP participants, Special Programs Counselor Jackie Pittsley, designed and delivered the comprehensive content via video chat and independent assignments. Malcolm, an honor student at Cortland Jr/Sr High School, successfully completed the training and offered valuable feedback on the lessons that can be used for future training.",
       },
       {
-        title: "",
+        title: "Cayuga Cortland Workforce Development Board",
         image: "Melynna Vasquez_Central New York",
         copy: "Melynna Vasquez, 15, of McGraw, NY worked with SYEP at Lime Hollow Nature Center. Melynna wanted to be at a worksite where she could be active. According to her supervisor, Melynna was a leader in the crew and set an example of what hard work and dedication look like. Melynna had perfect attendance during her placement and was part of a group of youth that was recognized locally for their contribution to major improvements at the non-profit.",
       },
       {
-        title: "",
+        title: "Cayuga Cortland Workforce Development Board",
         image: "Sienna Haskins_Central New York",
         copy: "Sienna Haskins, 17, of Homer, NY returned for her third summer as a SYEP participant and her second summer at Center for Arts. Sienna’s duties included clerical work, cleaning and organizing, ticket sales, and event preparation for the Center’s socially distanced parking lot performance series. Because of her love for the venue and the staff, Sienna volunteers at the Center throughout the year.",
       },
@@ -70,7 +75,7 @@ export const regions = [
       {
         title: "Livingston County Workforce Development",
         image: "tainairis goodwill - Mary Guldenschuh",
-        copy: "This year marked the fourth summer for 17 year old Tainairis that she participated in SYEP.  At her employment interview she asked if she could get help this summer to find an after school job for the fall.  Bearing this in mind, she was matched with Goodwill of the Finger Lakes. Early on, Tainairis identified an interest in being a cashier and began inquiring about open positions.  Meanwhile, her Employment Counselor, Kayla,  assisted by updating her resume and master application and practicing interview questions.  When the time came to interview, Tainairis was permitted to have Kayla in the room for support.  Tainairis finished her commitment to working for us in the summer program and was directly hired on by Goodwill!  When asked what advice she would pass on to new recruits, Tainairis said “be on time, do your work, don’t miss days, and don’t be scared to ask questions.”  It has been a gratifying experience to bear witness to 14 year old Tainairis grow in confidence and maturity over the past 4 years.",
+        copy: "This year marked the fourth summer for 17 year old Tainairis that she participated in SYEP.  At her employment interview she asked if she could get help this summer to find an after school job for the fall.  Bearing this in mind, she was matched with Goodwill of the Finger Lakes. Early on, Tainairis identified an interest in being a cashier and began inquiring about open positions.  Meanwhile, her Employment Counselor, Kayla,  assisted by updating her resume, filling out the application and practicing interview questions.  When the time came to interview, Tainairis was permitted to have Kayla in the room for support.  Tainairis finished her commitment to working for us in the summer program and was directly hired on by Goodwill!  When asked what advice she would pass on to new recruits, Tainairis said “be on time, do your work, don’t miss days, and don’t be scared to ask questions.”  It has been a gratifying experience to bear witness to 14 year old Tainairis grow in confidence and maturity over the past 4 years.",
       },
       {
         title: "OrleansCounty Job Development",
@@ -85,9 +90,9 @@ export const regions = [
     ],
   },
   {
-    region: "Hudson Valley",
+    region: "Mid Hudson",
     regionID: "08",
-    regionURL: "hudson-valley",
+    regionURL: "mid-hudson",
     counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester'],
     content: [
       {
@@ -96,18 +101,18 @@ export const regions = [
         copy: "In partnership with the Dutchess County Workforce Investment Board, Poughkeepsie Farm Project was able to provide a ten-week paid summer internship for six Poughkeepsie youth.  The youth crew was involved in every aspect of growing, harvesting, and distributing produce in the community - working both in the farm fields and our educational gardens. In addition to this hands-on training, the youth also gained knowledge about food access in their own community as they acted as youth ambassadors during community harvest events and free produce distributions. These programs highlighted the links between food justice and racial justice as youth explored the historical roots of racial injustices embedded in our nation’s food system.  The final project for the internship was creating an Anti-Racist Timeline and inviting all in the PFP community to consider how they are and can work towards being anti-racist advocates in their daily lives.  Over the course of the summer, the youth expressed the value of not only having a summer job, but also having a job through the year for both supporting their household finances and because of the positive relationships they develop with the adult staff members who serve as supervisors and mentors. This time of COVID also highlighted the importance of access to healthy food for the youth, who were able to take home a weekly share of the produce they helped to grow. Two of our summer interns, who also worked with us last summer and had previously volunteered at Poughkeepsie Farm Project, truly stood out and demonstrated their dedication to the community and to their own learning. We are thrilled that they are able to extend their internship through the fall season and possibly beyond. Young people like Tania and Rakim are our future and we look to them to lead the way toward a just and sustainable food system. "
       },
 
-        {
-          title: "Ulster County Office of Employment & Training",
-          image: "Ulster County",
-          copy: "During the summer of 2020 the Ulster County Office of Employment & Training created several innovative partnerships that created unique internships along with educational and work readiness/workforce development opportunities for the young adults of Ulster County.  Due to the lack of worksites for SYEP this year because of the pandemic, we teamed up with Albany Can Code to provide an online Front- End Web Development course.  This course was taught virtually and met for 4 weeks @ 20 hours per week with 5 additional hours of self-study each week.  The SYEP youth learned the basics of HTML & CSS: foundational skills in the world of computer programming; received a certificate of completion from the training provider; and an additional $800 incentive for those who successfully completed the online course and built their own website.  It is important to note that the youth in this web development class ranged from 14 to 17 years old and were able to create their own website after four weeks of class! Here’s a website created by Augustin, an SYEP participant who shares his interest in Psychology and how going to college and majoring in Psychology will help him understand how to help others. Quite impressive for the young adults but also for instructors at Albany Can Code for making difficult material seem easy!!!  "
+      {
+        title: "Ulster County Office of Employment & Training",
+        image: "Ulster County",
+        copy: "During the summer of 2020 the Ulster County Office of Employment & Training created several innovative partnerships that created unique internships along with educational and work readiness/workforce development opportunities for the young adults of Ulster County.  Due to the lack of worksites for SYEP this year because of the pandemic, we teamed up with Albany Can Code to provide an online Front- End Web Development course.  This course was taught virtually and met for 4 weeks @ 20 hours per week with 5 additional hours of self-study each week.  The SYEP youth learned the basics of HTML & CSS: foundational skills in the world of computer programming; received a certificate of completion from the training provider; and an additional $800 incentive for those who successfully completed the online course and built their own website.  It is important to note that the youth in this web development class ranged from 14 to 17 years old and were able to create their own website after four weeks of class! Here's a website created by Augustin, an SYEP participant who shares his interest in Psychology and how going to college and majoring in Psychology will help him understand how to help others. Quite impressive for the young adults but also for instructors at Albany Can Code for making difficult material seem easy!!!  "
       },
       {
         title: "Greenburgh Department of Community Resources",
         image: "TDYCC",
         copy: "Summer of 2020 was very different from our Summer Camp experiences in the years past, as we were faced with many obstacles as a result of COVID-19.  However, we not only overcame these obstacles, but had an extremely fun, exciting and safe Summer camp experience, for both the Staff and campers. We implemented new and exciting Programs to the campers, such as Gardening and Extreme Crafting, and were able to get to know our campers even more, since the groups were kept small.Instead of our typical field trips, we brought an outdoor water experience to the campers, which they LOVED Summer 2020 has shown us just how creative we all are, and proven that although we may be presented with adversities, we will overcome them by working together."
       },
-      ],
-    
+    ],
+
   },
 
   {
@@ -163,7 +168,7 @@ export const regions = [
       {
         title: "New York City Department of Youth & Community Development",
         image: "Wynter Dias",
-        copy: '“This year is definitely a year like no other. I have been faced with one of the most difficult times in my entire life. My family was sick with COVID-19. The most difficult task was having to take care of an entire household. I was left in devastation by the loss of two loved ones. I needed an outlet and a break! I was notified that I was able to be a part of SYEP Summer Bridge. Although it was challenging because I had to discipline myself to do the work virtually, I am so grateful I did it. This Summer Bridge experience has given me knowledge and the skills necessary to be successful as I prepare  for college and beyond.”'
+        copy: '“This year is definitely a year like no other. I have been faced with one of the most difficult times in my entire life. My family was sick with COVID-19. The most difficult task was having to take care of an entire household. I was left in devastation by the loss of two loved ones. I needed an outlet and a break! I was notified that I was able to be a part of SYEP Summer Bridge. Although it was challenging because I had to discipline myself to do the work virtually, I am so grateful I did it. This Summer Bridge experience has given me knowledge and the skills necessary to be successful as I prepare  for college and beyond.”\n - Wynter Dias: SYEP Summber Bridge Participant'
 
       },
       {
@@ -188,15 +193,15 @@ export const regions = [
 
   },
   {
-    region: "Southern",
+    region: "Southern Tier",
     regionID: "04",
-    regionURL: "southern",
+    regionURL: "southern-tier",
     counties: ['Broome', 'Chenango', 'Chemung', 'Delaware', 'Schuyler', 'Steuben', 'Tioga', 'Tompkins'],
     content: [
       {
         title: "Tompkins County Workforce Development Board",
         image: "thumbnail_Dylan cropped - Shannon Alvord",
-        copy: '"My experience with SYEP changed my life in a huge way. Due to my disability I never thought I\'d be able to work again, let alone in art and design.SYEP gave me the opportunity to use my skills to reach the local community and improve on my skills as an artist and employee.The opportunities given to me by Tompkins Workforce have genuinely been the best thing to ever happen to me and I can\'t recommend them enough." -Dylan, age 20'
+        copy: '"My experience with SYEP changed my life in a huge way. Due to my disability I never thought I\'d be able to work again, let alone in art and design.SYEP gave me the opportunity to use my skills to reach the local community and improve on my skills as an artist and employee.The opportunities given to me by Tompkins Workforce have genuinely been the best thing to ever happen to me and I can\'t recommend them enough."\n -Dylan, age 20'
       },
       {
         title: "Pro Action of Steuben & Yates, Inc.",
@@ -206,20 +211,20 @@ export const regions = [
     ],
   },
   {
-    region: "Western",
+    region: "Western New York",
     regionID: "01",
-    regionURL: "western",
+    regionURL: "western-new-york",
     counties: ['Allegany', 'Cattaraugus', 'Chautauqua', 'Erie', 'Niagara'],
     content: [
       {
         title: "YMCA of Greater Rochester",
         image: "YMCA of Greater Rochester_Western New York",
-        copy: "This is the YMCA of Greater Rochester's second year of participating in the Summer Youth Employment Program through RochesterWorks! This year looked a lot different compared to our first year due to COVID-19. A normal program year we would be teaching the youth to implement enrichments within our Power Scholars Academy Program at the YMCA of Greater Rochester. Our summer program with youth was a OCFS licensed program and due to  COVID-19 we didn't allow the program participants to be in classrooms with youth due to safety and licensing concerns. However as an organization we pivoted from doing our program in person but into a program year that allowed us to do our normal programming virtually and provide youth with financial Literacy, job readiness training, and most importantly teaching youth how to implement enrichment programming with young people within a child care setting. We taught the youth how to write STEM and Art lesson plans based on the YMCA 9-Core component model that the YMCA follows. Participants were able to see professional lesson plans and were able to write their own lesson plans within a small group. They gained necessary skills to be able to hopefully get into a career in youth development and implement successful programming. <br> As an organization we are extremely proud that we were able to pivot in such a different way than the year before.Given the circumstances of what was going on throughout the world with COVID - 19 and social injustice issues we were able to successfully complete a program that gave the youth a voice and gave the youth opportunities to grow within themselves.Our success has contributed to youth willing to take the chance on us to lead them and most importantly taking the chance within themselves to try new things or something much different than they have done in the past.I would say all the youth participants were the champions of this program and their willingness to adapt to our world/ program is our success story."
+        copy: "This is the YMCA of Greater Rochester's second year of participating in the Summer Youth Employment Program through RochesterWorks! This year looked a lot different compared to our first year due to COVID-19. In a normal program year we would be teaching the youth to implement enrichments within our Power Scholars Academy Program at the YMCA of Greater Rochester. Our summer program with youth was a OCFS licensed program and due to  COVID-19 we didn't allow the program participants to be in classrooms with youth due to safety and licensing concerns. However as an organization we pivoted from doing our program in person but into a program year that allowed us to do our normal programming virtually and provide youth with financial Literacy, job readiness training, and most importantly teaching youth how to implement enrichment programming with young people within a child care setting. We taught the youth how to write STEM and Art lesson plans based on the YMCA 9-Core component model that the YMCA follows. Participants were able to see professional lesson plans and were able to write their own lesson plans within a small group. They gained necessary skills to be able to hopefully get into a career in youth development and implement successful programming. As an organization we are extremely proud that we were able to pivot in such a different way than the year before. Given the circumstances of what was going on throughout the world with COVID - 19 and social injustice issues we were able to successfully complete a program that gave the youth a voice and gave the youth opportunities to grow within themselves. Our success has contributed to youth willing to take the chance on us to lead them and most importantly taking the chance within themselves to try new things or something much different than they have done in the past. I would say all the youth participants were the champions of this program and their willingness to adapt to our world/ program is our success story."
       },
       {
         title: "WIB Inc dba Chautauqua Works",
         image: "WIB Inc dba Chautauqua Works",
-        copy: "At WIB Inc dba Chautauqua Works every youth participates in a two hour orientation that contains an educational component including logistics of the program, workplace behavior, workplace safety, sexual harassment prevention, COVID-19 health and safety requirements, and financial literacy.  During the program, youth have the opportunity to participate in additional career based educational activities including a career word search activity and a testimonial of their experience in the program.  At the conclusion of the program, youth will complete a resume during a three hour wrap-up session which also includes a workshop on completing a job application and work readiness skills. An additional educational component for 14-15 year olds was developed this year.  It consisted of two 3 hour sessions per week at the Chautauqua Works Jamestown office.  In addition to those sessions, youth were offered activities to complete that provided additional paid employment hours.  Caleb, a young adult participant who worked at  Michael's AJ’s Texas Hots, shares that his favorite part of his experience thi summer was the flexibility he was granted from his worksite and the support he received from the program. Caleb looks forward to pursuing a career in Law Enforcement or Psychology."
+        copy: "At WIB Inc dba Chautauqua Works every youth participates in a two hour orientation that contains an educational component including logistics of the program, workplace behavior, workplace safety, sexual harassment prevention, COVID-19 health and safety requirements, and financial literacy.  During the program, youth have the opportunity to participate in additional career based educational activities including a career word search activity and a testimonial of their experience in the program. At the conclusion of the program, youth will complete a resume during a three hour wrap-up session which also includes a workshop on completing a job application and work readiness skills. An additional educational component for 14-15 year olds was developed this year. It consisted of two 3 hour sessions per week at the Chautauqua Works Jamestown office. In addition to those sessions, youth were offered activities to complete that provided additional paid employment hours.  Caleb, a young adult participant who worked at  Michael's AJ’s Texas Hots, shares that his favorite part of his experience this summer was the flexibility he was granted from his worksite and the support he received from the program. Caleb looks forward to pursuing a career in Law Enforcement or Psychology."
       },
     ],
   },

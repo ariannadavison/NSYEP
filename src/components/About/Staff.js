@@ -33,6 +33,7 @@ const Staff = () => {
                         <div className="staffMember">
                             <div className="staffImage"><img src={src}></img></div>
                             <div className="staffName">{s.name}</div>
+                            <div className="staffName">{s.title}</div>
 
                         </div>
                     )

@@ -1,6 +1,6 @@
 .mappy {
   display: flex;
-  grid-template-columns: 20% 85%;
+  grid-template-columns: 25% 80%;
   width: 100%;
   justify-content: center;
   position: relative;
@@ -27,7 +27,7 @@
   background-color: var(--sidebar-orange);
 
   width: 100%;
-  flex-basis: 20%;
+  flex-basis: 24%;
   display: flex;
 
   flex-flow: column;
@@ -69,7 +69,7 @@
   overflow-x: visible;
   position: relative;
   text-align: left;
-  padding-left: 1.5rem;
+  padding-left: 1.8rem;
   font-size: 80%;
 }
 #map__regionNameLinks div {

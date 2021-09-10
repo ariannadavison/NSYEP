@@ -1,27 +1,27 @@
 export const staffMembers = [
     {
         name: "Melinda Mack",
-        title: "",
+        title: "Executive Director",
         image: "Melinda Mack",
     },
     {
         name: "Evelyn Ortiz",
-        title: "",
+        title: "Deputy Director",
         image: "Evelyn Ortiz",
     },
     {
         name: "Megan Farry",
-        title: "",
+        title: "Director of Strategic Partnerships",
         image: "Megan Farry",
     },
     {
         name: "Molly Tocin",
-        title: "",
+        title: "Operations & Corporate Engagement Manager",
         image: "Molly Tocin",
     },
     {
         name: "Jenine Loche",
-        title: "",
+        title: "Training and Events Coordinator",
         image: "Jenine Headshot",
     },
 

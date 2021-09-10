@@ -70,7 +70,7 @@ export const contactInfo = [
     ],
   },
   {
-    Region: "Hudson Valley",
+    Region: "Mid-Hudson",
     contacts: [
       {
         site: "Dutchess County Workforce Investment Board",

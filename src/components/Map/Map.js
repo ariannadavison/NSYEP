@@ -236,9 +236,9 @@ const Map = () => {
               </text>
             </Link>
             <Link
-              to="/hudson-valley"
+              to="/mid-hudson"
               id="s03"
-              title="Hudson Valley"
+              title="Mid-Hudson"
               class="hint undefined  "
             >
               <path
