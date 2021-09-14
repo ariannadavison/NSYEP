@@ -1,33 +1,35 @@
 export const staffMembers = [
     {
+        name: "Melinda Mack",
+        title: "Executive Director",
+        image: "Melinda Mack",
+    },
+    {
+        name: "Evelyn Ortiz",
+        title: "Deputy Director",
+        image: "Evelyn Ortiz",
+    },
+    {
         name: "Megan Farry",
-        title: "",
+        title: "Director of Strategic Partnerships",
         image: "Megan Farry",
     },
-
+    {
+        name: "Molly Tocin",
+        title: "Operations & Corporate Engagement Manager",
+        image: "Molly Tocin",
+    },
     {
         name: "Jenine Loche",
-        title: "",
+        title: "Training and Events Coordinator",
         image: "Jenine Headshot",
     },
 
-    {
-        name: "Melinda Mack",
-        title: "",
-        image: "Melinda Mack",
-    },
 
-    {
-        name: "Evelyn Ortiz",
-        title: "",
-        image: "Evelyn Ortiz",
-    },
 
-    {
-        name: "Molly Tocin",
-        title: "",
-        image: "Molly Tocin",
-    },
+
+
+
 ]
 
 export const members = [
@@ -87,3 +89,4 @@ export const what = [{
 const whoWeAre = [{
     who: "Launched in the late 1970s, NYATEP was founded by a small group of professionals dedicated to collaborating to increase the effectiveness of federally funded workforce programs.In the last 40 years, the organization has grown to be New York’s statewide workforce development association.Our members support more than a million New Yorkers achieve good or better jobs through education, employment, training and supportive services.NYATEP is a membership based, 501c3 non - profit, intermediary that provides leadership, vision, and advocacy for a thriving workforce development network across New York State."
 }]
+//change

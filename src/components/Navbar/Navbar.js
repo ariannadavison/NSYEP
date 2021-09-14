@@ -19,9 +19,10 @@ const Navbar = (props) => {
         </NavItem>
         <NavLink href="/regionalmap" className="navbar__link">Find Your Region</NavLink>
         <NavLink href="/about-us" className="navbar__link">About NYATEP</NavLink>
+        <NavLink href="https://nyatep.wixsite.com/nysummeryouth/2019-youth" className="navbar__link">Stories from Previous Years</NavLink>
       </Nav>
     </div>
   );
 };
-
+//change
 export default Navbar;

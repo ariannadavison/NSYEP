@@ -3,18 +3,25 @@ import { withRouter } from "react-router"
 import './Error404.css'
 const Error404 = (props) => {
 
-    let errorMessage = props.match.params.regionName.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase())
+    var Filter = require('bad-words'),
+        filter = new Filter();
+
+    let errorMessage = props.match.params.regionName.replace(/(^\w|\s\w)/g, (m) =>
+        m.toUpperCase()
+    );
     return (
-        <div className='error'>
+        <div className="error">
+            <div className="error404">404 Error</div>
 
-            <div className='error404'>
+            <div className="errorMessage">
+                Page Not Found: &#160;
 
-                404  Error
+                <i>/{filter.clean(errorMessage.toLowerCase().replace("-", " "))}</i>
             </div>
-
-            <div className='errorMessage'>Page Not Found: &#160;<i>/{errorMessage.toLowerCase().replace("-", " ")}</i></div>
-
         </div>
-    )
-}
-export default withRouter(Error404)
+    );
+};
+export default withRouter(Error404);
+
+
+

@@ -1,18 +1,22 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-// import "./region.css";
-import { makeStyles, Typography } from "@material-ui/core";
 
+
+import { makeStyles, Typography } from "@material-ui/core";
+import { reactStringReplace, match } from "react-string-replace";
 import NoContent from "./Error/NoContent";
 import Error404 from "./Error/Error404";
 import "./region.css";
+import { ReactDOM } from "react-dom";
+import reactDom from "react-dom";
+
 
 export default function Region(props) {
   let name = props.match.params.regionName;
   // the name comes through as the url, so we must name-ify it.
   name = name.replace(/-/g, " ");
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
-
+  console.log(name)
   //gotta locate the right object that's holding the region name:
   let content = []
   console.log(regions, "regions")
@@ -28,14 +32,14 @@ export default function Region(props) {
   const importImages = (r) => r.keys().map(r);
 
   switch (name) {
-    case "Capital":
+    case "Capital Region":
       images = importImages(
-        require.context(`./Images/Capital`, false, /\.(png|jpe?g|svg)$/i)
+        require.context(`./Images/CapitalRegion`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
-    case "Central":
+    case "Central New York":
       images = importImages(
-        require.context(`./Images/Central`, false, /\.(png|jpe?g|svg)$/i)
+        require.context(`./Images/CentralNewYork`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
     case "Finger Lakes":
@@ -43,10 +47,10 @@ export default function Region(props) {
         require.context(`./Images/FingerLakes`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
-    case "Hudson Valley":
+    case "Mid Hudson":
       images = importImages(
         require.context(
-          `./Images/HudsonValley`,
+          `./Images/Mid-Hudson`,
           false,
           /\.(png|jpe?g|svg|mp4|HEIC)$/i
         )
@@ -57,7 +61,7 @@ export default function Region(props) {
         require.context(`./Images/LongIsland`, false, /\.(png|jpe?g|svg)$/i)
       );
       break;
-    case "Southern":
+    case "Southern Tier":
       images = importImages(
         require.context(`./Images/Southern`, false, /\.(png|jpe?g|svg)$/i)
       );
@@ -89,9 +93,9 @@ export default function Region(props) {
         )
       );
       break;
-    case "North":
+    case "North Country":
       images = importImages(
-        require.context(`./Images/North`, false, /\.(png|jpe?g|svg|mp4)$/i)
+        require.context(`./Images/NorthCountry`, false, /\.(png|jpe?g|svg|mp4)$/i)
       );
       break;
     default:
@@ -146,6 +150,7 @@ export default function Region(props) {
           {/* probably will be a map as according to the number of things to put into the page */}
 
           {content.map((c, key) => {
+            let text = c.copy.split('\n')
             let image = getRightImage(c.image);
             let imgTag = () => {
               return image.match("mp4") ? (
@@ -187,13 +192,38 @@ export default function Region(props) {
                   <Typography variant="h6" className={styles.headers}>
                     {c.title}
                   </Typography>
-                  {c.copy}
+
+                  {text.map((t) => {
+                    if (t.includes('Augustin')) {
+                      const reactStringReplace = require('react-string-replace');
+                      const newLink =
+                        reactStringReplace(t, "Here's a website", (match, i) => (
+                          <a style={{ color: "white", textDecoration: "underline" }} href="https://auggie-syep-final-project.testing101.repl.co/">{match}</a>)
+
+                        )
+                      return (
+                        <p>{newLink}
+
+                          )
+
+                        </p>
+                      )
+                    }
+                    else {
+
+                      return (<p>{t}</p>)
+                    }
+
+
+
+                  })}
+
                 </div>
               </div>
             );
           })}
         </div>
-      </div>
+      </div >
     );
   }
 }

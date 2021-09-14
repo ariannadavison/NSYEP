@@ -2,8 +2,11 @@
   background-color: var(--banner-color-accent);
   text-transform: uppercase;
 }
-
-.navbar a:hover, .navbar a:focus {
+change {
+  opacity: 1;
+}
+.navbar a:hover,
+.navbar a:focus {
   text-decoration: none;
 }
 
@@ -20,16 +23,20 @@
   border-color: transparent;
 }
 
-.navbar .nav-tabs .nav-link:hover, .navbar .nav-tabs .nav-link:focus {
+.navbar .nav-tabs .nav-link:hover,
+.navbar .nav-tabs .nav-link:focus {
   border: 1px solid transparent;
   border-bottom: 1px solid #bebebe;
 }
 
-.navbar__link:hover, .navbar__link:focus {
+.navbar__link:hover,
+.navbar__link:focus {
   color: #bebebe;
 }
 
-a.dropdown-item:hover, a.dropdown-item:focus, button.dropdown-item:hover, button.dropdown-item:focus {
+a.dropdown-item:hover,
+a.dropdown-item:focus,
+button.dropdown-item:hover,
+button.dropdown-item:focus {
   background-color: #17b6eb57;
 }
-

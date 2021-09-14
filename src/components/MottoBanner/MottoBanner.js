@@ -19,3 +19,4 @@ const MottoBanner = () => {
 
 
 export default MottoBanner;
+//change

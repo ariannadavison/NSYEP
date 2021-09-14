@@ -6,7 +6,6 @@
   height: 0px;
 }
 
-
 #message,
 #title {
   width: 100%;
@@ -67,4 +66,7 @@
 }
 .bold {
   font-weight: 700;
+}
+change {
+  opacity: 1;
 }

@@ -19,7 +19,7 @@ const RegionalMap = () => {
                             <Accordion className='map__regionNames__dropdown'>
                                 <AccordionSummary expandIcon={'\u25be'} className="map__regionName">
                                     <Link to={"/" + region.regionURL} id="map__regionNameLinks">
-                                        <b>{region.region}</b>
+                                        <b>{region.region.replace("Mid Hudson", "Mid-Hudson")}</b>
                                     </Link>
                                 </AccordionSummary >
                                 {region.counties.map((county) => {
@@ -42,3 +42,4 @@ const RegionalMap = () => {
     );
 };
 export default RegionalMap;
+//change
