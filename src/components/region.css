@@ -97,3 +97,6 @@ div ::-webkit-scrollbar-thumb {
     /* justify-content: flex-end; */
   }
 }
+change {
+  opacity: 1;
+}

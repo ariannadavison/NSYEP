@@ -3,3 +3,4 @@ export const footerInfo = {
   facebook: "https://www.facebook.com/NYATEP/",
   linkedIn: "https://www.linkedin.com/company/nyatep",
 };
+//change

@@ -64,3 +64,6 @@
 .tooltip div.close:hover {
   border-style: outset;
 }
+change {
+  opacity: 1;
+}

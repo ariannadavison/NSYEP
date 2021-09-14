@@ -30,7 +30,6 @@
   align-items: flex-start;
 }
 
-
 .impact__part {
   padding: 1rem;
   font-weight: bold;
@@ -87,4 +86,7 @@
   .impact__img {
     max-width: 100%;
   }
+}
+change {
+  opacity: 1;
 }

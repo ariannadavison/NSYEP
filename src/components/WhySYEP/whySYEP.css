@@ -14,7 +14,7 @@
   position: relative;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: 'Barlow Semi Condensed', Montserrat, Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", Montserrat, Arial, sans-serif;
 }
 
 .why__header-bg {
@@ -50,4 +50,7 @@
   .why__picture {
     float: right;
   }
+}
+change {
+  opacity: 1;
 }

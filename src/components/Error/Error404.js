@@ -13,9 +13,11 @@ const Error404 = (props) => {
 
             <div className="errorMessage">
                 Page Not Found: &#160;
+
                 <i>/{filter.clean(errorMessage.toLowerCase().replace("-", " "))}</i>
             </div>
         </div>
     );
 };
 export default withRouter(Error404);
+//change
