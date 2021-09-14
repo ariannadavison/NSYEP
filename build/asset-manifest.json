@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb7047d0.chunk.css",
-    "main.js": "/static/js/main.f2ec8a73.chunk.js",
-    "main.js.map": "/static/js/main.f2ec8a73.chunk.js.map",
+    "main.css": "/static/css/main.10859f45.chunk.css",
+    "main.js": "/static/js/main.70745067.chunk.js",
+    "main.js.map": "/static/js/main.70745067.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7545a8a1.js",
     "runtime-main.js.map": "/static/js/runtime-main.7545a8a1.js.map",
     "static/css/2.081f420c.chunk.css": "/static/css/2.081f420c.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.8ae1a74a.chunk.js.map": "/static/js/2.8ae1a74a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.081f420c.chunk.css.map": "/static/css/2.081f420c.chunk.css.map",
-    "static/css/main.fb7047d0.chunk.css.map": "/static/css/main.fb7047d0.chunk.css.map",
+    "static/css/main.10859f45.chunk.css.map": "/static/css/main.10859f45.chunk.css.map",
     "static/js/2.8ae1a74a.chunk.js.LICENSE.txt": "/static/js/2.8ae1a74a.chunk.js.LICENSE.txt",
     "static/media/2020.png": "/static/media/2020.44cb9f48.png",
     "static/media/Banner.dbe40461.png": "/static/media/Banner.dbe40461.png",
@@ -46,6 +46,7 @@
     "static/media/employer.ae066df8.png": "/static/media/employer.ae066df8.png",
     "static/media/nyateplogo.ae90a837.png": "/static/media/nyateplogo.ae90a837.png",
     "static/media/people.2ec92748.png": "/static/media/people.2ec92748.png",
+    "static/media/perscholaslogo.cac8ba6d.svg": "/static/media/perscholaslogo.cac8ba6d.svg",
     "static/media/s3-syep.426da95f.jpeg": "/static/media/s3-syep.426da95f.jpeg",
     "static/media/tainairis goodwill - Mary Guldenschuh.jpg": "/static/media/tainairis goodwill - Mary Guldenschuh.6e93d954.jpg",
     "static/media/thumbnail_Dylan cropped - Shannon Alvord.jpg": "/static/media/thumbnail_Dylan cropped - Shannon Alvord.430b852d.jpg"
@@ -54,7 +55,7 @@
     "static/js/runtime-main.7545a8a1.js",
     "static/css/2.081f420c.chunk.css",
     "static/js/2.8ae1a74a.chunk.js",
-    "static/css/main.fb7047d0.chunk.css",
-    "static/js/main.f2ec8a73.chunk.js"
+    "static/css/main.10859f45.chunk.css",
+    "static/js/main.70745067.chunk.js"
   ]
 }
