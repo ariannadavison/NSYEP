@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
 import { footerInfo } from "../../data/FooterContacts.js";
+import perscholaslogo from "./perscholaslogo.svg"
 
 const Footer = () => {
   return (
@@ -52,6 +53,12 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
             </div>
           </a>
+          <div id="perScholas" >
+
+            <img src={perscholaslogo}></img>
+            Developed by <br /> Per Scholas Alumni
+          </div>
+
           {/* <a href={footerInfo.instagram} target="_blank" rel="noopener noreferrer">
           <div className="instagram social-bg">
               <FontAwesomeIcon icon={faInstagram} size="lg" />

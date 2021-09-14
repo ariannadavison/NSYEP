@@ -1,15 +1,16 @@
 .footer {
-  background-image: linear-gradient(to bottom right, #1DBBF1 20%, #213D88);
+  background-image: linear-gradient(to bottom right, #1dbbf1 20%, #213d88);
   color: white;
   padding: 1rem 2rem;
 }
 
 .footer__columns {
+  max-width: 90%;
   display: flex;
+  /* border-style: solid; */
   justify-content: space-between;
   align-items: center;
 }
-
 
 .footer__info {
   color: white;
@@ -40,7 +41,7 @@
 }
 
 .footer__social .twitter {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
 }
 
 .footer__social .twitter:hover {
@@ -64,7 +65,7 @@
 }
 
 .footer__social .instagram {
-  background-color: #833AB4;
+  background-color: #833ab4;
 }
 
 .footer__social .instagram:hover {
@@ -79,4 +80,26 @@
 
 .footer__social a {
   color: inherit;
+}
+
+#perScholas {
+  width: 4.5rem;
+  display: flex;
+  flex-flow: column;
+  margin-right: -30px;
+  margin-left: 30px;
+  font-size: 5pt;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  margin-right: -40px;
+}
+#perScholas img {
+  overflow-x: hidden;
+  /* background-color: white; */
+  filter: brightness(900%);
+  /* position: absolute; */
+  /* object-fit: cover; */
+  width: 4.5rem;
+  margin-bottom: 6px;
+  /* clip: rect(0px, 100%, 100%, 0px); */
 }
