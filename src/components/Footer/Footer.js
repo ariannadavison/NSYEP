@@ -13,7 +13,7 @@ import perscholaslogo from "./perscholaslogo.svg"
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer__columns container">
+      <div className="footer__columns">
         <div className="footer__info">
           <p>
             <b>NYATEP</b>

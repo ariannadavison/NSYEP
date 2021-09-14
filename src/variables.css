@@ -1,15 +1,15 @@
 :root {
   --banner-color: var(--logo-orange);
-  --banner-color-accent: white;
+  --banner-color-accent: var( --logo-orange);
   /* decorative text color*/
   --text-color-deco: var(--logo-navy);
-  --sidebar-orange: var(--logo-orange);
-  --logo-navy: #203a83;
-  --logo-green: #7bbf50;
-  --logo-orange: #e89620;
-  --logo-tan: #f0c67d;
-  --logo-blue: #1fbcf2;
-  --logo-dark-gray: #5d5858;
+
+  --logo-navy: #203A83;
+  --logo-green: #7BBF50;
+  --logo-orange: #E89620;
+  --logo-tan: #F0C67D;
+  --logo-blue: #1FBCF2;
+  --logo-dark-gray: #5D5858;
   --logo-darkest-gray: #39383a;
   --near-black: #1f1f1f;
   --logo-pink: #f08e8e;

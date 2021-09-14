@@ -85,7 +85,7 @@
   height: 100%;
 }
 .map__regionNames div {
-  background-color: var(--sidebar-orange);
+  background-color: var(--banner-color-accent);
   color: white;
 
   max-width: 100%;

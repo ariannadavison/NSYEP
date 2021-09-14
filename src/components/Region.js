@@ -1,6 +1,7 @@
 import RegionBanner from "./RegionBanners/RegionBanner";
 import { regions } from "../data/Regions";
-import React from "react";
+
+
 import { makeStyles, Typography } from "@material-ui/core";
 import { reactStringReplace, match } from "react-string-replace";
 import NoContent from "./Error/NoContent";
@@ -17,9 +18,12 @@ export default function Region(props) {
   name = name.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
   console.log(name)
   //gotta locate the right object that's holding the region name:
-  let content = [];
+  let content = []
+  console.log(regions, "regions")
   let region = regions.filter((r) => r.region === name);
+  console.log(region.length)
   if (region.length > 0) {
+
     content = region[0].content;
   }
 
@@ -120,7 +124,6 @@ export default function Region(props) {
     headers: {
       textTransform: "uppercase",
       fontWeight: "bold",
-      textAlign: "auto",
     },
   });
 

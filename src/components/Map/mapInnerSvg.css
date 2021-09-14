@@ -15,8 +15,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
-
+  fill: var(--finger-lakes);
 }
 #states #s10 path:hover {
   cursor: pointer;
@@ -27,7 +26,6 @@
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
   fill: #1deab9;
-
 }
 #states #s11 path:hover {
   cursor: pointer;
@@ -547,7 +545,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--north);
 }
 #states #s01 path:hover {
   cursor: pointer;
@@ -557,7 +555,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--capital);
 }
 #states #s02 path:hover {
   cursor: pointer;
@@ -567,7 +565,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--mid-hudson);
 }
 #states #s03 path:hover {
   cursor: pointer;
@@ -577,7 +575,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--nyc);
 }
 #states #s04 path:hover {
   cursor: pointer;
@@ -587,7 +585,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--long-island);
 }
 #states #s05 path:hover {
   cursor: pointer;
@@ -597,7 +595,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--mohawk-valley);
 }
 #states #s06 path:hover {
   cursor: pointer;
@@ -607,7 +605,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--southern);
 }
 #states #s07 path:hover {
   cursor: pointer;
@@ -617,7 +615,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--western);
 }
 #states #s08 path:hover {
   cursor: pointer;
@@ -627,7 +625,7 @@
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: var(--logo-green);
+  fill: var(--central);
 }
 #states #s09 path:hover {
   cursor: pointer;

@@ -1,6 +1,8 @@
-import { withRouter } from "react-router";
-import "./Error404.css";
+
+import { withRouter } from "react-router"
+import './Error404.css'
 const Error404 = (props) => {
+
     var Filter = require('bad-words'),
         filter = new Filter();
 
@@ -20,4 +22,6 @@ const Error404 = (props) => {
     );
 };
 export default withRouter(Error404);
-//change
+
+
+

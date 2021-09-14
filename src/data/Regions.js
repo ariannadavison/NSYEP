@@ -92,6 +92,7 @@ export const regions = [
   {
     region: "Mid Hudson",
     regionID: "08",
+
     regionURL: "mid-hudson",
     counties: ['Dutchess', 'Orange', 'Putnam', 'Rockland', 'Sullivan', 'Ulster', 'Westchester'],
     content: [
@@ -113,8 +114,8 @@ export const regions = [
       },
     ],
 
-  },
 
+  },
   {
     region: "Long Island",
     regionID: "10",
@@ -137,23 +138,12 @@ export const regions = [
       },
     ],
   },
-
-
   {
     region: "Mohawk Valley",
     regionID: "06",
     regionURL: "mohawk-valley",
-    counties: ['Fulton', 'Herkimer', 'Montgomery', 'Oneida', 'Otsego', 'Schoharie'],
-    content: [
-      {
-        title: "",
-        image: "",
-        copy: ""
-      },
-    ],
+    counties: ['Fulton', 'Herkimer', 'Montgomery', 'Oneida', 'Otsego', 'Schoharie']
   },
-
-
   {
     region: "New York City",
     regionID: "09",
