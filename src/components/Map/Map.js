@@ -117,7 +117,7 @@ const Map = () => {
               </text>
             </Link>
             <Link
-              to="/capital"
+              to="/capital-region"
               id="s02"
               title="Capital"
               class="hint undefined  "
@@ -544,7 +544,7 @@ const Map = () => {
               </text>
             </Link>
             <Link
-              to="/southern"
+              to="/southern-tier"
               id="s07"
               title="Southern"
               class="hint undefined  "
@@ -663,7 +663,7 @@ const Map = () => {
               </text>
             </Link>
             <Link
-              to="/western"
+              to="/western-new-york"
               id="s08"
               title="Western"
               class="hint undefined  "
@@ -740,7 +740,7 @@ const Map = () => {
               </text>
             </Link>
             <Link
-              to="/central"
+              to="/central-new-york"
               id="s09"
               title="Central"
               class="hint undefined  "
