@@ -13,4 +13,3 @@ const LogoHero = () => {
 };
 
 export default LogoHero;
-//change
