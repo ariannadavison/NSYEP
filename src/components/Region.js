@@ -124,7 +124,7 @@ export default function Region(props) {
     },
   });
 
-  console.log(images)
+
   const styles = useStyles();
   if (region.length === 0) {
     return (
