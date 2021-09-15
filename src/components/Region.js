@@ -75,7 +75,7 @@ export default function Region(props) {
         )
       );
       break;
-    case "Western":
+    case "Western New York":
       images = importImages(
         require.context(
           `./Images/Western`,
@@ -127,6 +127,7 @@ export default function Region(props) {
     },
   });
 
+  console.log(images)
   const styles = useStyles();
   if (region.length === 0) {
     return (
