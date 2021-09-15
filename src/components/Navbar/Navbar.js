@@ -24,5 +24,5 @@ const Navbar = (props) => {
     </div>
   );
 };
-//change
+
 export default Navbar;
