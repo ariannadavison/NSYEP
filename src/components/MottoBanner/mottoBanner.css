@@ -79,3 +79,8 @@ change {
 change {
   opacity: 1;
 }
+@media (max-width: 200px) {
+  .motto__text {
+    font-size: 1rem;
+  }
+}
