@@ -7,7 +7,7 @@ const LogoHero = () => {
   return (
     <div className="logoHero__container">
       <img className="logoImg" src={nyateplogo} />
-      <img src={Banner} />
+      <img className="skyline" src={Banner} />
     </div>
   );
 };
