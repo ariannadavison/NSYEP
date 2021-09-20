@@ -83,12 +83,12 @@
 }
 
 #perScholas {
-  width: 4.5rem;
+  width: 5rem;
   display: flex;
   flex-flow: column;
   margin-right: -30px;
   margin-left: 30px;
-  font-size: 5pt;
+  font-size: 6pt;
   justify-content: center;
   /* overflow-x: hidden; */
   margin-right: -40px;
@@ -99,7 +99,7 @@
   filter: brightness(900%);
   /* position: absolute; */
   /* object-fit: cover; */
-  width: 4.5rem;
+  width: 6rem;
   margin-bottom: 6px;
   /* clip: rect(0px, 100%, 100%, 0px); */
 }
